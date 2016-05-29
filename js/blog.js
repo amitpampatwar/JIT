@@ -62,6 +62,7 @@ function addData(url, headerType, elementName)
             });
             
             formData = formData + "</fieldset></form>";
+            blogData = blogData + formData;
           }
     
           if (objContent.Profile) {
