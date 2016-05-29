@@ -62,7 +62,7 @@
 		"ChildNav": [				 		
 			{
 				"Name":"Training &amp; Placement",
-				"Link":"Placements_TrainingPlacement.html"
+				"Link":"Main.html?JSON=placements_trainingplacements.json"
 			},
 			{
 				"Name":"Placement History",
