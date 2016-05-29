@@ -28,8 +28,8 @@
                     },
                     {
                         "Dropdown" : {
-                            "ID" : "mobileNo",
-                            "Name" : "Mobile No",
+                            "ID" : "branchDetails",
+                            "Name" : "Branch",
                             "Option" : [
                                 { "Value" : "1", "Text" : "BE (Electronics and Tele-Communication Engineering)" },
                                 { "Value" : "2", "Text" : "BE (Electronics and Communication Engineering)" },
@@ -41,6 +41,20 @@
                                 { "Value" : "8", "Text" : "M Tech (VLSI)" },
                                 { "Value" : "9", "Text" : "M Tech (CSE)" }
                             ]
+                        }
+                    },
+                    {
+                        "Textarea" : {
+                            "ID" : "txtComments",
+                            "Name" : "Comments",
+                            "Width" : "1",
+                            "Rows" : "7"
+                        }
+                    },
+                    {
+                        "Button" : {
+                            "ID" : "btnSubmit",
+                            "Name" : "Submit"
                         }
                     }
                 ]
