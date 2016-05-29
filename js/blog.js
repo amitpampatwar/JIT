@@ -68,36 +68,34 @@ function addData(url, headerType, elementName)
           if (objContent.Profile) {
             var profileData = ""; 
             
-            $.each(objContent.Profile, function(index, objProfileContent) {
-              profileData = profileData + "<article class=\"uk-article\">";        
-              profileData = profileData + "<header class=\"uk-comment-header\"><img class=\"uk-comment-avatar\" src=\"" + objProfileContent.ImageURL + "\" alt=\"" + objProfileContent.ImageTitle + "\">"
-              profileData = profileData + "<h4 class=\"uk-comment-title\">" + objProfileContent.ProfileName + "</h4>";
+            profileData = profileData + "<article class=\"uk-article\">";        
+            profileData = profileData + "<header class=\"uk-comment-header\"><img class=\"uk-comment-avatar\" src=\"" + objProfileContent.ImageURL + "\" alt=\"" + objProfileContent.ImageTitle + "\">"
+            profileData = profileData + "<h4 class=\"uk-comment-title\">" + objProfileContent.ProfileName + "</h4>";
 
-              $.each(objProfileContent.Qualifications, function(childIndex, qualifications) {          
-                profileData = profileData + "<div class=\"uk-comment-meta\">" + qualifications.Title + "</div>";
-              });
-
-              profileData = profileData + "</header>";
-
-              $.each(objProfileContent.Details, function(childIndex, details) {
-                if (details.Header) {
-                  profileData = profileData + "<h2>" + details.Header + "</h2>";
-                }
-                profileData = profileData + "<div class=\"uk-comment-body uk-text-justify\">" + details.Paregraph + "</div>";
-              });
-
-              $.each(objProfileContent.Lists, function(childIndex, lists) {
-                if (lists.Header) {
-                  profileData = profileData + "<h2>" + lists.Header + "</h2><ul class=\"uk-list uk-list-striped\">";
-                }
-                if (lists.Value) {
-                  profileData = profileData + "<li>" + lists.Value + "</li>";
-                }
-              });
-
-              profileData = profileData + "</ul></article>";
-              blogData = blogData + profileData;
+            $.each(objProfileContent.Qualifications, function(childIndex, qualifications) {          
+              profileData = profileData + "<div class=\"uk-comment-meta\">" + qualifications.Title + "</div>";
             });
+
+            profileData = profileData + "</header>";
+
+            $.each(objProfileContent.Details, function(childIndex, details) {
+              if (details.Header) {
+                profileData = profileData + "<h2>" + details.Header + "</h2>";
+              }
+              profileData = profileData + "<div class=\"uk-comment-body uk-text-justify\">" + details.Paregraph + "</div>";
+            });
+
+            $.each(objProfileContent.Lists, function(childIndex, lists) {
+              if (lists.Header) {
+                profileData = profileData + "<h2>" + lists.Header + "</h2><ul class=\"uk-list uk-list-striped\">";
+              }
+              if (lists.Value) {
+                profileData = profileData + "<li>" + lists.Value + "</li>";
+              }
+            });
+
+            profileData = profileData + "</ul></article>";
+            blogData = blogData + profileData;
           }
     
           if (objContent.ImageURL) {
@@ -162,6 +160,10 @@ function addData(url, headerType, elementName)
             });
             
             blogData = blogData + "</ul></article>";
+          }
+    
+          if (objContent.HR) {
+            blogData = blogData + "<hr class=\"uk-article-divider\">";
           }
         });
 
