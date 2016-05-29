@@ -46,18 +46,20 @@
             {
                 "Paregraphs": [
 					{
-						"Text" : "The T & P Cell has a well-equipped conference room and separate, well-ventillated furnished rooms for interviews and counseling."
+						"Text" : "<b>The T & P Cell has a well-equipped conference room and separate, well-ventillated furnished rooms for interviews and counseling.</b>"
 					}
 				]
             },
             {
                 "HR" : "true"
-            }
-        ]
-    },
-    {
-		"Title":"Members from the T &amp; P Department",
-		"Content": [
+            },
+            {
+                "Paregraphs": [
+					{
+						"H2" : "Members from the T &amp; P Department"
+					}
+				]
+            },
             {
                 "Profile" : {
                     "ImageURL":"images/kunalpadole.png",
@@ -135,6 +137,49 @@
                         }
                     ]	
                 }                
+            },
+            {
+                "HR" : "true"
+            },
+            {                
+                "Lists" : [
+                    {
+                        "Header": "JIT has tie-ups & signed MOUs with"
+                    },
+                    {
+                        "Value" : "MAC, as authorized centre for software training"
+                    },
+                    {
+                        "Value" : "EFY (Electronics for You)"
+                    },
+                    {
+                        "Value" : "MACCIA (Maharashtra Chamber of Commerce Industry & Agriculture)"
+                    },
+                    {
+                        "Value" : "Houston University, USA"
+                    },
+                    {
+                        "Value" : "University Putra Malaysia"
+                    }
+                ]                                    
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+					{
+						"H2" : "Graphical representation Of placed students for last 3 years"
+					}
+				]
+            },
+            {
+                "ImageURL": [
+					{
+						"URL" : "images/placeholder_800x400_1.jpg",
+						"ImageTitle":"Graphical representation Of placed students for last 3 years"
+					}
+                ]
             }
         ]
     }
