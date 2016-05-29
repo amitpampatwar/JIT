@@ -9,6 +9,31 @@
                             "ID" : "firstName",
                             "Name" : "Name",
                             "Width" : "2"
+                        },                        
+                        "Textbox" : {
+                            "ID" : "email",
+                            "Name" : "Email",
+                            "Width" : "1"
+                        },                        
+                        "Textbox" : {
+                            "ID" : "mobileNo",
+                            "Name" : "Mobile No",
+                            "Width" : "3"
+                        },                        
+                        "Dropdown" : {
+                            "ID" : "mobileNo",
+                            "Name" : "Mobile No",
+                            "Option" : [
+                                { "Value" : "1", "Text" : "BE (Electronics and Tele-Communication Engineering)" },
+                                { "Value" : "2", "Text" : "BE (Electronics and Communication Engineering)" },
+                                { "Value" : "3", "Text" : "BE (Electronics Engineering)" },
+                                { "Value" : "4", "Text" : "BE (Computer Science and Engineering)" },
+                                { "Value" : "5", "Text" : "BE (Electrical Engineering)" },
+                                { "Value" : "6", "Text" : "BE (Mechanical Engineering)" },
+                                { "Value" : "7", "Text" : "MBA (Business Administration)" },
+                                { "Value" : "8", "Text" : "M Tech (VLSI)" },
+                                { "Value" : "9", "Text" : "M Tech (CSE)" },
+                            ]
                         }
                     }
                 ]
