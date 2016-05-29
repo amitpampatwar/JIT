@@ -19,6 +19,51 @@ function addData(url, headerType, elementName)
         }
 
         $.each(objData.Content, function(index, objContent) {
+          if (objContent.Form) {
+            var formData = "";
+            
+            formData = formData + "<form id=\"admissionForm\" class=\"uk-form uk-width-medium-1-2\"><fieldset>";
+            
+            $.each(objContent.Form, function(index, objFormContent) {
+              formData = formData + "<div class=\"uk-form-row\">";
+              
+              if (objFormContent.Textbox) {
+                var textboxContent = objFormContent.Textbox;
+                
+                formData = formData + "<input id=\"" + textboxContent.ID + "\" type=\"text\" placeholder=\"" + textboxContent.Name + "\" class=\"uk-width-1-" + textboxContent.Width + "\">";
+              }
+              
+              if (objFormContent.Dropdown) {
+                var dropdownContent = objFormContent.Dropdown;
+                
+                formData = formData + "<select id=\"" + dropdownContent.ID + "\">";
+                formData = formData + "<option>-- Select " + dropdownContent.Name + "--</option>";
+                
+                $.each(dropdownContent.Option, function(index, objOptionValue) {
+                  formData = formData + "<option>" + objOptionValue.Text + "</option>";
+                });
+                
+                formData = formData + "</select>";
+              }
+              
+              if (objFormContent.Button) {
+                var buttonContent = objFormContent.Button;
+                
+                formData = formData + "<button id=\"" + buttonContent.ID + "\" class=\"uk-button\">" + buttonContent.Text + "</button>";                
+              }
+              
+              if (objFormContent.Textarea) {
+                var textareaContent = objFormContent.Textarea;
+                
+                formData = formData + "<textarea id=\"" + textareaContent.ID + "\" rows=\"" + textareaContent.Rows + "\" placeholder=\"" + textareaContent.Name + "\" class=\"uk-width-1-" + textareaContent.Width + "\"></textarea>";
+              }
+              
+              formData = formData + "</div>";
+            });
+            
+            formData = formData + "</fieldset></form>";
+          }
+    
           if (objContent.Profile) {
             var profileData = ""; 
             
@@ -81,12 +126,6 @@ function addData(url, headerType, elementName)
               else if (paregraphs.H4) {
                 blogData = blogData + "<h4>" + paregraphs.H4 + "</h4>";
               }
-            });
-          }
-
-          if (objContent.Comment) {
-            $.each(objContent.Paregraphs, function(childIndex, paregraphs) {          
-              blogData = blogData + "<p class=\"uk-text-justify\">" + paregraphs.Text + "</p>";
             });
           }
 
