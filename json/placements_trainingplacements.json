@@ -49,6 +49,9 @@
 						"Text" : "The T & P Cell has a well-equipped conference room and separate, well-ventillated furnished rooms for interviews and counseling."
 					}
 				]
+            },
+            {
+                "HR" : "true"
             }
         ]
     },
@@ -86,7 +89,11 @@
                                 "Title" : "Experience - 10 Years"
                             }
                         ]		
-                    },
+                    }
+                ]
+            },
+            {
+                "Profile" : [
                     {
                         "ImageURL":"images/no-profile-img.gif",
                         "ImageTitle":"Mr. Faizan Ur Rehman",
@@ -107,7 +114,11 @@
                                 "Title" : "Experience - 03 Years"
                             }
                         ]	
-                    },
+                    }
+                ]
+            },
+            {
+                "Profile" : [
                     {
                         "ImageURL":"images/no-profile-img.gif",
                         "ImageTitle":"Ms. Bhavana Kewalramani",
