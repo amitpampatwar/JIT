@@ -89,14 +89,10 @@
 			{
 				"Name":"Library",
 				"Link":"Main.html?JSON=academics_library.json"
-			},
+			},					
 			{
-				"Name":"Canteen",
-				"Link":"Academics_Canteen.html"
-			},			
-			{
-				"Name":"Laboratories",
-				"Link":"Academics_Laboratories.html"
+				"Name":"Other Facilities",
+				"Link":"Main.html?JSON=academics_otherfacilities.json"
 			},
 			{
 		 		"Name": "Departments",

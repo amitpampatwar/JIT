@@ -1,0 +1,283 @@
+[
+	{
+		"Title":"Other Facilities",
+		"Content": [
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Language LAB"
+                    }
+                ]
+            },
+			{
+                "ImageURL": [
+                    {
+                        "URL" : "images/Library.png",
+                        "ImageTitle":"JIT Library"
+                    }
+                ]
+            },            
+			{
+                "Paregraphs": [
+                    {
+                        "Text" : "Language laboratory has been developed by the college to facilitate sharpening of communication skills in English outside the classroom. There are as many as twenty computers with earphones. Students from rural areas who are generally weak in English can have sufficient ear training in the language lab."
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Internet Center"
+                    }
+                ]
+            },
+			{
+                "ImageURL": [
+                    {
+                        "URL" : "images/Library.png",
+                        "ImageTitle":"JIT Library"
+                    }
+                ]
+            },            
+			{
+                "Paregraphs": [
+                    {
+                        "Text" : "Excellent Internet surfing facility is provided to the students and staff through RF link from STPI."
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Canteen"
+                    }
+                ]
+            },
+			{
+                "ImageURL": [
+                    {
+                        "URL" : "images/Library.png",
+                        "ImageTitle":"JIT Library"
+                    }
+                ]
+            },            
+			{
+                "Paregraphs": [
+                    {
+                        "Text" : "Aircooled canteen located in a scenic ambiance, keeping a soothing environment for relaxation."
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Councelling Cell"
+                    }
+                ]
+            },
+			{
+                "ImageURL": [
+                    {
+                        "URL" : "images/Library.png",
+                        "ImageTitle":"JIT Library"
+                    }
+                ]
+            },            
+			{
+                "Paregraphs": [
+                    {
+                        "Text" : "Students going through stress and tension can avail the psychological help of a counselor appointed for the purpose."
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Students Grievance Cell"
+                    }
+                ]
+            },
+			{
+                "ImageURL": [
+                    {
+                        "URL" : "images/Library.png",
+                        "ImageTitle":"JIT Library"
+                    }
+                ]
+            },            
+			{
+                "Paregraphs": [
+                    {
+                        "Text" : "Senior faculty members are member of this cell. They look into the diffculties faced by the students in academic and administrative matters, students can approach the members of this cell to resolve their problems. They can also use suggestion and complaint boxes and email to bring academic discomforts and grievances to the notice of management."
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Transport"
+                    }
+                ]
+            },
+			{
+                "ImageURL": [
+                    {
+                        "URL" : "images/Library.png",
+                        "ImageTitle":"JIT Library"
+                    }
+                ]
+            },            
+			{
+                "Paregraphs": [
+                    {
+                        "Text" : "College bus facility is provided to all the first year students at subsidized rates. A yearly pass to use this facility can be obtained from the college office after paying the prescribed charges. The buses run on three different routes. The facility is also extended from koradi, khparkhedaa, savner, kampthi, nandagaumukh, boregaon and parshioni. The facility is also extended for visits to industries, research institutes, for survey camp etc."
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Games And Sports Facilities"
+                    }
+                ]
+            },
+			{
+                "ImageURL": [
+                    {
+                        "URL" : "images/Library.png",
+                        "ImageTitle":"JIT Library"
+                    }
+                ]
+            },            
+			{
+                "Paregraphs": [
+                    {
+                        "Text" : "JIT provides facilities and encouragement for every sport activity that students find interest in. Exceptional talents are given adequate encouragement to emerge as winning performers in their chosen sporting disciplines. National level 'Cricket' pitch with the help of VCA has been recently laid for cricket."
+                    }
+                ]
+            },
+            {
+                "Lists" : [                    
+                    {
+                        "Value" : "<b>Indoor multi purpose auditorium :</b> 01 Nos"
+                    },
+                    {
+                        "Value" : "<b>Badminton Courts :</b> 01 Nos"
+                    },
+                    {
+                        "Value" : "<b>Volleyball Courts :</b> 01 Nos"
+                    },
+                    {
+                        "Value" : "<b>Basktball Courts :</b> 01 Nos"
+                    },
+                    {
+                        "Value" : "<b>Table Tennis :</b> 02 Nos"
+                    }
+                ]
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "Text" : "State of Art 'Gymnesiem' with full fledge facilities is available to students and staff for maintaining their physique and stress free mental balance."
+                    },
+                    {
+                        "Text" : "A well equipped seperate club is available for the amature and professional singers and musicians."
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Well Furnished Conference, Group Discussion And Seminar Halls"
+                    }
+                ]
+            },
+			{
+                "ImageURL": [
+                    {
+                        "URL" : "images/Library.png",
+                        "ImageTitle":"JIT Library"
+                    }
+                ]
+            },            
+			{
+                "Paregraphs": [
+                    {
+                        "Text" : "JIT has fully air conditioned conference hall. Group Discussion hall and Seminar Hall, with advanced multimedia projector. e-Classrooms with multimedia equipment, LCD projectors and screens."
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Book Bank Scheme For Weaker Sections And Meritorious Students"
+                    }
+                ]
+            },
+			{
+                "ImageURL": [
+                    {
+                        "URL" : "images/Library.png",
+                        "ImageTitle":"JIT Library"
+                    }
+                ]
+            },            
+			{
+                "Paregraphs": [
+                    {
+                        "Text" : "Library offers a book bank scheme for the meritorious and needy student in which books are given to the students for the complete academic session. There is also a social welfare scheme for SC/ST students, in which a set of books is given to student for the complete academics session."
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "State-of-the-art Infrastructure"
+                    }
+                ]
+            },
+			{
+                "ImageURL": [
+                    {
+                        "URL" : "images/Library.png",
+                        "ImageTitle":"JIT Library"
+                    }
+                ]
+            },            
+			{
+                "Paregraphs": [
+                    {
+                        "Text" : "We have best planned and best used infrastructure of verdant serenity and houses state of the art technology to enable first rate education in a range of courses. The rapidly mechanizing and hi-tech areas of Engineering require an equally advanced infrastructure."
+                    }
+                ]
+            }
+		]
+	}
+]
