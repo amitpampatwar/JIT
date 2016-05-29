@@ -32,7 +32,7 @@
                                 { "Value" : "6", "Text" : "BE (Mechanical Engineering)" },
                                 { "Value" : "7", "Text" : "MBA (Business Administration)" },
                                 { "Value" : "8", "Text" : "M Tech (VLSI)" },
-                                { "Value" : "9", "Text" : "M Tech (CSE)" },
+                                { "Value" : "9", "Text" : "M Tech (CSE)" }
                             ]
                         }
                     }
