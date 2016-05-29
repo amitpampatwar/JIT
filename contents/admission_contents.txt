@@ -1,0 +1,15 @@
+﻿<div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small uk-row-first">
+	<ul class="tm-nav uk-nav">
+	  <li class="uk-nav-header">BE First Year</li>
+	  <li class="{{CoursesOffered}}"><a href="Admissions_CoursesOffered.html">Courses Offered</a></li>
+	  <li class="{{EligiblityCriteria}}"><a href="Admissions_EligiblityCriteria.html">Eligiblity Criteria</a></li>	  
+	  <li class="uk-nav-header">BE Second Year</li>
+	  <li class="{{SECoursesOffered}}"><a href="Admissions_SECoursesOffered.html">Courses Offered</a></li>
+	  <li class="{{SEEligiblityCriteria}}"><a href="Admissions_SEEligiblityCriteria.html">Eligiblity Criteria</a></li>
+	  <li class="uk-nav-header">Admission Enquiry</li>
+	  <li class="{{AdmissionEnquiry}}"><a href="Admissions_AdmissionEnquiry.html">Admission Enquiry Form</a></li>
+	  <li class="uk-nav-header">Post Graduation</li>
+	  <li class="{{MTech}}"><a href="Admissions_MTech.html">M Tech</a></li>
+	  <li class="{{MBA}}"><a href="Admissions_MBA.html">MBA</a></li>     
+	</ul>
+</div>
