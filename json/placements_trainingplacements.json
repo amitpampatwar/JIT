@@ -49,11 +49,16 @@
 						"Text" : "The T & P Cell has a well-equipped conference room and separate, well-ventillated furnished rooms for interviews and counseling."
 					}
 				]
-            },
+            }
+        ]
+    },
+    {
+		"Title":"Members from the T &amp; P Department",
+		"Content": [
             {
                 "Profile" : [
                     {
-                        "ImageURL":"images/kunalpadole.jpg",
+                        "ImageURL":"images/kunalpadole.png",
                         "ImageTitle":"Mr. Kunal Padole",
                         "ProfileName":"Kunal Padole",
                         "Details": [
