@@ -54,7 +54,7 @@
                     {
                         "Button" : {
                             "ID" : "btnSubmit",
-                            "Name" : "Submit"
+                            "Text" : "Submit"
                         }
                     }
                 ]
