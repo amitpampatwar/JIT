@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="Stylesheet" media="screen,print" href="css/uikit.docs.min.css" />    
+    <link type="text/css" rel="Stylesheet" media="screen,print" href="css/docs.css" />
+    <link type="text/css" rel="Stylesheet" media="screen,print" href="css/highlight.css" />
+
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="js/docs.js"></script>
+    <script type="text/javascript" src="js/uikit.js"></script>
+    <script type="text/javascript" src="js/components/sticky.js"></script>
+    <script type="text/javascript" src="js/components/slideshow.js"></script>
+    <script type="text/javascript" src="js/components/slideshow-fx.js"></script>    
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/blog.js"></script>   
+  </head>
+  <script>
+    function GetParameterValues(param) {  
+      var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      
+      for (var i = 0; i < url.length; i++) {  
+        var urlparam = url[i].split('=');  
+        if (urlparam[0] == param) {  
+          return urlparam[1];  
+        }  
+      }  
+    }
+    
+    $(document).ready(function() {
+      var jsonFile = "json/" + GetParameterValues("JSON");
+          
+      addData(jsonFile, 1, "main");
+    });
+  </script>
+  <body class="tm-background">
+    <header id="header"></header>
+    <div class="tm-middle">
+      <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-margin="">
+          <div id="subMenu" class="tm-sidebar uk-width-medium-1-4 uk-hidden-small uk-row-first"></div>
+          <div class="tm-main uk-width-medium-3-4">
+            <article id="main" class="uk-comment"></article>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <footer id="footer"></footer>
+  </body>
+</html>

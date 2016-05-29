@@ -1,0 +1,257 @@
+[
+	{
+		"Name":"Home",
+		"Link":"Default.html"
+	},
+	{
+		"Name":"Admissions",
+		"ChildNav": [
+			{
+				"Name":"Prospectus",				
+				"Link":"zip/Prospectus_2016.zip"
+			},
+			{
+				"Name":"Admission Enquiry",
+				"Divide":"true",
+				"Link":"Admissions_AdmissionEnquiry.html"
+			},
+	 		{
+		 		"Name": "BE First Year",
+		 		"SubChildNav":[
+					{
+						"Name":"Courses Offered",
+						"Link":"Admissions_CoursesOffered.html"
+					},
+					{
+						"Name":"Eligibality Criteria",
+						"Link":"Admissions_EligiblityCriteria.html"
+					}
+				]
+			},
+			{
+				"Name" : "BE Second Year",
+				"Divide" : "true",
+				"SubChildNav": [
+					{
+						"Name":"Courses Offered",
+						"Link":"Admissions_SECoursesOffered.html"
+					},
+					{
+						"Name":"Eligibality Criteria",
+						"Link":"Admissions_SEEligiblityCriteria.html"
+					}					
+				]
+			},				
+			{
+				"Name" : "Post Graduation",
+				"SubChildNav": [
+					{
+						"Name":"M Tech",
+						"Link":"Admissions_MTech.html"
+					},
+					{
+						"Name":"MBA",
+						"Link":"Admissions_MBA.html"
+					}
+				]
+			}			
+		]
+	},
+	{
+		"Name":"Placements",
+		"ChildNav": [				 		
+			{
+				"Name":"Training &amp; Placement",
+				"Link":"Placements_TrainingPlacement.html"
+			},
+			{
+				"Name":"Placement History",
+				"Link":"Academics_PlacementHistory.html"
+			},
+			{
+				"Name":"Industrial Tieups",
+				"Link":"Placements_IndustrialTieups.html"
+			}
+		]
+	},
+	{
+		"Name":"Academics",
+		"ChildNav": [				 		
+			{
+				"Name":"Academic Calender",
+				"Link":"Academics_AcademicCalender.html",
+				"Divide":"true"
+			},
+			{
+				"Name":"Hostel",
+				"Link":"Academics_Hostel.html"
+			},
+			{
+				"Name":"Library",
+				"Link":"Academics_Library.html"
+			},
+			{
+				"Name":"Canteen",
+				"Link":"Academics_Canteen.html"
+			},			
+			{
+				"Name":"Laboratories",
+				"Link":"Academics_Laboratories.html"
+			},
+			{
+		 		"Name": "Departments",
+		 		"SubChildNav":[
+					{
+						"Name":"First Year",
+						"Link":"Academics_FirstYear.html"
+					},
+					{
+						"Name":"Electronics",
+						"Link":"Academics_Electronics.html"
+					},
+					{
+						"Name":"Electrical",
+						"Link":"Academics_Electrical.html"
+					},
+					{
+						"Name":"Computer Science",
+						"Link":"Academics_ComputerScience.html"
+					},
+					{
+						"Name":"Mechanical",
+						"Link":"Academics_Mechanical.html"
+					},
+					{
+						"Name":"MBA",
+						"Link":"Academics_MBA.html"
+					}
+				]
+			}
+		]
+	},
+	{
+		"Name":"Students",
+		"ChildNav": [
+			{
+				"Name":"News",
+				"Link":"Students_News.html"
+			},
+			{
+				"Name":"Events",
+				"Link":"Students_Events.html"
+			},
+			{
+				"Name":"Results",
+				"Link":"Students_Results.html"
+			},
+			{
+				"Name":"Transcript",
+				"Link":"Students_Transcript.html"				
+			},
+			{
+				"Name":"Anti-Ragging Commitee",
+				"Link":"Students_AntiRagging.html",
+				"Divide":"true"
+			},
+			{
+				"Name":"Sports Activities",
+				"Link":"Students_SportsActivities.html"
+			},
+			{
+				"Name":"Students Achievements",
+				"Link":"Students_StudentsAchievements.html"
+			}
+		]
+	},
+	{
+		"Name":"About Us",
+		"ChildNav": [
+			{
+				"Name":"Principal",
+				"Link":"About_Principal.html?JSON=about_principal.json"
+			},		 		
+			{
+				"Name":"Vision Mission",
+				"Link":"About_VisionMission.html"				
+			},
+			{
+				"Name":"Organization Structure",
+				"Link":"About_OrganizationStructure.html",
+				"Divide":"true"
+			},
+			{
+		 		"Name": "Visionaries",
+		 		"Divide":"true",
+		 		"SubChildNav":[
+					{
+						"Name":"Patrons",
+						"Link":"About_Patrons.html"
+					},
+					{
+						"Name":"Board Of Directors",
+						"Link":"About_Board.html"
+					},
+					{
+						"Name":"Academic Advisors",
+						"Link":"About_AcademicAdvisors.html"
+					},
+					{
+						"Name":"Corporate Advisors",
+						"Link":"About_CorporateAdvisors.html"
+					},
+					{
+						"Name":"Testimonials",
+						"Link":"About_Testimonials.html"
+					}
+				]
+			},			
+			{
+		 		"Name": "Mandatory Disclosure",
+		 		"Divide":"true",
+		 		"SubChildNav":[
+					{
+						"Name":"Mandatory Disclosure",
+						"Link":"pdf/Mandatory Disclosure 2014-15.pdf"
+					},
+					{
+						"Name":"Affiliation Letter",
+						"Link":"pdf/Univ Affiliation upto 2017.pdf"
+					}
+				]
+			},						
+			{
+		 		"Name": "Head Of Departments",
+		 		"SubChildNav":[
+		 			{
+						"Name":"First Year",
+						"Link":"About_FirstYear.html"
+					},
+					{
+						"Name":"Electronics",
+						"Link":"About_Electronics.html"
+					},
+					{
+						"Name":"Electrical",
+						"Link":"About_Electrical.html"
+					},
+					{
+						"Name":"Computer Science",
+						"Link":"About_ComputerScience.html"
+					},
+					{
+						"Name":"Mechanical",
+						"Link":"About_Mechanical.html"
+					},
+					{
+						"Name":"MBA",
+						"Link":"About_MBA.html"
+					}
+				]
+			}
+		]
+	},
+	{
+		"Name":"Contact Us",
+		"Link":"Contact_ContactUs.html"
+	}
+]

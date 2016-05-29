@@ -1,0 +1,61 @@
+[
+	{
+		"Title":"Hostel",
+		"Content": [
+			{
+				"Table" : [
+					{
+						"Header" : [
+							{
+								"Cell" : "Particulars"
+							},
+							{
+								"Cell" : "Hostel Fees"
+							}
+						],
+						"Row" : [
+							{
+								"Cell" : "Boys / Girls"
+							},
+							{
+								"Cell" : "65,000/-"
+							}
+						]
+					}
+				]
+			},
+			{
+				"ImageURL": [
+					{
+						"URL" : "images/placeholder_800x400_1.jpg",
+						"ImageTitle":"Scenerio"
+					},
+					{
+						"URL" : "images/placeholder_800x400_2.jpg",
+						"ImageTitle":"Scenerio"
+					},
+					{
+						"URL" : "images/placeholder_800x400_3.jpg",
+						"ImageTitle":"Scenerio"
+					}
+				]
+			},			
+			{
+				"Paregraphs": [
+					{
+						"Text" : "The Institute provides excellent hostel facility for the students. Hostels are provided with round the clock caretakers and other essential staff. Honorable Secretary of the institute & Chairman of hostel Advisory committee monitors overall organization of hostels & provides guidelines time to time. With personal attention and supervision, a clean, healthy and cheerful atmosphere is maintained at the hostels."
+					},
+					{
+						"Text" : "The Institute provides excellent hostel facility for the students. Hostels are provided with round the clock caretakers and other essential staff. Honorable Secretary of the institute & Chairman of hostel Advisory committee monitors overall organization of hostels & provides guidelines time to time. With personal attention and supervision, a clean, healthy and cheerful atmosphere is maintained at the hostels."
+					},
+					{
+						"Text" : "The Institute provides excellent hostel facility for the students. Hostels are provided with round the clock caretakers and other essential staff. Honorable Secretary of the institute & Chairman of hostel Advisory committee monitors overall organization of hostels & provides guidelines time to time. With personal attention and supervision, a clean, healthy and cheerful atmosphere is maintained at the hostels."
+					},
+					{
+						"Text" : "The Institute provides excellent hostel facility for the students. Hostels are provided with round the clock caretakers and other essential staff. Honorable Secretary of the institute & Chairman of hostel Advisory committee monitors overall organization of hostels & provides guidelines time to time. With personal attention and supervision, a clean, healthy and cheerful atmosphere is maintained at the hostels."
+					}
+				]
+			}
+		]
+	}
+]
