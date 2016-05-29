@@ -152,7 +152,7 @@ function addData(url, headerType, elementName)
           }
     
           if (objContent.Lists) {
-            $.each(objProfileContent.Lists, function(childIndex, lists) {
+            $.each(objContent.Lists, function(childIndex, lists) {
               if (lists.Header) {
                 blogData = blogData + "<h2>" + lists.Header + "</h2><ul class=\"uk-list uk-list-striped\">";
               }
