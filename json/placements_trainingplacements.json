@@ -59,88 +59,82 @@
 		"Title":"Members from the T &amp; P Department",
 		"Content": [
             {
-                "Profile" : [
-                    {
-                        "ImageURL":"images/kunalpadole.png",
-                        "ImageTitle":"Mr. Kunal Padole",
-                        "ProfileName":"Kunal Padole",
-                        "Details": [
-                            {
-                                "Paregraph" : "JIT is proud that its graduates are highly rated by employers from industry and commerce in the private and public sectors.The Placement and Training Centre is provided with a well-equipped conference training room and separate, well-furnished rooms for interviews and counselling. Mr. Kunal Padole is Dean-Training & Placement,/ Corporate Relations at Jhulelal Institute of Technology. He has over 9 years of experience in Campus Recruitments, Staffing Solutions, Client Servicing and Business Development. He is Secretary of Vidarbha Engineering College Placement Association and is also 'Vice President' (Management Opportunity) in 'JCI-Junior Chamber International' Nagpur Chapter. Mr. Kunal Padole is double post graduate with MBA (Master of Business Administration )degree in Marketing & Human Resources, from RTM Nagpur University. He has an efficient team to assist him to impart extensive training to students for getting through written tests, GD and PI."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Dean, Training & placement"
-                            },
-                            {
-                                "Title" : "Corporate Relations B.A. (English Literature)"
-                            },
-                            {
-                                "Title" : "BMC, MBA-Marketing"
-                            },
-                            {
-                                "Title" : "MBA-HR"
-                            },
-                            {
-                                "Title" : "PGDM"
-                            },
-                            {
-                                "Title" : "Experience - 10 Years"
-                            }
-                        ]		
-                    }
-                ]
+                "Profile" : {
+                    "ImageURL":"images/kunalpadole.png",
+                    "ImageTitle":"Mr. Kunal Padole",
+                    "ProfileName":"Kunal Padole",
+                    "Details": [
+                        {
+                            "Paregraph" : "JIT is proud that its graduates are highly rated by employers from industry and commerce in the private and public sectors.The Placement and Training Centre is provided with a well-equipped conference training room and separate, well-furnished rooms for interviews and counselling. Mr. Kunal Padole is Dean-Training & Placement,/ Corporate Relations at Jhulelal Institute of Technology. He has over 9 years of experience in Campus Recruitments, Staffing Solutions, Client Servicing and Business Development. He is Secretary of Vidarbha Engineering College Placement Association and is also 'Vice President' (Management Opportunity) in 'JCI-Junior Chamber International' Nagpur Chapter. Mr. Kunal Padole is double post graduate with MBA (Master of Business Administration )degree in Marketing & Human Resources, from RTM Nagpur University. He has an efficient team to assist him to impart extensive training to students for getting through written tests, GD and PI."
+                        }
+                    ],
+                    "Qualifications": [
+                        {
+                            "Title" : "Dean, Training & placement"
+                        },
+                        {
+                            "Title" : "Corporate Relations B.A. (English Literature)"
+                        },
+                        {
+                            "Title" : "BMC, MBA-Marketing"
+                        },
+                        {
+                            "Title" : "MBA-HR"
+                        },
+                        {
+                            "Title" : "PGDM"
+                        },
+                        {
+                            "Title" : "Experience - 10 Years"
+                        }
+                    ]		
+                }                
             },
             {
-                "Profile" : [
-                    {
-                        "ImageURL":"images/no-profile-img.gif",
-                        "ImageTitle":"Mr. Faizan Ur Rehman",
-                        "ProfileName":"Faizan Ur Rehman",
-                        "Details": [
-                            {
-                                "Paregraph" : "---"
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Marketing Executive / T&P Coordinator B.A"
-                            },
-                            {
-                                "Title" : "MBA-HR"
-                            },
-                            {
-                                "Title" : "Experience - 03 Years"
-                            }
-                        ]	
-                    }
-                ]
+                "Profile" : {
+                    "ImageURL":"images/no-profile-img.gif",
+                    "ImageTitle":"Mr. Faizan Ur Rehman",
+                    "ProfileName":"Faizan Ur Rehman",
+                    "Details": [
+                        {
+                            "Paregraph" : "---"
+                        }
+                    ],
+                    "Qualifications": [
+                        {
+                            "Title" : "Marketing Executive / T&P Coordinator B.A"
+                        },
+                        {
+                            "Title" : "MBA-HR"
+                        },
+                        {
+                            "Title" : "Experience - 03 Years"
+                        }
+                    ]	
+                }                
             },
             {
-                "Profile" : [
-                    {
-                        "ImageURL":"images/no-profile-img.gif",
-                        "ImageTitle":"Ms. Bhavana Kewalramani",
-                        "ProfileName":"Bhavana Kewalramani",
-                        "Details": [
-                            {
-                                "Paregraph" : "---"
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Assistant Professor B.B.A"
-                            },
-                            {
-                                "Title" : "MBA-HR"
-                            },
-                            {
-                                "Title" : "Experience - 02 Years"
-                            }
-                        ]	
-                    }
-                ]
+                "Profile" : {
+                    "ImageURL":"images/no-profile-img.gif",
+                    "ImageTitle":"Ms. Bhavana Kewalramani",
+                    "ProfileName":"Bhavana Kewalramani",
+                    "Details": [
+                        {
+                            "Paregraph" : "---"
+                        }
+                    ],
+                    "Qualifications": [
+                        {
+                            "Title" : "Assistant Professor B.B.A"
+                        },
+                        {
+                            "Title" : "MBA-HR"
+                        },
+                        {
+                            "Title" : "Experience - 02 Years"
+                        }
+                    ]	
+                }                
             }
         ]
     }
