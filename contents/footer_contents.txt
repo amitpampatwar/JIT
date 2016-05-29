@@ -1,4 +1,4 @@
-﻿<div class="tm-footer">
+<div class="tm-footer">
   <div class="uk-container uk-container-center uk-text-center">
     <ul class="uk-subnav uk-subnav-line uk-flex-center">
       <li><a href="http://github.com/uikit/uikit">Jobs</a></li>
@@ -22,6 +22,12 @@
           <li><a href="documentation_how-to-customize.html">How to customize</a></li>
           <li><a href="documentation_layouts.html">Layout examples</a></li>
           <li><a href="core.html">Core</a></li>
+          <li class="uk-parent"><a href="#">Documentation</a>
+            <ul class="uk-nav-sub">
+              <li><a href="documentation_layouts.html">Layout examples</a></li>
+              <li><a href="documentation_layouts.html">Layout examples</a></li>
+            </ul>
+          </li>
           <li><a href="components.html">Components</a></li>
           <li><a href="documentation_project-structure.html">Project structure</a></li>
           <li><a href="documentation_less-sass.html">Less &amp; Sass files</a></li>
