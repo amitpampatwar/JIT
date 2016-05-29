@@ -5,8 +5,7 @@
             {
                 "Form" : [
                     {                        
-                        "Textbox" : 
-                        {
+                        "Textbox" : {
                             "ID" : "firstName",
                             "Name" : "Name",
                             "Width" : "2"
@@ -30,6 +29,7 @@
                         "Dropdown" : {
                             "ID" : "branchDetails",
                             "Name" : "Branch",
+                            "Width" : "1",
                             "Option" : [
                                 { "Value" : "1", "Text" : "BE (Electronics and Tele-Communication Engineering)" },
                                 { "Value" : "2", "Text" : "BE (Electronics and Communication Engineering)" },
