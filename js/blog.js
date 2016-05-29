@@ -36,7 +36,7 @@ function addData(url, headerType, elementName)
               if (objFormContent.Dropdown) {
                 var dropdownContent = objFormContent.Dropdown;
                 
-                formData = formData + "<select id=\"" + dropdownContent.ID + "\">";
+                formData = formData + "<select id=\"" + dropdownContent.ID + "\" class=\"uk-width-1-" + dropdownContent.Width + "\">";
                 formData = formData + "<option>-- Select " + dropdownContent.Name + "--</option>";
                 
                 $.each(dropdownContent.Option, function(index, objOptionValue) {
