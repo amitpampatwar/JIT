@@ -1,0 +1,164 @@
+[
+	{
+		"Title":"Board Of Directors",
+		"Content": [
+            {
+                "Profile" : [
+                    {
+                        "ImageURL":"images/rsz_mrmahesh_sadhwani_chairman__jit.png",
+                        "ImageTitle":"Mahesh Sadhwani - Chairman",
+                        "ProfileName":"Mahesh Sadhwani - Chairman",
+                        "Details": [
+                            {
+                                "Paregraph" : "Striving hard to achieve excellence had been the motto of JIT since its inception. We achieve it through highly dedicated and devoted faculties of our college. The alumni of JIT have fond memories of their alma mater and cherish happy memories."
+                            }
+                        ],
+                        "Qualifications": [
+                            {
+                                "Title" : "Secretary - CREDAI, Maharashtra"
+                            },
+                            {
+                                "Title" : "Governing Council Member - RST Cancer Hospital, Nagpur"
+                            },
+                            {
+                                "Title" : "IPP - BAI, Nagpur"
+                            },
+                            {
+                                "Title" : "Ex President - Vidarbha Contractors Association, Nagpur"
+                            },
+                            {
+                                "Title" : "MD - Nanik Group (Contractors & Builders), Nagpur"
+                            },
+                            {
+                                "Title" : "VP - CREDAI Nagpur Metro"
+                            }	
+                        ]		
+                    },
+                    {
+                        "ImageURL":"images/Untitled.png",
+                        "ImageTitle":"Virendra Kukreja - Secretary",
+                        "ProfileName":"Virendra Kukreja - Secretary",
+                        "Details": [
+                            {
+                                "Paregraph" : "It gives me pleasure to put forth the ideal replica of hard work, integrity, talent, keenness, truthfulness with experienced and research oriented faculties. Jhulelal Institute of Technology is a resourceful institute with broad vision og giving students pleasant and healthy environment with advanced infrastructure facilities and professionally educated faculty members."
+                            }
+                        ]
+                    },
+                    {
+                        "ImageURL":"images/rsz_mrjayprakash_sahajramani_.png",
+                        "ImageTitle":"Jayprakash Sahajramani - Treasurer",
+                        "ProfileName":"Jayprakash Sahajramani - Treasurer",
+                        "Details": [
+                            {
+                                "Paregraph" : "Progress of the institute depends mainly on performance of the students in academics, sports and cultural activities along with maintaining high level of ethics. I am proud to day that our students are doing excellently in academics, sports and cultural activities with great moral values."
+                            }
+                        ],
+                        "Qualifications": [
+                            {
+                                "Title" : "President - Fly Ash Brick Manufacturers Association, Nagpur"
+                            },
+                            {
+                                "Title" : "MD - National Bricks, Nagpur"
+                            }	
+                        ]		
+                    },
+                    {
+                        "ImageURL":"images/rsz_mrpramod_pampatwar_photo.png",
+                        "ImageTitle":"Pramod Pampatwar - Director Technical",
+                        "ProfileName":"Pramod Pampatwar - Director Technical",
+                        "Details": [
+                            {
+                                "Paregraph" : "Progress of the institute depends mainly on performance of the students in academics, sports and cultural activities along with maintaining high level of ethics. I am proud to day that our students are doing excellently in academics, sports and cultural activities with great moral values."
+                            }
+                        ],
+                        "Qualifications": [
+                            {
+                                "Title" : "B.E (Mechanical)"
+                            },
+                            {
+                                "Title" : "MBA (Finance)"
+                            },
+                            {
+                                "Title" : "Director VNIT Alumini"
+                            },
+                            {
+                                "Title" : "Executive Director VED"
+                            },
+                            {
+                                "Title" : "Chairman - Vidharbha Region, Engg College Management Association, Maharashtra"
+                            },
+                            {
+                                "Title" : "Executive Director - AMMI, Maharashtra"
+                            }	
+                        ]		
+                    },
+                    {
+                        "ImageURL":"images/rsz_mrghanshyamdas_kukreja_.png",
+                        "ImageTitle":"Ghanshyamdas Kukreja - Exec. Committee Member",
+                        "ProfileName":"Ghanshyamdas Kukreja - Exec. Committee Member",
+                        "Details": [
+                            {
+                                "Paregraph" : "India is all set to become a superpower in terms of human resource. We at JIT educate the youth not only for how to make a living but also how to live. We provide excellent engineering educational opportunity to the youth of India."
+                            }
+                        ]
+                    },
+                    {
+                        "ImageURL":"images/rsz_mrrajesh_tejwani.png",
+                        "ImageTitle":"Rajesh Tejwani - Exec. Committee Member",
+                        "ProfileName":"Rajesh Tejwani - Exec. Committee Member",
+                        "Details": [
+                            {
+                                "Paregraph" : "Students participation in various activities reveal their passion within them. College provides many platforms to motivate them and explore."
+                            }
+                        ]	
+                    },
+                    {
+                        "ImageURL":"images/rsz_mrpramod_wairagade.png",
+                        "ImageTitle":"Pramod Wairagade - Exec. Committee Member",
+                        "ProfileName":"Pramod Wairagade - Exec. Committee Member",
+                        "Details": [
+                            {
+                                "Paregraph" : "JIT promotes research, exchange of ideas between academics, community and industry. Fosters entrepreneurship development. At JIT we encourage students to participate in various different activities reveal that their passion."
+                            }
+                        ]
+                    },
+                    {
+                        "ImageURL":"images/rsz_mrgirish_sadhwani.png",
+                        "ImageTitle":"Girish Sadhwani - Exec. Committee Member",
+                        "ProfileName":"Girish Sadhwani - Exec. Committee Member",
+                        "Details": [
+                            {
+                                "Paregraph" : "We believe in nurturing students talents, ingenuity and creativity. We also instill a sense of discipline and morality in them."
+                            }
+                        ],
+                        "Qualifications": [
+                            {
+                                "Title" : "President - Rotary Club Of Nagpur North"
+                            }
+                        ]		
+                    },
+                    {
+                        "ImageURL":"images/rsz_mrpraveen_balany.png",
+                        "ImageTitle":"Praveen Balany - Exec. Committee Member",
+                        "ProfileName":"Praveen Balany - Exec. Committee Member",
+                        "Details": [
+                            {
+                                "Paregraph" : "Our mission is to impart quality engineering education for the welfare of technical and social community. The institute has partnerships with various renowned companies around the globe."
+                            }
+                        ]	
+                    },
+                    {
+                        "ImageURL":"images/DR.HEMANTASRANI.png",
+                        "ImageTitle":"Hemant Asrani - Exec. Committee Member",
+                        "ProfileName":"Hemant Asrani - Exec. Committee Member",
+                        "Details": [
+                            {
+                                "Paregraph" : "We strive to make JIT centre of excellence and institution that promotes thought leadership, nurtures excellence and creates a lineage of students that are a class apart."
+                            }
+                        ]	
+                    }
+                ]
+            }
+        ]
+    }
+]

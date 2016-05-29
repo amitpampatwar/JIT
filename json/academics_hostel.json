@@ -1,0 +1,36 @@
+[
+	{
+		"Title":"Hostel",
+		"Content": [
+			{
+				"Paregraphs": [
+					{
+						"Text" : "The Institute provides excellent hostel facility for the students. Hostels are provided with round the clock caretakers and other essential staff. Honorable Secretary of the institute & Chairman of hostel Advisory committee monitors overall organization of hostels & provides guidelines time to time. With personal attention and supervision, a clean, healthy and cheerful atmosphere is maintained at the hostels."
+					}
+				]
+			},
+			{
+				"Table" : [
+					{
+						"Header" : [
+							{
+								"Cell" : "Particulars"
+							},
+							{
+								"Cell" : "Hostel Fees"
+							}
+						],
+						"Row" : [
+							{
+								"Cell" : "Boys / Girls"
+							},
+							{
+								"Cell" : "65,000/-"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
