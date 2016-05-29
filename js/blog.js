@@ -40,7 +40,7 @@ function addData(url, headerType, elementName)
                 formData = formData + "<option>-- Select " + dropdownContent.Name + "--</option>";
                 
                 $.each(dropdownContent.Option, function(index, objOptionValue) {
-                  formData = formData + "<option>" + objOptionValue.Text + "</option>";
+                  formData = formData + "<option value=\"" + objOptionValue.Value + "\">" + objOptionValue.Text + "</option>";
                 });
                 
                 formData = formData + "</select>";
@@ -149,6 +149,19 @@ function addData(url, headerType, elementName)
             tableData = tableData.replace('{{BODY}}', tableBody);
 
             blogData = blogData + tableData;
+          }
+    
+          if (objContent.Lists) {
+            $.each(objProfileContent.Lists, function(childIndex, lists) {
+              if (lists.Header) {
+                blogData = blogData + "<h2>" + lists.Header + "</h2><ul class=\"uk-list uk-list-striped\">";
+              }
+              if (lists.Value) {
+                blogData = blogData + "<li>" + lists.Value + "</li>";
+              }
+            });
+            
+            blogData = blogData + "</ul></article>";
           }
         });
 
