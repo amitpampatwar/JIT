@@ -36,6 +36,8 @@ function addfooter()
           footerHTML = footerHTML + "<li class=\"uk-parent\"><a href=\"" + objParent.Link + "\">" + objParent.Name + "</a></li>";
         }
       });
+
+      footer.innerHTML = footerHTML;
     }
   });
 }
