@@ -16,7 +16,7 @@ function addfooter()
       
       $.each(objMenu, function(index, objParent) {
         if (objParent.ChildNav !== undefined) {
-          footerHTML = footerHTML + "<li class=\"uk-parent\"><a href=\"" + objParent.Link + "\">" + objParent.Name + "</a>";
+          footerHTML = footerHTML + "<li class=\"uk-parent\"><a href=\"#\">" + objParent.Name + "</a>";
           footerHTML = footerHTML + "<ul class=\"uk-nav-sub\">";
           
           $.each(objParent.ChildNav, function(childIndex, objChild) {
@@ -33,7 +33,7 @@ function addfooter()
           footerHTML = footerHTML + "</ul></li>";
         }
         else {
-          footerHTML = footerHTML + "<li class=\"uk-parent\"><a href=\"" + objParent.Link + "\">" + objParent.Name + "</a></li>";
+          footerHTML = footerHTML + "<li><a href=\"" + objParent.Link + "\">" + objParent.Name + "</a></li>";
         }
       });
 
