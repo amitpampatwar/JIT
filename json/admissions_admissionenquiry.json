@@ -5,28 +5,11 @@
             {
                 "Form" : [
                     {                        
-                        "Textbox": [
-                            {
-                                "ID" : "firstName",
-                                "Name" : "Name",
-                                "Width" : "2"
-                            },
-                            {
-                                "ID" : "email",
-                                "Name" : "Email",
-                                "Width" : "1"
-                            },
-                            {
-                                "ID" : "mobileNo",
-                                "Name" : "Mobile No",
-                                "Width" : "3"
-                            },
-                            {
-                                "ID" : "mobileNo",
-                                "Name" : "Mobile No",
-                                "Width" : "3"
-                            }		
-                        ]
+                        "Textbox" : {
+                            "ID" : "firstName",
+                            "Name" : "Name",
+                            "Width" : "2"
+                        }
                     }
                 ]
             }
