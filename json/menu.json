@@ -88,7 +88,7 @@
 			},
 			{
 				"Name":"Library",
-				"Link":"Academics_Library.html"
+				"Link":"Main.html?JSON=academics_library.json"
 			},
 			{
 				"Name":"Canteen",
