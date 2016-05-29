@@ -9,43 +9,39 @@
 					}
 				]
             },
-            {
-                "Profile" : [
+            {                
+                "Lists" : [
                     {
-                        "Lists" : [
-                            {
-                                "Header": "The T & P cell grooms the students extensively in varied fields"
-                            },
-                            {
-                                "Value" : "Self Assessment"
-                            },
-                            {
-                                "Value" : "CV and the writing of a cover letter"
-                            },
-                            {
-                                "Value" : "Career Strategies"
-                            },
-                            {
-                                "Value" : "Competency baseo mock interviews"
-                            },
-                            {
-                                "Value" : "Time Management"
-                            },
-                            {
-                                "Value" : "Salary Negotiation"
-                            },
-                            {
-                                "Value" : "Personalized Coaching"
-                            },
-                            {
-                                "Value" : "Networking"
-                            },
-                            {
-                                "Value" : "Personality Development"
-                            }
-                        ]
+                        "Header": "The T & P cell grooms the students extensively in varied fields"
+                    },
+                    {
+                        "Value" : "Self Assessment"
+                    },
+                    {
+                        "Value" : "CV and the writing of a cover letter"
+                    },
+                    {
+                        "Value" : "Career Strategies"
+                    },
+                    {
+                        "Value" : "Competency baseo mock interviews"
+                    },
+                    {
+                        "Value" : "Time Management"
+                    },
+                    {
+                        "Value" : "Salary Negotiation"
+                    },
+                    {
+                        "Value" : "Personalized Coaching"
+                    },
+                    {
+                        "Value" : "Networking"
+                    },
+                    {
+                        "Value" : "Personality Development"
                     }
-                ]
+                ]                                    
             }
         ]
     }
