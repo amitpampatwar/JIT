@@ -13,7 +13,7 @@
 			{
 				"Name":"Admission Enquiry",
 				"Divide":"true",
-				"Link":"Main.html?JSON=Admissions_AdmissionEnquiry.json"
+				"Link":"Main.html?JSON=admissions_admissionenquiry.json"
 			},
 	 		{
 		 		"Name": "BE First Year",
