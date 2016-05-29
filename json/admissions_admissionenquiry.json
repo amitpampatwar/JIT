@@ -1,45 +1,31 @@
 [
 	{
-		"Title":"Principal",
+		"Title":"Admission Enquiry",
 		"Content": [
             {
-                "Profile" : [
-                    {
-                        "ImageURL":"images/JITPrincipal.jpg",
-                        "ImageTitle":"Dr. Pramod Patil",
-                        "ProfileName": "Dr. Pramod Patil",
-                        "Details": [
+                "Form" : [
+                    {                        
+                        "Textbox": [
                             {
-                                "Paregraph" : "We at JIT believe in nurturing students latent talents, ingenuity and creativity. We bring out the best in them. We train them not only to pass the university examination with flying colors, but also to put in practice what they have learned in theory. Our teachers never stop learning. They continuously update themselves through conferences and research. As the global economy comes out of recession opportunities for engineers will increase many fold. We will make sure that our students are globally competitive."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "B.E (Electronics Engineering), Amravati University (1989)"
+                                "ID" : "firstName",
+                                "Name" : "Name",
+                                "Width" : "2"
                             },
                             {
-                                "Title" : "M.E (Advanced Electronics), Amravati University (1997)"
+                                "ID" : "email",
+                                "Name" : "Email",
+                                "Width" : "1"
                             },
                             {
-                                "Title" : "Ph.D (Electronics Engineering), Amravati University (2007)"
+                                "ID" : "mobileNo",
+                                "Name" : "Mobile No",
+                                "Width" : "3"
+                            },
+                            {
+                                "ID" : "mobileNo",
+                                "Name" : "Mobile No",
+                                "Width" : "3"
                             }		
-                        ],
-                        "Lists" : [
-                            {
-                                "Header": "Professional Profile"
-                            },
-                            {
-                                "Value" : "Principal for last 8 years"
-                            },
-                            {
-                                "Value" : "Principal for last 8 years"
-                            },
-                            {
-                                "Value" : "Principal for last 8 years"
-                            },
-                            {
-                                "Value" : "Principal for last 8 years"
-                            }
                         ]
                     }
                 ]
