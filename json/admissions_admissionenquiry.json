@@ -5,21 +5,28 @@
             {
                 "Form" : [
                     {                        
-                        "Textbox" : {
+                        "Textbox" : 
+                        {
                             "ID" : "firstName",
                             "Name" : "Name",
                             "Width" : "2"
-                        },                        
+                        }
+                    },
+                    {
                         "Textbox" : {
                             "ID" : "email",
                             "Name" : "Email",
                             "Width" : "1"
-                        },                        
+                        }
+                    },  
+                    {
                         "Textbox" : {
                             "ID" : "mobileNo",
                             "Name" : "Mobile No",
                             "Width" : "3"
-                        },                        
+                        }
+                    },
+                    {
                         "Dropdown" : {
                             "ID" : "mobileNo",
                             "Name" : "Mobile No",
