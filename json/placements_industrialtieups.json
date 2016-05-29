@@ -1,0 +1,22 @@
+[
+	{
+		"Title":"Industrial Tieups",
+		"Content": [							                
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Graphical representation Of placed students for last 3 years"
+                    }
+                ]
+            },
+            {
+                "ImageURL": [
+                    {
+                        "URL" : "images/placeholder_800x400_1.jpg",
+                        "ImageTitle":"Graphical representation Of placed students for last 3 years"
+                    }
+                ]
+            }				
+		]
+	}
+]

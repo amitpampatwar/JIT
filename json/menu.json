@@ -66,11 +66,11 @@
 			},
 			{
 				"Name":"Placement History",
-				"Link":"Academics_PlacementHistory.html"
+				"Link":"Main.html?JSON=placements_placementhistory.json"
 			},
 			{
 				"Name":"Industrial Tieups",
-				"Link":"Placements_IndustrialTieups.html"
+				"Link":"Main.html?JSON=placements_industrialtieups.json"
 			}
 		]
 	},
@@ -168,7 +168,7 @@
 		"ChildNav": [
 			{
 				"Name":"Principal",
-				"Link":"About_Principal.html?JSON=about_principal.json"
+				"Link":"Main.html?JSON=about_principal.json"
 			},		 		
 			{
 				"Name":"Vision Mission",

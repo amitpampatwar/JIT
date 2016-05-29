@@ -137,50 +137,7 @@
                         }
                     ]	
                 }                
-            },
-            {
-                "HR" : "true"
-            },
-            {                
-                "Lists" : [
-                    {
-                        "Header": "JIT has tie-ups & signed MOUs with"
-                    },
-                    {
-                        "Value" : "MAC, as authorized centre for software training"
-                    },
-                    {
-                        "Value" : "EFY (Electronics for You)"
-                    },
-                    {
-                        "Value" : "MACCIA (Maharashtra Chamber of Commerce Industry & Agriculture)"
-                    },
-                    {
-                        "Value" : "Houston University, USA"
-                    },
-                    {
-                        "Value" : "University Putra Malaysia"
-                    }
-                ]                                    
-            },
-            {
-                "HR" : "true"
-            },
-            {
-                "Paregraphs": [
-					{
-						"H2" : "Graphical representation Of placed students for last 3 years"
-					}
-				]
-            },
-            {
-                "ImageURL": [
-					{
-						"URL" : "images/placeholder_800x400_1.jpg",
-						"ImageTitle":"Graphical representation Of placed students for last 3 years"
-					}
-                ]
-            }
+            }            
         ]
     }
 ]
