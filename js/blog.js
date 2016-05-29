@@ -67,6 +67,7 @@ function addData(url, headerType, elementName)
     
           if (objContent.Profile) {
             var profileData = ""; 
+            var objProfileContent = objContent.Profile;
             
             profileData = profileData + "<article class=\"uk-article\">";        
             profileData = profileData + "<header class=\"uk-comment-header\"><img class=\"uk-comment-avatar\" src=\"" + objProfileContent.ImageURL + "\" alt=\"" + objProfileContent.ImageTitle + "\">"
