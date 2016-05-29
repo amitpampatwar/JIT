@@ -84,7 +84,7 @@
 			},
 			{
 				"Name":"Hostel",
-				"Link":"Academics_Hostel.html"
+				"Link":"Main.html?JSON=academics_hostel.json"
 			},
 			{
 				"Name":"Library",
