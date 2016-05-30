@@ -130,19 +130,32 @@ function addData(url, headerType, elementName)
           }
 
           if (objContent.Table) {
+            var table = objContent.Table;
             var tableData = "<table class=\"uk-table uk-table-striped\"><thead>{{HEAD}}</thead>{{BODY}}<tbody></tbody></table>";
             var tableHead = "";
             var tableBody = "";
-
-            $.each(objContent.Table, function(childIndex, table) { 
+            
+            if (table.Header) {
+              tableHead = tableHead + "<tr>";
+              
               $.each(table.Header, function(childIndex, headerDetails) {
                 tableHead = tableHead + "<th>" + headerDetails.Cell + "</th>";
               });
-
-              $.each(table.Row, function(childIndex, cell) {
-                tableBody = tableBody + "<td>" + cell.Cell + "</td>";
-              });              
-            });
+              
+              tableHead = tableHead + "</tr>";
+            }
+            
+            if (table.Rows) {                
+                $.each(table.Rows, function(childIndex, row) {
+                  tableBody = tableBody + "<tr>";
+                  
+                  $.each(row.Cell, function(childIndex, cell) {
+                    tableBody = tableBody + "<td>" + cell.Cell + "</td>";
+                  });
+                  
+                  tableBody = tableBody + "</tr>";
+                });
+            }
 
             tableData = tableData.replace('{{HEAD}}', tableHead);
             tableData = tableData.replace('{{BODY}}', tableBody);
