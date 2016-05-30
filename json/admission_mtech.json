@@ -1,0 +1,73 @@
+[
+	{
+		"Title":"Courses Offered (M Tech)",
+		"Content": [			
+			{
+				"Paregraphs": [
+					{
+						"Text" : "All postgraduate courses offered in JIT."
+					}
+				]				
+			},            
+            {
+                "Table" : {
+                    "Header" : [
+                        {
+                            "Cell" : "Course Name"
+                        },
+                        {
+                            "Cell" : "Course Code"
+                        },
+                        {
+                            "Cell" : "Intake"
+                        }
+                    ],
+                    "Rows" : [
+                        {
+                            "Row" : [
+                                {
+                                    "Cell" : "M.Tech. VLSI"
+                                },
+                                {
+                                    "Cell" : "413935910"
+                                },
+                                {
+                                    "Cell" : "24"
+                                }
+                            ]
+                        },
+                        {
+                            "Row" : [
+                                {
+                                    "Cell" : "M.Tech. CSE"
+                                },
+                                {
+                                    "Cell" : "413924210"
+                                },
+                                {
+                                    "Cell" : "24"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "HR" : "true"
+            },
+            {
+				"Paregraphs": [
+					{
+						"H2" : "Eligibility Criteria (M Tech)"
+					},
+                    {
+						"Text" : "Candidate should be an Indian National possessing Bachelor’s degree or Appeared for the final year examination of Bachelors degreein the relevant field of Engg./Tech from an AICTE/ MHRD approved institutions, as per specified by the concerned university for which admission is being sought to a particular PG course/spl. He/She should have at least 50% agg. Marks (at least 45% marks in case of candidate of backward category & person with disability belonging to Maharashtra state only)."
+					},
+                    {
+						"Text" : "Has non – zero GATE Score."
+					}
+				]				
+			},  
+		]
+	}
+]

@@ -1,0 +1,92 @@
+[
+	{
+		"Title":"Eligibility Criteria (Direct Second Year)",
+		"Content": [			
+			{
+				"Paregraphs": [
+					{
+						"Text" : "The candidate should have passed Post-SSC or Post- HSC Diploma course in Engineering / Technology with minimum 50% for open and 45% for reserved category."
+					},
+                    {
+						"H2" : "OR"
+					},
+                    {
+						"Text" : "The candidate should have passed B.Sc. Degree from UGC/ Association of Indian Universities with minimum 50% for open category and 45% for reserved category*. Also passed XII Std with English as medium of instruction and Mathematics as a subject."
+					},
+                    {
+						"Text" : "Obtained a positive composite score i.e. marks obtained after adding 50% of JEE (Main) 2015(Paper 1) marks &amp; 50% of normalized Std. XII (Board or Equivalent Examination) marks in Physics, Chemistry &amp; Mathematics."
+					}
+				]				
+			},
+            {
+                "HR" : "true"
+            },
+            {
+				"Paregraphs": [
+					{
+						"H2" : "Admission Procedure (Direct Second Year)"
+					},
+                    {
+						"Text" : "Candidates has to submit the Admission Request Form (ARF) and following original documents with 3 sets of photo copies."
+					}
+				]				
+			},
+            {
+                "Lists" : [                    
+                    {
+                        "Value" : "Diploma/B.Sc. mark sheets"
+                    },
+                    {
+                        "Value" : "School leaving certificate"
+                    },
+                    {
+                        "Value" : "Equivalence certficate for board other than MSBTE. Other documents for category students"
+                    },
+                    {
+                        "Value" : "Caste certificate and validity."
+                    },
+                    {
+                        "Value" : "Non creamy layer certificate for students other than OBC"
+                    }
+                ]
+            },
+            {
+				"Paregraphs": [					
+                    {
+						"Text" : "<b>Fees Structure: Tution fees is fixed by Shikshan Shulka Samitee and is subject to change rules for refund of fee for cancellation of admission (in any quota) are as per the DTE notification.</b>"
+					}
+				]				
+			},
+            {
+                "Table" : {
+                    "Header" : [
+                        {
+                            "Cell" : "Interim Tution Fees"
+                        },
+                        {
+                            "Cell" : "Caution Money"
+                        },
+                        {
+                            "Cell" : "Hostel Fees"
+                        }
+                    ],
+                    "Rows" : [
+                        {
+                            "Row" : [
+                                {
+                                    "Cell" : "Rs. 91,000"
+                                },
+                                {
+                                    "Cell" : "Rs. 5000"
+                                },
+                                {
+                                    "Cell" : "Rs. 65,000"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+		]
+	}
+]

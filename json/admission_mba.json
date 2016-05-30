@@ -1,0 +1,60 @@
+[
+	{
+		"Title":"Courses Offered (MBA)",
+		"Content": [			
+			{
+				"Paregraphs": [
+					{
+						"Text" : "All postgraduate courses offered in JIT."
+					}
+				]				
+			},            
+            {
+                "Table" : {
+                    "Header" : [
+                        {
+                            "Cell" : "Course Name"
+                        },
+                        {
+                            "Cell" : "Course Code"
+                        },
+                        {
+                            "Cell" : "Intake"
+                        }
+                    ],
+                    "Rows" : [
+                        {
+                            "Row" : [
+                                {
+                                    "Cell" : "Master of Business Administration"
+                                },
+                                {
+                                    "Cell" : "413910110"
+                                },
+                                {
+                                    "Cell" : "60"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "HR" : "true"
+            },
+            {
+				"Paregraphs": [
+					{
+						"H2" : "Eligibility Criteria (MBA)"
+					},
+                    {
+						"Text" : "The candidate must be a graduate of any discipline and having aggregate percentage in graduation more than 50% for open category and 45% for reserved category."
+					},
+                    {
+						"Text" : "The candidate should have non-zero score in MAH-MBA/MMS-CET 2015 or AMMI-CET 2015. The candidates securing non-zero score in CMAT/XAT/CAT/MAT/JMET/ATMA(including Test, GD &amp; PI) are also eligible."
+					}
+				]				
+			}
+		]
+	}
+]

@@ -20,11 +20,11 @@
 		 		"SubChildNav":[
 					{
 						"Name":"Courses Offered",
-						"Link":"Main.html?JSON=admission_FYCoursesOffered"
+						"Link":"Main.html?JSON=admission_fycoursesoffered"
 					},
 					{
 						"Name":"Eligibality Criteria",
-						"Link":"Main.html?JSON=admission_FYEligibilityCriteria"
+						"Link":"Main.html?JSON=admission_fyeligibilitycriteria"
 					}
 				]
 			},
@@ -34,11 +34,11 @@
 				"SubChildNav": [
 					{
 						"Name":"Courses Offered",
-						"Link":"Main.html?JSON=admission_SYCoursesOffered"
+						"Link":"Main.html?JSON=admission_sycoursesoffered"
 					},
 					{
 						"Name":"Eligibality Criteria",
-						"Link":"Main.html?JSON=admission_SYEligibilityCriteria"
+						"Link":"Main.html?JSON=admission_syeligibilitycriteria"
 					}					
 				]
 			},				
@@ -47,11 +47,11 @@
 				"SubChildNav": [
 					{
 						"Name":"M Tech",
-						"Link":"Admissions_MTech.html"
+						"Link":"Main.html?JSON=admission_mtech"
 					},
 					{
 						"Name":"MBA",
-						"Link":"Admissions_MBA.html"
+						"Link":"Main.html?JSON=admission_mba"
 					}
 				]
 			}			

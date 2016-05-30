@@ -1,0 +1,89 @@
+[
+	{
+		"Title":"Courses Offered (First Year)",
+		"Content": [			
+			{
+				"Table" : {
+                    "Header" : [
+                        {
+                            "Cell" : "Course Name"
+                        },
+                        {
+                            "Cell" : "Course Code"
+                        },
+                        {
+                            "Cell" : "Intake"
+                        }
+                    ],
+                    "Rows" : [
+                        {
+                            "Row" : [
+                                {
+                                    "Cell" : "Electronics and Tele-Communication Engineering"
+                                },
+                                {
+                                    "Cell" : "413937210"
+                                },
+                                {
+                                    "Cell" : "60"
+                                }
+                            ]
+                        },
+                        {
+                            "Row" : [
+                                {
+                                    "Cell" : "Electronics Engineering"
+                                },
+                                {
+                                    "Cell" : "413937610"
+                                },
+                                {
+                                    "Cell" : "60"
+                                }
+                            ]
+                        },
+                        {
+                            "Row" : [
+                                {
+                                    "Cell" : "Computer Science and Engineering"
+                                },
+                                {
+                                    "Cell" : "413924210"
+                                },
+                                {
+                                    "Cell" : "90"
+                                }
+                            ]
+                        },
+                        {
+                            "Row" : [
+                                {
+                                    "Cell" : "Electrical Engineering"
+                                },
+                                {
+                                    "Cell" : "413929310"
+                                },
+                                {
+                                    "Cell" : "60"
+                                }
+                            ]
+                        },
+                        {
+                            "Row" : [
+                                {
+                                    "Cell" : "Mechanical Engineering"
+                                },
+                                {
+                                    "Cell" : "413961210"
+                                },
+                                {
+                                    "Cell" : "60"
+                                }
+                            ]                            
+                        }
+                    ]
+                }				
+			}
+		]
+	}
+]
