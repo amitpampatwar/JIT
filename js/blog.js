@@ -182,7 +182,7 @@ function addData(url, headerType, elementName)
               blogData = blogData + startList;
             }
             
-            blogData = blogData + "</ul></article>";
+            blogData = blogData + listData + "</ul></article>";
           }
     
           if (objContent.HR) {
