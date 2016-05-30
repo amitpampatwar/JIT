@@ -20,14 +20,18 @@
 								"Cell" : "Hostel Fees"
 							}
 						],
-						"Row" : [
-							{
-								"Cell" : "Boys / Girls"
-							},
-							{
-								"Cell" : "65,000/-"
-							}
-						]
+                        Rows : [
+                            {
+                                "Row" : [
+                                    {
+                                        "Cell" : "Boys / Girls"
+                                    },
+                                    {
+                                        "Cell" : "65,000/-"
+                                    }
+                                ]
+                            }
+                        ]
 					}
 				]
 			}
