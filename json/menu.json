@@ -20,7 +20,7 @@
 		 		"SubChildNav":[
 					{
 						"Name":"Courses Offered",
-						"Link":"Admissions_CoursesOffered.html"
+						"Link":"Main.html?JSON=admission_FYCoursesOffered"
 					},
 					{
 						"Name":"Eligibality Criteria",
