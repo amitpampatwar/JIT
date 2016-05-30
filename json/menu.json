@@ -185,7 +185,7 @@
 					},
 					{
 						"Name":"Board Of Directors",
-						"Link":"About_Board.html"
+						"Link":"Main.html?JSON=about_board"
 					},
 					{
 						"Name":"Academic Advisors",
