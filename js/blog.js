@@ -149,7 +149,7 @@ function addData(url, headerType, elementName)
                 $.each(table.Rows, function(childIndex, row) {
                   tableBody = tableBody + "<tr>";
                   
-                  $.each(row.Cell, function(childIndex, cell) {
+                  $.each(row.Row, function(childIndex, cell) {
                     tableBody = tableBody + "<td>" + cell.Cell + "</td>";
                   });
                   
