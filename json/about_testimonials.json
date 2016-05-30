@@ -1,221 +1,217 @@
 [
-	{
+    {
 		"Title":"Testimonials",
 		"Content": [
-            {
-                "Profile" : [
+            {"Profile" : {
+                "ImageURL":"images/Dr. Bhatkar.jpg",
+                "ImageTitle":"Dr. Vijay Bhatkar ",
+                "ProfileName":"Dr. Vijay Bhatkar ",
+                "Details": [
                     {
-                        "ImageURL":"images/Dr. Bhatkar.jpg",
-                        "ImageTitle":"Dr. Vijay Bhatkar ",
-                        "ProfileName":"Dr. Vijay Bhatkar ",
-                        "Details": [
-                            {
-                                "Paregraph" : "I would like to acclaim the progress made by JIT in a span of less than 5 years. Indeed commendable accomplishments!I got an opportunity to come to JIT for the Inauguration of the International Conference on Industrial Automation and Computing. What I experienced that the Participation was admirable. This is a college with potential for excellence and it should be further developed with this vision in view.My Best wishes for the success of JIT."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Chairman, Board of Governors, Indian Institute of Technology Delhi."
-                            }
-                        ]		
-                    },
-                    {
-                        "ImageURL":"images/Dr. Wi Shaw.jpg",
-                        "ImageTitle":"Dr. Wei Sha",
-                        "ProfileName":"Dr. Wei Sha",
-                        "Details": [
-                            {
-                                "Paregraph" : "Very memorable experience. Conference and College organization is first class. Enjoyed most the numerous interactions with Professors and toppers.I have visited India 3 times but this visit surpassed all the previous visits. Thank you for your hospitality."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Professor, School of Planning, Architecture and Civil Engineering - Centre for Built Environment Research, Belfast, UK."
-                            }
-                        ]	
-                    },
-                    {
-                        "ImageURL":"images/Dr. Aminul Hoque.jpg",
-                        "ImageTitle":"Dr. Aminul Hoque",
-                        "ProfileName":"Dr. Aminul Hoque",
-                        "Details": [
-                            {
-                                "Paregraph" : "It is my proud previlage to attend the International Conference on Industrial Automation and Computing organized by JIT. I am greatful to the college for inviting me to be a part of the conference. I wish all the success to JIT."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Professor, Department of Electrical and Electronic Engineering, Bangladesh University of Engineering and Technology, Bangladesh"
-                            }
-                        ]		
-                    },
-                    {
-                        "ImageURL":"images/Mr. Nitin Bawankule.jpg",
-                        "ImageTitle":"Mr. Nitin Bawankule",
-                        "ProfileName":"Mr. Nitin Bawankule",
-                        "Details": [
-                            {
-                                "Paregraph" : "For an Institution as young as 6 years, its an amazing progress. In today?s scenario to conduct an International Conference in Nagpur is really commendable. I am sure that the students and faculty will benefit a lot from this exposure. Best Wishes."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Industry Director at Google India, Gurgaon, India."
-                            }	
-                        ]		
-                    },
-                    {
-                        "ImageURL":"images/Dr Apte.jpg",
-                        "ImageTitle":"Dr. Prakash Apte",
-                        "ProfileName":"Dr. Prakash Apte",
-                        "Details": [
-                            {
-                                "Paregraph" : "I was happy with the 1st edition of International Conference on Industrial Automation and Computing. Let us take it forward and do it every year."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Professor Electrical Department, IIT Mumbai"
-                            }	
-                        ]	
-                    },
-                    {
-                        "ImageURL":"images/Dr. P.K. Dubey.jpg",
-                        "ImageTitle":"Dr. P. K. Dubey",
-                        "ProfileName":"Dr. P. K. Dubey",
-                        "Details": [
-                            {
-                                "Paregraph" : "A good institution particularly focusing in the field of research snd involved in the career built of the students. All the Best."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Senior Sceintist, NPL, Delhi"
-                            }	
-                        ]		
-                    },
-                    {
-                        "ImageURL":"images/Ms. Dimple Lalwani.jpg",
-                        "ImageTitle":"Ms. Dimple Lalwani ",
-                        "ProfileName":"Ms. Dimple Lalwani ",
-                        "Details": [
-                            {
-                                "Paregraph" : "It is a pleasure to visit JIT for ICIAC 2014. It is good to see that college has made tremendous progress in 5 years span. I wish all the best for future."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Project Manager, ST Micro, Noida"
-                            }	
-                        ]
-                    },
-                    {
-                        "ImageURL":"images/Roshni Lalwani.jpg",
-                        "ImageTitle":"Ms. Roshni Lalwani",
-                        "ProfileName":"Ms. Roshni Lalwani",
-                        "Details": [
-                            {
-                                "Paregraph" : "It was a great pleasure to attend International Conference on Industrial Automation and Computing. It is really good to see the college has made great progress in a small span of time. All the Best! I would like to see more ventures coming out of this college."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Sr. Software Manager, Mentor graphics, Noida."
-                            }
-                        ]		
-                    },
-                    {
-                        "ImageURL":"images/Rajan_Welukar.png",
-                        "ImageTitle":"Dr. Rajan Welukar",
-                        "ProfileName":"Dr. Rajan Welukar",
-                        "Details": [
-                            {
-                                "Paregraph" : "I congratulate the college for its development in a short period of times of three years.Tech fest organised by this college was an excellent opportunity for the younger generation. My best wishes to all."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Vice,chancellor,Mumbai University "
-                            }
-                        ]		
-                    },
-                    {
-                        "ImageURL":"images/Harold.png",
-                        "ImageTitle":"Dr.Harold D'costa",
-                        "ProfileName":"Dr.Harold D'costa",
-                        "Details": [
-                            {
-                                "Paregraph" : "The infrastructure and the ambience is the best in it's class. I was happy to be a part of the Shikhar 2012. Families and officials are via person. Wish you all the best."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Cyber Crime Expert, Pune"
-                            }
-                        ]			
-                    },
-                    {
-                        "ImageURL":"images/Nitin_Raut.png",
-                        "ImageTitle":"Dr. Nitin Raut",
-                        "ProfileName":"Dr. Nitin Raut",
-                        "Details": [
-                            {
-                                "Paregraph" : "It gives me immense pleasure to know that JIT has achieved 2nd rank in B.E.1st year Result of RTMNU. I am happy to see that you are on the way of achieving your vision of developing the students as true professionals. This shows the devotion and dedication of your entire team for imparting quality education for the bright future of our nation."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Past Minister for EGS& water conservation,Govt.of Maharashtra"
-                            }	
-                        ]
-                    },
-                    {
-                        "ImageURL":"images/Harshwardhan_Patil.png",
-                        "ImageTitle":"Mr.Harshvardhan Patil",
-                        "ProfileName":"Mr.Harshvardhan Patil",
-                        "Details": [
-                            {
-                                "Paregraph" : "Excellent college very good staff and good management will progress in future and establish a good level of quality education.."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Past Minister for Co-operation and Parlimentry affairs, Govt.of Maharashtra"
-                            }
-                        ]		
-                    },
-                    {
-                        "ImageURL":"images/nitin_gadkari.png",
-                        "ImageTitle":"Mr.Nitin Gadkari",
-                        "ProfileName":"Mr.Nitin Gadkari",
-                        "Details": [
-                            {
-                                "Paregraph" : "Good and outstanding educational institute contributing in the engineering education in vidarbha."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Minister for Road Transport and Highways, Shipping,Govt.of India "
-                            }
-                        ]		
-                    },
-                    {
-                        "ImageURL":"images/Abhay_Wagh.png",
-                        "ImageTitle":"Mr.Abhay Wagh",
-                        "ProfileName":"Mr.Abhay Wagh",
-                        "Details": [
-                            {
-                                "Paregraph" : "It really enlightened me to see all the events shows, exhibits kept today \"Teachers for Shikhar\".Nice Infrastructure enthuziastic faculty,leadership & nice to interact with all students."
-                            }
-                        ],
-                        "Qualifications": [
-                            {
-                                "Title" : "Deputy Sec. of Higher & Technical Education, Govt. of Maharashtra"
-                            }
-                        ]			
+                        "Paregraph" : "I would like to acclaim the progress made by JIT in a span of less than 5 years. Indeed commendable accomplishments!I got an opportunity to come to JIT for the Inauguration of the International Conference on Industrial Automation and Computing. What I experienced that the Participation was admirable. This is a college with potential for excellence and it should be further developed with this vision in view.My Best wishes for the success of JIT."
                     }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Chairman, Board of Governors, Indian Institute of Technology Delhi."
+                    }
+                ]		
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Dr. Wi Shaw.jpg",
+                "ImageTitle":"Dr. Wei Sha",
+                "ProfileName":"Dr. Wei Sha",
+                "Details": [
+                    {
+                        "Paregraph" : "Very memorable experience. Conference and College organization is first class. Enjoyed most the numerous interactions with Professors and toppers.I have visited India 3 times but this visit surpassed all the previous visits. Thank you for your hospitality."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Professor, School of Planning, Architecture and Civil Engineering - Centre for Built Environment Research, Belfast, UK."
+                    }
+                ]	
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Dr. Aminul Hoque.jpg",
+                "ImageTitle":"Dr. Aminul Hoque",
+                "ProfileName":"Dr. Aminul Hoque",
+                "Details": [
+                    {
+                        "Paregraph" : "It is my proud previlage to attend the International Conference on Industrial Automation and Computing organized by JIT. I am greatful to the college for inviting me to be a part of the conference. I wish all the success to JIT."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Professor, Department of Electrical and Electronic Engineering, Bangladesh University of Engineering and Technology, Bangladesh"
+                    }
+                ]		
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Mr. Nitin Bawankule.jpg",
+                "ImageTitle":"Mr. Nitin Bawankule",
+                "ProfileName":"Mr. Nitin Bawankule",
+                "Details": [
+                    {
+                        "Paregraph" : "For an Institution as young as 6 years, its an amazing progress. In today?s scenario to conduct an International Conference in Nagpur is really commendable. I am sure that the students and faculty will benefit a lot from this exposure. Best Wishes."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Industry Director at Google India, Gurgaon, India."
+                    }	
+                ]		
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Dr Apte.jpg",
+                "ImageTitle":"Dr. Prakash Apte",
+                "ProfileName":"Dr. Prakash Apte",
+                "Details": [
+                    {
+                        "Paregraph" : "I was happy with the 1st edition of International Conference on Industrial Automation and Computing. Let us take it forward and do it every year."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Professor Electrical Department, IIT Mumbai"
+                    }	
+                ]	
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Dr. P.K. Dubey.jpg",
+                "ImageTitle":"Dr. P. K. Dubey",
+                "ProfileName":"Dr. P. K. Dubey",
+                "Details": [
+                    {
+                        "Paregraph" : "A good institution particularly focusing in the field of research snd involved in the career built of the students. All the Best."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Senior Sceintist, NPL, Delhi"
+                    }	
+                ]		
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Ms. Dimple Lalwani.jpg",
+                "ImageTitle":"Ms. Dimple Lalwani ",
+                "ProfileName":"Ms. Dimple Lalwani ",
+                "Details": [
+                    {
+                        "Paregraph" : "It is a pleasure to visit JIT for ICIAC 2014. It is good to see that college has made tremendous progress in 5 years span. I wish all the best for future."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Project Manager, ST Micro, Noida"
+                    }	
                 ]
-            }
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Roshni Lalwani.jpg",
+                "ImageTitle":"Ms. Roshni Lalwani",
+                "ProfileName":"Ms. Roshni Lalwani",
+                "Details": [
+                    {
+                        "Paregraph" : "It was a great pleasure to attend International Conference on Industrial Automation and Computing. It is really good to see the college has made great progress in a small span of time. All the Best! I would like to see more ventures coming out of this college."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Sr. Software Manager, Mentor graphics, Noida."
+                    }
+                ]		
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Rajan_Welukar.png",
+                "ImageTitle":"Dr. Rajan Welukar",
+                "ProfileName":"Dr. Rajan Welukar",
+                "Details": [
+                    {
+                        "Paregraph" : "I congratulate the college for its development in a short period of times of three years.Tech fest organised by this college was an excellent opportunity for the younger generation. My best wishes to all."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Vice,chancellor,Mumbai University "
+                    }
+                ]		
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Harold.png",
+                "ImageTitle":"Dr.Harold D'costa",
+                "ProfileName":"Dr.Harold D'costa",
+                "Details": [
+                    {
+                        "Paregraph" : "The infrastructure and the ambience is the best in it's class. I was happy to be a part of the Shikhar 2012. Families and officials are via person. Wish you all the best."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Cyber Crime Expert, Pune"
+                    }
+                ]			
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Nitin_Raut.png",
+                "ImageTitle":"Dr. Nitin Raut",
+                "ProfileName":"Dr. Nitin Raut",
+                "Details": [
+                    {
+                        "Paregraph" : "It gives me immense pleasure to know that JIT has achieved 2nd rank in B.E.1st year Result of RTMNU. I am happy to see that you are on the way of achieving your vision of developing the students as true professionals. This shows the devotion and dedication of your entire team for imparting quality education for the bright future of our nation."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Past Minister for EGS& water conservation,Govt.of Maharashtra"
+                    }	
+                ]
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Harshwardhan_Patil.png",
+                "ImageTitle":"Mr.Harshvardhan Patil",
+                "ProfileName":"Mr.Harshvardhan Patil",
+                "Details": [
+                    {
+                        "Paregraph" : "Excellent college very good staff and good management will progress in future and establish a good level of quality education.."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Past Minister for Co-operation and Parlimentry affairs, Govt.of Maharashtra"
+                    }
+                ]		
+            }},
+            {"Profile" : {
+                "ImageURL":"images/nitin_gadkari.png",
+                "ImageTitle":"Mr.Nitin Gadkari",
+                "ProfileName":"Mr.Nitin Gadkari",
+                "Details": [
+                    {
+                        "Paregraph" : "Good and outstanding educational institute contributing in the engineering education in vidarbha."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Minister for Road Transport and Highways, Shipping,Govt.of India "
+                    }
+                ]		
+            }},
+            {"Profile" : {
+                "ImageURL":"images/Abhay_Wagh.png",
+                "ImageTitle":"Mr.Abhay Wagh",
+                "ProfileName":"Mr.Abhay Wagh",
+                "Details": [
+                    {
+                        "Paregraph" : "It really enlightened me to see all the events shows, exhibits kept today \"Teachers for Shikhar\".Nice Infrastructure enthuziastic faculty,leadership & nice to interact with all students."
+                    }
+                ],
+                "Qualifications": [
+                    {
+                        "Title" : "Deputy Sec. of Higher & Technical Education, Govt. of Maharashtra"
+                    }
+                ]			
+            }}
         ]
     }
 ]

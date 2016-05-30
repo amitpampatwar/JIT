@@ -197,7 +197,7 @@
 					},
 					{
 						"Name":"Testimonials",
-						"Link":"About_Testimonials.html"
+						"Link":"Main.html?JSON=about_testimonials"		
 					}
 				]
 			},			
