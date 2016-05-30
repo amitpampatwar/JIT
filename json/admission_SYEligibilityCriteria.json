@@ -1,17 +1,20 @@
 [
 	{
-		"Title":"Eligibility Criteria (First Year)",
+		"Title":"Eligibility Criteria (Direct Second Year)",
 		"Content": [			
 			{
 				"Paregraphs": [
 					{
-						"Text" : "Candidate should be an Indian National and should have passed H.S.C (Std XII) exam of M.S Board of Sec. and Higher Sec. Education or its equivalent exam with subjects English, Phys, Maths &amp; Chem/Biotech/Bio/Tech Vocational subject."
+						"Text" : "The candidate should have passed Post-SSC or Post- HSC Diploma course in Engineering / Technology with minimum 50% for open and 45% for reserved category."
 					},
                     {
-						"Text" : "Secured minimum 50% marks (minimum 45% marks in case of candidates of Backward class categories and person with disability candidate belonging to Maharashtra state only) in the subjects Phys, Maths &amp; Chem/ Biotech/ Bio/Tech Voc subjects added together."
+						"H2" : "OR"
 					},
                     {
-						"Text" : "Appeared for JEE (Main) 2016 (Paper 1) / MHTCET Exam."
+						"Text" : "The candidate should have passed B.Sc. Degree from UGC/ Association of Indian Universities with minimum 50% for open category and 45% for reserved category*. Also passed XII Std with English as medium of instruction and Mathematics as a subject."
+					},
+                    {
+						"Text" : "Obtained a positive composite score i.e. marks obtained after adding 50% of JEE (Main) 2015(Paper 1) marks &amp; 50% of normalized Std. XII (Board or Equivalent Examination) marks in Physics, Chemistry &amp; Mathematics."
 					}
 				]				
 			},
@@ -21,29 +24,26 @@
             {
 				"Paregraphs": [
 					{
-						"H2" : "Admission Procedure (First Year)"
+						"H2" : "Admission Procedure (Direct Second Year)"
 					},
                     {
-						"Text" : "Candidates has to submit the Admission Request Form (ARF) stating order of preference for the branch and following original documents with 3 sets of photo copies."
+						"Text" : "Candidates has to submit the Admission Request Form (ARF) and following original documents with 3 sets of photo copies."
 					}
 				]				
 			},
             {
                 "Lists" : [                    
                     {
-                        "Value" : "X and XII mark sheets"
+                        "Value" : "Diploma/B.Sc. mark sheets"
                     },
                     {
                         "Value" : "School leaving certificate"
                     },
                     {
-                        "Value" : "Migration certificate board other than State board."
+                        "Value" : "Equivalence certficate for board other than MSBTE. Other documents for category students"
                     },
                     {
-                        "Value" : "Other documents for category students"
-                    },
-                    {
-                        "Value" : "Caste certificate and validity"
+                        "Value" : "Caste certificate and validity."
                     },
                     {
                         "Value" : "Non creamy layer certificate for students other than OBC"
@@ -53,7 +53,7 @@
             {
 				"Paregraphs": [					
                     {
-						"Text" : "<b>Fees Structure: Tution fees is fixed by Shikshan Shulka Samitee and is subject to change. Rules for refund of fee for cancellation of admission (in any quota) are as per the DTE notification.</b>"
+						"Text" : "<b>Fees Structure: Tution fees is fixed by Shikshan Shulka Samitee and is subject to change rules for refund of fee for cancellation of admission (in any quota) are as per the DTE notification.</b>"
 					}
 				]				
 			},
@@ -74,7 +74,7 @@
                         {
                             "Row" : [
                                 {
-                                    "Cell" : "Rs. 84,263"
+                                    "Cell" : "Rs. 91,000"
                                 },
                                 {
                                     "Cell" : "Rs. 5000"
