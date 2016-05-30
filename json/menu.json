@@ -24,7 +24,7 @@
 					},
 					{
 						"Name":"Eligibality Criteria",
-						"Link":"Admissions_EligiblityCriteria.html"
+						"Link":"Main.html?JSON=admission_FYEligibilityCriteria"
 					}
 				]
 			},

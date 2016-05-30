@@ -1,0 +1,95 @@
+[
+	{
+		"Title":"Eligibility Criteria (First Year)",
+		"Content": [			
+			{
+				"Paregraphs": [
+					{
+						"Text" : "Candidate should be an Indian National and should have passed H.S.C (Std XII) exam of M.S Board of Sec. and Higher Sec. Education or its equivalent exam with subjects English, Phys, Maths &amp; Chem/Biotech/Bio/Tech Vocational subject."
+					},
+                    {
+						"Text" : "Secured minimum 50% marks (minimum 45% marks in case of candidates of Backward class categories and person with disability candidate belonging to Maharashtra state only) in the subjects Phys, Maths &amp; Chem/ Biotech/ Bio/Tech Voc subjects added together."
+					},
+                    {
+						"Text" : "Appeared for JEE (Main) 2016 (Paper 1) / MHTCET Exam."
+					}
+				]				
+			},
+            {
+                "HR" : "true"
+            },
+            {
+				"Paregraphs": [
+					{
+						"H2" : "Admission Procedure (First Year)"
+					},
+                    {
+						"Text" : "Candidates has to submit the Admission Request Form (ARF) stating order of preference for the branch and following original documents with 3 sets of photo copies."
+					}
+				]				
+			},
+            {
+                "Lists" : [                    
+                    {
+                        "Value" : "X and XII mark sheets"
+                    },
+                    {
+                        "Value" : "School leaving certificate"
+                    },
+                    {
+                        "Value" : "Migration certificate board other than State board."
+                    },
+                    {
+                        "Value" : "Other documents for category students"
+                    },
+                    {
+                        "Value" : "Caste certificate and validity"
+                    },
+                    {
+                        "Value" : "Non creamy layer certificate for students other than OBC"
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+				"Paregraphs": [					
+                    {
+						"Text" : "<b>Fees Structure: Tution fees is fixed by Shikshan Shulka Samitee and is subject to change. Rules for refund of fee for cancellation of admission (in any quota) are as per the DTE notification.</b>"
+					}
+				]				
+			},
+            {
+                "Table" : {
+                    "Header" : [
+                        {
+                            "Cell" : "Interim Tution Fees"
+                        },
+                        {
+                            "Cell" : "Caution Money"
+                        },
+                        {
+                            "Cell" : "Hostel Fees"
+                        }
+                    ],
+                    "Rows" : [
+                        {
+                            "Row" : [
+                                {
+                                    "Cell" : "Rs. 84,263"
+                                },
+                                {
+                                    "Cell" : "Rs. 5000"
+                                },
+                                {
+                                    "Cell" : "Rs. 65,000"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+		]
+	}
+]
