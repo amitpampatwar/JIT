@@ -11,7 +11,7 @@ function addData(url, headerType, elementName)
       var blogData = "";
 
       $.each(objBlog, function(index, objData) {
-        blogData = blogData + "<article class=\"uk-article uk-text-large\">";
+        blogData = blogData + "<article class=\"uk-article\">";
         blogData = blogData + "<h" + headerType + " class=\"uk-article-title\">" + objData.Title + "</h" + headerType + "><hr class=\"uk-article-divider\">";
 
         if (objData.CreatedDate) {
