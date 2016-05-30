@@ -13,7 +13,7 @@
 			{
 				"Name":"Admission Enquiry",
 				"Divide":"true",
-				"Link":"Main.html?JSON=admissions_admissionenquiry.json"
+				"Link":"Main.html?JSON=admissions_admissionenquiry"
 			},
 	 		{
 		 		"Name": "BE First Year",
@@ -62,15 +62,15 @@
 		"ChildNav": [				 		
 			{
 				"Name":"Training &amp; Placement",
-				"Link":"Main.html?JSON=placements_trainingplacements.json"
+				"Link":"Main.html?JSON=placements_trainingplacements"
 			},
 			{
 				"Name":"Placement History",
-				"Link":"Main.html?JSON=placements_placementhistory.json"
+				"Link":"Main.html?JSON=placements_placementhistory"
 			},
 			{
 				"Name":"Industrial Tieups",
-				"Link":"Main.html?JSON=placements_industrialtieups.json"
+				"Link":"Main.html?JSON=placements_industrialtieups"
 			}
 		]
 	},
@@ -84,15 +84,15 @@
 			},
 			{
 				"Name":"Hostel",
-				"Link":"Main.html?JSON=academics_hostel.json"
+				"Link":"Main.html?JSON=academics_hostel"
 			},
 			{
 				"Name":"Library",
-				"Link":"Main.html?JSON=academics_library.json"
+				"Link":"Main.html?JSON=academics_library"
 			},					
 			{
 				"Name":"Other Facilities",
-				"Link":"Main.html?JSON=academics_otherfacilities.json"
+				"Link":"Main.html?JSON=academics_otherfacilities"
 			},
 			{
 		 		"Name": "Departments",
@@ -164,7 +164,7 @@
 		"ChildNav": [
 			{
 				"Name":"Principal",
-				"Link":"Main.html?JSON=about_principal.json"
+				"Link":"Main.html?JSON=about_principal"
 			},		 		
 			{
 				"Name":"Vision Mission",
