@@ -53,9 +53,6 @@
                 }
             },
             {
-                "HR" : "true"
-            },
-            {
 				"Paregraphs": [
 					{
 						"H2" : "Eligibility Criteria (M Tech)"
@@ -67,7 +64,7 @@
 						"Text" : "Has non – zero GATE Score."
 					}
 				]				
-			},  
+			}
 		]
 	}
 ]
