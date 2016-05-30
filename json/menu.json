@@ -168,7 +168,7 @@
 			},		 		
 			{
 				"Name":"Vision Mission",
-				"Link":"About_VisionMission.html"				
+				"Link":"Main.html?JSON=about_visionmission"				
 			},
 			{
 				"Name":"Organization Structure",

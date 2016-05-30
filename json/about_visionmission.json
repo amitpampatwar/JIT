@@ -1,0 +1,32 @@
+[
+	{
+		"Title":"Vision",
+		"Content": [
+            {
+                "Paregraphs": [
+					{
+						"H3" : "To become an eminent institution through knowledge and research."
+					}
+				]				
+			},
+            {
+                "HR" : "true"
+            },                        
+        ]
+    },
+    {
+		"Title":"Mission",
+		"Content": [
+            {
+                "Paregraphs": [
+					{
+						"H3" : "To produce world class Engineers with academics and moral excellence who are not only equipped with cutting edge immense sense of social responsibility."
+					},
+                    {
+						"H3" : "To inculcate awareness and acceptance of ethical values through co-curricular activities for over all personality development of students."
+					}
+				]				
+			}                        
+        ]
+    }
+]
