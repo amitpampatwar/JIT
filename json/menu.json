@@ -34,7 +34,7 @@
 				"SubChildNav": [
 					{
 						"Name":"Courses Offered",
-						"Link":"Admissions_SECoursesOffered.html"
+						"Link":"Main.html?JSON=admission_SYCoursesOffered"
 					},
 					{
 						"Name":"Eligibality Criteria",

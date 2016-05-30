@@ -10,30 +10,28 @@
 				]
 			},
 			{
-				"Table" : [
-					{
-						"Header" : [
-							{
-								"Cell" : "Particulars"
-							},
-							{
-								"Cell" : "Hostel Fees"
-							}
-						],
-                        Rows : [
-                            {
-                                "Row" : [
-                                    {
-                                        "Cell" : "Boys / Girls"
-                                    },
-                                    {
-                                        "Cell" : "65,000/-"
-                                    }
-                                ]
-                            }
-                        ]
-					}
-				]
+				"Table" : {
+                    "Header" : [
+                        {
+                            "Cell" : "Particulars"
+                        },
+                        {
+                            "Cell" : "Hostel Fees"
+                        }
+                    ],
+                    Rows : [
+                        {
+                            "Row" : [
+                                {
+                                    "Cell" : "Boys / Girls"
+                                },
+                                {
+                                    "Cell" : "65,000/-"
+                                }
+                            ]
+                        }
+                    ]
+                }				
 			}
 		]
 	}
