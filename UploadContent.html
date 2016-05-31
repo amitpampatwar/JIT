@@ -27,7 +27,8 @@
         var contentData = "<div class=\"uk-form-row\">";
 
         if (selectedContentType == 1) { 
-          contentData = contentData + "<div class=\"uk-alert uk-alert-large\"><textarea id=\"txt" + textareaCounter + "\" rows=\"7\" placeholder=\"Add Content...\" class=\"uk-width-1-1\"></textarea></div>";
+          contentData = contentData + "<div class=\"uk-alert uk-alert-large\"><a href="" class=\"uk-alert-close uk-close\">";
+          contentData = contentData + "</a><textarea id=\"txt" + textareaCounter + "\" rows=\"7\" placeholder=\"Add Content...\" class=\"uk-width-1-1\"></textarea></div>";
           
           textareaCounter = textareaCounter + 1;
         }
