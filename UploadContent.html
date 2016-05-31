@@ -20,13 +20,14 @@
   <script>
     var textareaCounter = 1;
     var listitemCounter = 1;
+    var tableRowCounter = 1;
     
     $(document).ready(function() {
       $("#addParegraph").click(function() {        
         var contentData = "";
 
         contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add Paregraph...</h2>";
-        contentData = contentData + "<textarea id=\"txt" + textareaCounter + "\" rows=\"7\" placeholder=\"Add Content...\" class=\"uk-width-1-1\"></textarea></div>";
+        contentData = contentData + "<textarea id=\"txtParegraph" + textareaCounter + "\" rows=\"7\" placeholder=\"Add Content...\" class=\"uk-width-1-1\"></textarea></div>";
 
         textareaCounter = textareaCounter + 1;
 
@@ -36,10 +37,29 @@
       $("#addListItem").click(function() {        
         var contentData = "";
 
-        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-3\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add List Item...</h2>";
-        contentData = contentData + "<input id=\"txt" + listitemCounter + "\" type=\"Text\" placeholder=\"Add List Item...\" class=\"uk-width-1-3\"></input></div>";
+        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add List Item...</h2>";
+        contentData = contentData + "<input id=\"txList" + listitemCounter + "\" type=\"Text\" placeholder=\"Add List Item...\" class=\"uk-width-1-3\"></input></div>";
 
         listitemCounter = listitemCounter + 1;
+
+        $("#uploadContent").append(contentData);
+      });
+      
+      $("#addRow").click(function() {        
+        var counter = 0;
+        var contentData = "";
+        var noOfColumns = $("#columnNo").val();
+                
+        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add Table Row...</h2>";
+        contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p>";
+        
+        $.each(noOfColumns, function(index, noOfColumns) {
+          counter = counter + 1;
+          contentData = contentData + "<input id=\"txtCell" + index + counter + "\" type=\"Text\" placeholder=\"Data\" class=\"uk-width-1-" + noOfColumns + "\"></input>";
+        });
+        
+        contentData = contentData + "</div>";
+        tableRowCounter = tableRowCounter + 1;
 
         $("#uploadContent").append(contentData);
       });
@@ -63,8 +83,8 @@
                 </div>
                 <hr class="uk-article-divider">
                 <div class="uk-form-row">
-                  <input id="txtColumnData" type="button" class="uk-width-1-3" value="Add Row" />
-                  <input id="addListItem" type="button" class="uk-button uk-width-1-3" value="Add Row" />
+                  <input id="columnNo" type="number" min="0" max="10" value="5" class="uk-form-width-mini uk-form-small">
+                  <input id="addRow" type="button" class="uk-button uk-width-1-3" value="Add Row" />
                 </div>
               </div>
             </article>
