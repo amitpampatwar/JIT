@@ -27,10 +27,13 @@
     
     function AddContent() {
       var selectedContentType = $("select option:selected").val();
+      var contentData = "<div class=\"uk-form-row\">";
       
       if (selectedContentType == 1) { 
-        $("#uploadContent").append("<textarea id=\"txt" + textareaCounter + "\" rows=\"7\" placeholder=\"Add Content...\" class=\"uk-width-1-2\"></textarea>")
+        contentData = contentData + "<textarea id=\"txt" + textareaCounter + "\" rows=\"7\" placeholder=\"Add Content...\" class=\"uk-width-1-2\"></textarea>")
       }
+      
+      $("#uploadContent").append(contentData);
     }
   </script>
   <body class="tm-background">
@@ -55,7 +58,9 @@
               </div>
             </article>
             <hr class="uk-article-divider">
-            <article id="uploadContent" class="uk-comment">
+            <article class="uk-comment">
+              <div id="uploadContent" class="uk-form uk-width-medium-1-2">
+              </div>
             </article>
           </div>
         </div>
