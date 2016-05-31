@@ -18,10 +18,20 @@
     <script type="text/javascript" src="js/header.js"></script>
     <script type="text/javascript" src="js/blog.js"></script>   
   </head>
-  <script>    
+  <script>
+    var textareaCounter = 1;
+    
     $(document).ready(function() {
       
     });
+    
+    function AddContent() {
+      var selectedContentType = $("select option:selected").val();
+      
+      if (selectedContentType == 1) { 
+        $("#uploadContent").append("<textarea id=\"txt" + textareaCounter + "\" rows=\"7\" placeholder=\"Add Content...\" class=\"uk-width-1-2\"></textarea>")
+      }
+    }
   </script>
   <body class="tm-background">
     <header id="header"></header>
@@ -30,7 +40,7 @@
         <div class="uk-grid" data-uk-grid-margin="">
           <div id="subMenu" class="tm-sidebar uk-width-medium-1-4 uk-hidden-small uk-row-first"></div>
           <div class="tm-main uk-width-medium-3-4">
-            <article id="uploadContent" class="uk-comment">
+            <article id="uploadParameters" class="uk-comment">
               <div class="uk-form uk-width-medium-1-2">
                 <div class="uk-form-row">
                   <select id="contentType" class="uk-width-1-2">
@@ -40,9 +50,12 @@
                     <option value="3">Table</option>
                     <option value="4">List</option>
                   </select>                
-                  <input id="addContent" type="button" class="uk-button uk-width-1-3" value="Add" />                  
+                  <input id="addContent" type="button" class="uk-button uk-width-1-3" value="Add" onclick="AddContent();" />                  
                 </div>
               </div>
+            </article>
+            <hr class="uk-article-divider">
+            <article id="uploadContent" class="uk-comment">
             </article>
           </div>
         </div>
