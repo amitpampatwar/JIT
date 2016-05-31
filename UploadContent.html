@@ -19,18 +19,27 @@
   </head>
   <script>
     var textareaCounter = 1;
+    var listitemCounter = 1;
     
     $(document).ready(function() {
-      $("#addContent").click(function() {
-        var selectedContentType = $("select option:selected").val();
+      $("#addParegraph").click(function() {        
         var contentData = "";
 
-        if (selectedContentType == 1) { 
-          contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add Paregraph...</h2>";
-          contentData = contentData + "<textarea id=\"txt" + textareaCounter + "\" rows=\"7\" placeholder=\"Add Content...\" class=\"uk-width-1-1\"></textarea></div>";
-          
-          textareaCounter = textareaCounter + 1;
-        }
+        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add Paregraph...</h2>";
+        contentData = contentData + "<textarea id=\"txt" + textareaCounter + "\" rows=\"7\" placeholder=\"Add Content...\" class=\"uk-width-1-1\"></textarea></div>";
+
+        textareaCounter = textareaCounter + 1;
+
+        $("#uploadContent").append(contentData);
+      });
+      
+      $("#addListItem").click(function() {        
+        var contentData = "";
+
+        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add Paregraph...</h2>";
+        contentData = contentData + "<input id=\"txt" + listitemCounter + "\" type=\"Text\" placeholder=\"Add List Item...\" class=\"uk-width-1-3\"></input></div>";
+
+        listitemCounter = listitemCounter + 1;
 
         $("#uploadContent").append(contentData);
       });
@@ -45,15 +54,12 @@
           <div class="tm-main uk-width-medium-3-4">
             <article id="uploadParameters" class="uk-comment">
               <div class="uk-form uk-width-medium-1-2">
+                <div class="uk-form-row">                              
+                  <input id="addParegraph" type="button" class="uk-button uk-width-1-3" value="Add Paregraph" />                  
+                </div>
+                <hr class="uk-article-divider">
                 <div class="uk-form-row">
-                  <select id="contentType" class="uk-width-1-2">
-                    <option>--- Select Content ---</option>
-                    <option value="1">Paregraphs</option>
-                    <option value="2">Image</option>
-                    <option value="3">Table</option>
-                    <option value="4">List</option>
-                  </select>                
-                  <input id="addContent" type="button" class="uk-button uk-width-1-3" value="Add" />                  
+                  <input id="addListItem" type="button" class="uk-button uk-width-1-3" value="Add List Item" />                  
                 </div>
               </div>
             </article>
