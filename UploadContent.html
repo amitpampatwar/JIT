@@ -20,9 +20,9 @@
   <script>
     var textareaCounter = 1;
     var listitemCounter = 1;
-    var tableRowCounter = 1;      
-
-    $(function() {
+    var tableRowCounter = 1;
+    
+    $(document).ready(function() {
       var progressbar = $("#progressbar"),
           bar         = progressbar.find('.uk-progress-bar'),
           settings    = {
@@ -49,9 +49,7 @@
 
       var select = UIkit.uploadSelect($("#upload-select"), settings),
           drop   = UIkit.uploadDrop($("#upload-drop"), settings);
-    });
-    
-    $(document).ready(function() {
+      
       $("#addParegraph").click(function() {        
         var contentData = "";
 
@@ -130,7 +128,7 @@
                 <hr class="uk-article-divider">
                 <div class="uk-form-row">
                   <div id="upload-drop" class="uk-placeholder">
-                    Info text... <a class="uk-form-file">Select a file<input id="upload-select" type="file"></a>.
+                    <a class="uk-form-file">Select a file<input id="upload-select" type="file"></a>.
                   </div>
                   <div id="progressbar" class="uk-progress uk-hidden">
                     <div class="uk-progress-bar" style="width: 0%;">...</div>
