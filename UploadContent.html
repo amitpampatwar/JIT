@@ -22,7 +22,7 @@
     var textareaCounter = 1;
     
     $(document).ready(function() {
-      function AddContent() {
+      $("#addContent").click(function() {
         var selectedContentType = $("select option:selected").val();
         var contentData = "<div class=\"uk-form-row\">";
 
@@ -33,7 +33,7 @@
         }
 
         $("#uploadContent").append(contentData);
-      }
+      });
     });        
   </script>
   <body class="tm-background">
