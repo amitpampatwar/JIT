@@ -52,9 +52,9 @@
         contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add Table Row...</h2>";
         contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p>";
         
-        for (var index = 1; index <= noOfColumns; index++) 
+        for (var index = 1; index <= noOfColumns; index++) {
           contentData = contentData + "<input id=\"txtCell" + tableRowCounter + index + "\" type=\"Text\" placeholder=\"Data\" class=\"uk-width-1-" + noOfColumns + "\"></input>";
-        });
+        }
         
         contentData = contentData + "</div>";
         tableRowCounter = tableRowCounter + 1;
