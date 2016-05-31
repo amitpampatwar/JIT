@@ -16,7 +16,6 @@
     <script type="text/javascript" src="js/components/slideshow-fx.js"></script>    
     <script type="text/javascript" src="js/footer.js"></script>
     <script type="text/javascript" src="js/header.js"></script>
-    <script type="text/javascript" src="js/blog.js"></script>   
   </head>
   <script>
     var textareaCounter = 1;
@@ -27,7 +26,7 @@
         var contentData = "<div class=\"uk-form-row\">";
 
         if (selectedContentType == 1) { 
-          contentData = contentData + "<div class=\"uk-alert uk-alert-large\"><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add Paregraph...</h2>";
+          contentData = contentData + "<div class=\"uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add Paregraph...</h2>";
           contentData = contentData + "<textarea id=\"txt" + textareaCounter + "\" rows=\"7\" placeholder=\"Add Content...\" class=\"uk-width-1-1\"></textarea></div>";
           
           textareaCounter = textareaCounter + 1;
