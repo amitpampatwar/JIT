@@ -23,10 +23,10 @@
     $(document).ready(function() {
       $("#addContent").click(function() {
         var selectedContentType = $("select option:selected").val();
-        var contentData = "<div class=\"uk-form-row\">";
+        var contentData = "";
 
         if (selectedContentType == 1) { 
-          contentData = contentData + "<div class=\"uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add Paregraph...</h2>";
+          contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add Paregraph...</h2>";
           contentData = contentData + "<textarea id=\"txt" + textareaCounter + "\" rows=\"7\" placeholder=\"Add Content...\" class=\"uk-width-1-1\"></textarea></div>";
           
           textareaCounter = textareaCounter + 1;
