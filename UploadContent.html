@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="Stylesheet" media="screen,print" href="css/uikit.docs.min.css" />    
+    <link type="text/css" rel="Stylesheet" media="screen,print" href="css/docs.css" />
+    <link type="text/css" rel="Stylesheet" media="screen,print" href="css/highlight.css" />
+
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="js/docs.js"></script>
+    <script type="text/javascript" src="js/uikit.js"></script>
+    <script type="text/javascript" src="js/components/sticky.js"></script>
+    <script type="text/javascript" src="js/components/slideshow.js"></script>
+    <script type="text/javascript" src="js/components/slideshow-fx.js"></script>    
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/blog.js"></script>   
+  </head>
+  <script>    
+    $(document).ready(function() {
+      
+    });
+  </script>
+  <body class="tm-background">
+    <header id="header"></header>
+    <div class="tm-middle">
+      <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-margin="">
+          <div id="subMenu" class="tm-sidebar uk-width-medium-1-4 uk-hidden-small uk-row-first"></div>
+          <div class="tm-main uk-width-medium-3-4">
+            <article id="uploadContent" class="uk-comment">
+              <ul class="uk-subnav uk-subnav-line">
+                <li>
+                  <select id="contentType" class="uk-width-1-2">
+                    <option>--- Select Content ---</option>
+                    <option value="1">Paregraphs</option>
+                    <option value="2">Image</option>
+                    <option value="3">Table</option>
+                    <option value="4">List</option>
+                  </select>
+                </li>
+                <li>
+                  <input type="button" class="uk-button uk-width-1-1" value="Add" />                  
+                </li>
+              </ul>              
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <footer id="footer">
+      <div class="tm-footer">
+        <div class="uk-container uk-container-center uk-text-center">
+          <ul class="uk-subnav uk-subnav-line uk-flex-center">
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Rules &amp; Regulations</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+          <div class="uk-panel">
+            <p>All Rights Reserved with Samruddhi Sarwajanik Charitable Trust, <br/>Jhulelal Institute Of Technology, Nagpur</p>
+            <a href="../index.html"><img src="images/SiteLogo.png" width="90" height="30" title="JIT" alt="JIT"></a>
+          </div>
+        </div>
+      </div>
+      <div id="tm-offcanvas" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+          <ul id="footerList" class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{multiple:true}"></ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
