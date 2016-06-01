@@ -93,9 +93,9 @@
         tableContent = tableContent + "<input id=\"txtCell" + tableCounter + eachRowCounter[tableCounter] + index + "\" type=\"Text\" placeholder=\"Cell\" class=\"uk-width-1-" + columnNo + "\"></input>";
       }
       
-      tableContent = tableContent + "</div><!--EndTable:" + tableCounter + "-->";
+      tableContent = tableContent + "</div></div><!--EndTable:" + tableCounter + "-->";
       
-      uploadContentHTML = uploadContentHTML.replace("<!--EndTable:" + tableCounter + "-->", tableContent);
+      uploadContentHTML = uploadContentHTML.replace("</div><!--EndTable:" + tableCounter + "-->", tableContent);
       eachRowCounter[tableCounter] = eachRowCounter[tableCounter] + 1;
       
       $("#uploadContent").html(uploadContentHTML);
