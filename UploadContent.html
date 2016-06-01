@@ -207,7 +207,22 @@
           });
         });
         
+        if (isTablePresent) {
+          isTablePresent = false;
+
+          var TableDetails = { "Table" : [Table] };
+          Content.push(TableDetails);
+        }
+
+        if (isListPresent) {
+          isListPresent = false;
+
+          var ListDetails = { "Lists" : [Lists] };
+          Content.push(ListDetails);
+        }
         
+        var objectData = {[ "Title" : $("#txtTitle").val(), "Content" : [Content] ]};
+        var jsonData = JSON.stringify(objectData);
       });
     });
     
