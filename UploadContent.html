@@ -53,7 +53,7 @@
         var contentData = "";
 
         contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>List Item</h2>";
-        contentData = contentData + "<input id=\"txList" + listitemCounter + "\" type=\"Text\" placeholder=\"Add List Item...\" class=\"uk-width-1-1\"></input></div>";
+        contentData = contentData + "<input id=\"txtList" + listitemCounter + "\" type=\"Text\" placeholder=\"Add List Item...\" class=\"uk-width-1-1\"></input></div>";
 
         listitemCounter = listitemCounter + 1;
 
@@ -64,7 +64,7 @@
         var contentData = "";
 
         contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Sub Header</h2>";
-        contentData = contentData + "<input id=\"txSubHeader" + headerCounter + "\" type=\"Text\" placeholder=\"Add Sub Header...\" class=\"uk-width-1-1\"></input></div>";
+        contentData = contentData + "<input id=\"txtSubHeader" + headerCounter + "\" type=\"Text\" placeholder=\"Add Sub Header...\" class=\"uk-width-1-1\"></input></div>";
 
         headerCounter = headerCounter + 1;
 
@@ -95,18 +95,49 @@
         var Object = [];
         var Title = { "Title" : $("#txtTitle").val() };        
         var Content = [];
+        var Lists = [];
         var htmlContent = $.parseHTML($("#uploadContent").html().trim());
-        
-        Object.push(Title);
-        
+        var isListPresent = false;
+
         $.each(htmlContent, function(index, objContent) {
           $.each(objContent.childNodes, function(index, objChildNode) {
             if(objChildNode.id.toLowerCase().indexOf("txtparegraph") >= 0) {
+              if (isListPresent) {
+                isListPresent = false;
+                
+                var ListDetails = { "Lists" : [Lists] };
+                Content.push(ListDetails);
+              }
+              
               var myParegraph = document.getElementById(objChildNode.id);
               var Text = { "Text" : myParegraph.value };
               var Paregraphs = { "Paregraphs" : [Text] };
               
-              Object.push(Paregraphs);
+              Content.push(Paregraphs);
+            }
+            
+            if(objChildNode.id.toLowerCase().indexOf("txtsubheader") >= 0) {
+              if (isListPresent) {
+                isListPresent = false;
+                
+                var ListDetails = { "Lists" : [Lists] };
+                Content.push(ListDetails);
+              }
+              
+              var mySubHeader = document.getElementById(objChildNode.id);
+              var Text = { "H2" : mySubHeader.value };
+              var Paregraphs = { "Paregraphs" : [Text] };
+              
+              Content.push(Paregraphs);
+            }
+            
+            if(objChildNode.id.toLowerCase().indexOf("txtlist") >= 0) {
+              isListPresent = true;
+              
+              var myListItem = document.getElementById(objChildNode.id);
+              var Text = { "Value" : myListItem.value };
+              
+              Lists.push(Text);
             }
           });
         });                              
