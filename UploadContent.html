@@ -101,11 +101,11 @@
         
         $.each(htmlContent, function(index, objContent) {
           $.each(objContent.childNodes, function(index, objChildNode) {
-            if(objChildNode.id.toLowerCase().indexOf("txtparegraph") >= 0) {
-              var Paregraphs = [];
-              var Text = { "Text" : objChildNode.value };
+            if(objChildNode.id.toLowerCase().indexOf("txtpdaregraph") >= 0) {
+              var myParegraph = document.getElementById(objChildNode.id);
+              var Text = { "Text" : myParegraph.value };
+              var Paregraphs = { "Paregraphs" : [Text] };
               
-              Paregraphs.push(Text);
               Object.push(Paregraphs);
             }
           });
