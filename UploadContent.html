@@ -24,6 +24,10 @@
     var tableRowCounter = 1;
     
     $(document).ready(function() {
+      function AddRows(columnNo) {
+        
+      }
+      
       $('input[type="file"]').change(function(e) {
         var fileUploadContent = "";
         
@@ -60,8 +64,8 @@
         var contentData = "";
         var noOfColumns = $("#columnNo").val();
                 
-        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Table Row</h2>";
-        contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p>";
+        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Table</h2><button id=\"tbl" + tableRowCounter + "\" class=\"tblRow uk-button uk-button-small uk-button-primary\" type=\"button\" onclick=\"AddRows(noOfColumns);\">Add Row</button>";
+        contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p><hr class=\"uk-article-divider\">";
         
         for (var index = 1; index <= noOfColumns; index++) {
           contentData = contentData + "<input id=\"txtCell" + tableRowCounter + index + "\" type=\"Text\" placeholder=\"Data\" class=\"uk-width-1-" + noOfColumns + "\"></input>";
@@ -71,21 +75,7 @@
         tableRowCounter = tableRowCounter + 1;
 
         $("#uploadContent").append(contentData);
-      });
-      
-      $("#addImage").click(function() {
-        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Add Table Row...</h2>";
-        contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p>";
-        
-        for (var index = 1; index <= noOfColumns; index++) {
-          contentData = contentData + "<input id=\"txtCell" + tableRowCounter + index + "\" type=\"Text\" placeholder=\"Data\" class=\"uk-width-1-" + noOfColumns + "\"></input>";
-        }
-        
-        contentData = contentData + "</div>";
-        tableRowCounter = tableRowCounter + 1;
-
-        $("#uploadContent").append(contentData);
-      });      
+      });   
     });        
   </script>
   <body class="tm-background">
@@ -102,12 +92,12 @@
                 </div>
                 <hr class="uk-article-divider">
                 <div class="uk-form-row">
-                  <input id="addListItem" type="button" class="uk-button uk-width-1-3" value="Add List Item" />                  
+                  <input id="addListItem" type="button" class="uk-button uk-width-1-3" value="Add List" />                  
                 </div>
                 <hr class="uk-article-divider">
                 <div class="uk-form-row">
                   <input id="columnNo" type="number" min="0" max="10" value="3" class="uk-form-width-mini uk-form-small">
-                  <input id="addRow" type="button" class="uk-button uk-width-1-3" value="Add Row" />
+                  <input id="addRow" type="button" class="uk-button uk-width-1-3" value="Add Table" />
                 </div>
                 <hr class="uk-article-divider">
                 <div class="uk-form-row">
@@ -123,7 +113,7 @@
               <div id="uploadContent" class="uk-form uk-width-medium-1-1">
               </div>
               <hr class="uk-article-divider">
-              <input id="createContent" type="button" class="uk-button uk-width-1-3" value="Save" />
+              <input id="createContent" type="button" class="uk-button uk-width-1-6" value="Save" />
             </article>
           </div>
         </div>
