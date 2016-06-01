@@ -32,7 +32,7 @@
         var fileUploadContent = "";
         
         $.each(e.target.files, function(index, objFile) {
-          fileUploadContent = fileUploadContent + "<div id=\"files\" class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><p>" + objFile.name + "</p></div>";
+          fileUploadContent = fileUploadContent + "<div class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><p>" + objFile.name + "</p></div>";
         });
         
         $("#uploadContent").prepend(fileUploadContent);
@@ -52,7 +52,7 @@
       $("#addListItem").click(function() {        
         var contentData = "";
 
-        contentData = contentData + "<div id=\"paregraph\" class=\"uk-form-row uk-alert uk-alert-large uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>List Item</h2>";
+        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>List Item</h2>";
         contentData = contentData + "<input id=\"txList" + listitemCounter + "\" type=\"Text\" placeholder=\"Add List Item...\" class=\"uk-width-1-1\"></input></div>";
 
         listitemCounter = listitemCounter + 1;
@@ -63,7 +63,7 @@
       $("#addSubHeader").click(function() {        
         var contentData = "";
 
-        contentData = contentData + "<div id=\"subheader\" class=\"uk-form-row uk-alert uk-alert-large uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Sub Header</h2>";
+        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Sub Header</h2>";
         contentData = contentData + "<input id=\"txSubHeader" + headerCounter + "\" type=\"Text\" placeholder=\"Add Sub Header...\" class=\"uk-width-1-1\"></input></div>";
 
         headerCounter = headerCounter + 1;
@@ -75,7 +75,7 @@
         var contentData = "";
         var noOfColumns = $("#columnNo").val();
                 
-        contentData = contentData + "<!--StartTable:" + tableCounter + "--><div id=\"table\" class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Table</h2><button id=\"tbl" + tableCounter + "\" class=\"tblRow uk-button uk-button-small uk-button-primary\" type=\"button\" onclick=\"AddRows(" + noOfColumns + "," + tableCounter + ");\">Add Row</button>";
+        contentData = contentData + "<!--StartTable:" + tableCounter + "--><div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Table</h2><button id=\"tbl" + tableCounter + "\" class=\"tblRow uk-button uk-button-small uk-button-primary\" type=\"button\" onclick=\"AddRows(" + noOfColumns + "," + tableCounter + ");\">Add Row</button>";
         contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p><hr class=\"uk-article-divider\"><div class=\"uk-form-row uk-alert uk-width-1-1\">";
         
         for (var index = 0; index < noOfColumns; index++) {
@@ -94,14 +94,22 @@
       $("#createContent").click(function() {
         var Object = [];
         var Title = { "Title" : $("#txtTitle").val() };        
-        var Content = []
+        var Content = [];
         var htmlContent = $.parseHTML($("#uploadContent").html().trim());
         
-        $.each(htmlContent, function(index, objContent) {
-          var test = objContent;
-        });
+        Object.push(Title);
         
-        Object.push(Title);              
+        $.each(htmlContent, function(index, objContent) {
+          $.each(objContent.childNodes, function(index, objChildNode) {
+            if(objChildNode.id.toLowerCase().indexOf("txtParegraph") >= 0) {
+              var Paregraphs = [];
+              var Text = { "Text" : objChildNode.value };
+              
+              Paregraphs.push(Text);
+              Object.push(Paregraphs);
+            }
+          });
+        });                              
       });
     });
     
