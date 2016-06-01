@@ -44,7 +44,7 @@
                   progressbar.addClass("uk-hidden");
               }, 250);
 
-              alert("Upload Completed")
+              UIkit.modal.alert("Upload Completed")
             }
           };
 
@@ -128,11 +128,7 @@
                 </div>
                 <hr class="uk-article-divider">
                 <div class="uk-form-row">
-                  <div id="upload-drop" class="uk-placeholder">
-                    <a class="uk-form-file">Select single file<input id="upload-select" type="file"></a>.
-                  </div>
-                  <div id="progressbar" class="uk-progress uk-hidden">
-                    <div class="uk-progress-bar" style="width: 0%;">...</div>
+                  <div class="uk-form-file">Add Files +<input type="file" name="files[]" multiple="">
                   </div>
                 </div>
               </div>
