@@ -28,7 +28,7 @@
         var fileUploadContent = "";
         
         $.each(e.target.files, function(index, objFile) {
-          fileUploadContent = fileUploadContent + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><p>" + objFile.name + "</p></div>";
+          fileUploadContent = fileUploadContent + "<div class=\"uk-form-row uk-alert uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><p>" + objFile.name + "</p></div>";
         });
         
         $("#uploadContent").prepend(fileUploadContent);
