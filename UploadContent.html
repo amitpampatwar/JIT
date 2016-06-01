@@ -80,7 +80,7 @@
     
     function AddRows(columnNo, tableCounter) {
       var tableContent = eachTableContent[tableCounter];
-      var uploadContentHTML = $("#uploadContent").html();
+      var uploadContentHTML = $("#uploadContent").html().trim();
       
       tableContent = tableContent.replace("<!--EndTable:" + tableCounter + "-->", "")
       tableContent = tableContent + "<div class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert>"
