@@ -22,7 +22,7 @@
     var textareaCounter = 1;
     var listitemCounter = 1;
     var tableCounter = 0;
-    var eachTableContent = [];
+    var eachRowCounter = [];
     
     $(document).ready(function() {            
       $('input[type="file"]').change(function(e) {
@@ -78,22 +78,21 @@
       });   
     });
     
-    function AddRows(columnNo, tableCounter) {
-      var tableContent = eachTableContent[tableCounter];
+    function AddRows(columnNo, tableCounter) {      
       var uploadContentHTML = $("#uploadContent").html().trim();
       
       tableContent = tableContent + "<div class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert>"
       
       for (var index = 0; index < columnNo; index++) {
-        tableContent = tableContent + "<input id=\"txtCell" + tableCounter + index + "\" type=\"Text\" placeholder=\"Header\" class=\"uk-width-1-" + columnNo + "\"></input>";
+        tableContent = tableContent + "<input id=\"txtCell" + tableCounter + eachRowCounter[tableCounter] + index + "\" type=\"Text\" placeholder=\"Cell\" class=\"uk-width-1-" + columnNo + "\"></input>";
       }
       
       tableContent = tableContent + "</div><!--EndTable:" + tableCounter + "-->";
       
       uploadContentHTML.replace("<!--EndTable:" + tableCounter + "-->", tableContent);
+      eachRowCounter[tableCounter] = eachRowCounter[tableCounter] + 1;
       
       $("#uploadContent").html(uploadContentHTML);
-      eachTableContent[tableCounter] = tableContent;
     }
   </script>
   <body class="tm-background">
