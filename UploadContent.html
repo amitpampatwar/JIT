@@ -93,10 +93,7 @@
       
       $("#createContent").click(function() {
         var Object = [];
-        var Title = new Object();
-        
-        Title.Title = $("#txtTitle").val();
-        
+        var Title = { "Title" : $("#txtTitle").val() };        
         var Content = []
         
         Object.push(Title);              
