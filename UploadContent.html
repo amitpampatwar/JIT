@@ -21,7 +21,8 @@
   <script>
     var textareaCounter = 1;
     var listitemCounter = 1;
-    var tableRowCounter = 1;
+    var tableCounter = 0;
+    var eachTableContent = [];
     
     $(document).ready(function() {            
       $('input[type="file"]').change(function(e) {
@@ -60,22 +61,40 @@
         var contentData = "";
         var noOfColumns = $("#columnNo").val();
                 
-        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Table</h2><button id=\"tbl" + tableRowCounter + "\" class=\"tblRow uk-button uk-button-small uk-button-primary\" type=\"button\" onclick=\"AddRows(noOfColumns);\">Add Row</button>";
+        contentData = contentData + "<!--StartTable:" + tableCounter + "--><div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Table</h2><button id=\"tbl" + tableCounter + "\" class=\"tblRow uk-button uk-button-small uk-button-primary\" type=\"button\" onclick=\"AddRows(" + noOfColumns + "," + tableCounter + ");\">Add Row</button>";
         contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p><hr class=\"uk-article-divider\">";
         
-        for (var index = 1; index <= noOfColumns; index++) {
-          contentData = contentData + "<input id=\"txtCell" + tableRowCounter + index + "\" type=\"Text\" placeholder=\"Data\" class=\"uk-width-1-" + noOfColumns + "\"></input>";
+        for (var index = 0; index < noOfColumns; index++) {
+          contentData = contentData + "<input id=\"txtCell" + tableCounter + index + "\" type=\"Text\" placeholder=\"Header\" class=\"uk-width-1-" + noOfColumns + "\"></input>";
         }
         
-        contentData = contentData + "</div>";
-        tableRowCounter = tableRowCounter + 1;
+        contentData = contentData + "</div><!--EndTable:" + tableCounter + "-->";
+        
+        eachTableContent[tableCounter] = contentData;
+        
+        tableCounter = tableCounter + 1;
 
         $("#uploadContent").append(contentData);
       });   
     });
     
-    function AddRows(columnNo) {
-        
+    function AddRows(columnNo, tableCounter) {
+      var tableContent = eachTableContent[tableCounter];
+      var uploadContentHTML = $("#uploadContent").html();
+      
+      tableContent = tableContent.replace("<!--EndTable:" + tableCounter + "-->", "")
+      tableContent = tableContent + "<div class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert>"
+      
+      for (var index = 0; index < columnNo; index++) {
+        contentData = contentData + "<input id=\"txtCell" + tableCounter + index + "\" type=\"Text\" placeholder=\"Header\" class=\"uk-width-1-" + columnNo + "\"></input>";
+      }
+      
+      tableContent = tableContent + "</div><!--EndTable:" + tableCounter + "-->";
+      
+      uploadContentHTML.replace(eachTableContent[tableCounter], tableContent);
+      
+      $("#uploadContent").html(uploadContentHTML);
+      eachTableContent[tableCounter] = tableContent;
     }
   </script>
   <body class="tm-background">
