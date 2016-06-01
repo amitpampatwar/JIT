@@ -76,7 +76,7 @@
         var noOfColumns = $("#columnNo").val();
                 
         contentData = contentData + "<!--StartTable:" + tableCounter + "--><div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Table</h2><button id=\"tbl" + tableCounter + "\" class=\"tblRow uk-button uk-button-small uk-button-primary\" type=\"button\" onclick=\"AddRows(" + noOfColumns + "," + tableCounter + ");\">Add Row</button>";
-        contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p><hr class=\"uk-article-divider\"><div class=\"uk-form-row uk-alert uk-width-1-1\">";
+        contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p><hr class=\"uk-article-divider\"><div id=\"row\" class=\"uk-form-row uk-alert uk-width-1-1\">";
         
         for (var index = 0; index < noOfColumns; index++) {
           contentData = contentData + "<input id=\"txtHeader" + tableCounter + index + "\" type=\"Text\" placeholder=\"Header\" class=\"uk-width-1-6\"></input>";
@@ -101,7 +101,7 @@
 
         $.each(htmlContent, function(index, objContent) {
           $.each(objContent.childNodes, function(index, objChildNode) {
-            if(objChildNode.id.toLowerCase().indexOf("txtparegraph") >= 0) {
+            if (objChildNode.id.toLowerCase().indexOf("txtparegraph") >= 0) {
               if (isListPresent) {
                 isListPresent = false;
                 
@@ -116,7 +116,7 @@
               Content.push(Paregraphs);
             }
             
-            if(objChildNode.id.toLowerCase().indexOf("txtsubheader") >= 0) {
+            if (objChildNode.id.toLowerCase().indexOf("txtsubheader") >= 0) {
               if (isListPresent) {
                 isListPresent = false;
                 
@@ -131,13 +131,17 @@
               Content.push(Paregraphs);
             }
             
-            if(objChildNode.id.toLowerCase().indexOf("txtlist") >= 0) {
+            if (objChildNode.id.toLowerCase().indexOf("txtlist") >= 0) {
               isListPresent = true;
               
               var myListItem = document.getElementById(objChildNode.id);
               var Text = { "Value" : myListItem.value };
               
               Lists.push(Text);
+            }
+            
+            if (objChildNode.id.toLowerCase().indexOf("txtHeader") >= 0) {
+              
             }
           });
         });                              
@@ -148,7 +152,7 @@
       var uploadContentHTML = $("#uploadContent").html().trim();
       var tableContent = "";
       
-      tableContent = tableContent + "<div class=\"uk-form-row uk-alert uk-width-1-1\">"
+      tableContent = tableContent + "<div id=\"row\" class=\"uk-form-row uk-alert uk-width-1-1\">"
       
       if (isNaN(eachRowCounter[tableCounter])) {
         eachRowCounter[tableCounter] = 0;
