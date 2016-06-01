@@ -66,7 +66,7 @@
         contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p><hr class=\"uk-article-divider\">";
         
         for (var index = 0; index < noOfColumns; index++) {
-          contentData = contentData + "<input id=\"txtHeader" + tableCounter + index + "\" type=\"Text\" placeholder=\"Header\" class=\"uk-width-1-" + noOfColumns + "\"></input>";
+          contentData = contentData + "<input id=\"txtHeader" + tableCounter + index + "\" type=\"Text\" placeholder=\"Header\" class=\"uk-width-1-6\"></input>";
         }
         
         contentData = contentData + "</div><!--EndTable:" + tableCounter + "-->";
@@ -90,7 +90,7 @@
       }
       
       for (var index = 0; index < columnNo; index++) {
-        tableContent = tableContent + "<input id=\"txtCell" + tableCounter + eachRowCounter[tableCounter] + index + "\" type=\"Text\" placeholder=\"Cell\" class=\"uk-width-1-" + columnNo + "\"></input>";
+        tableContent = tableContent + "<input id=\"txtCell" + tableCounter + eachRowCounter[tableCounter] + index + "\" type=\"Text\" placeholder=\"Cell\" class=\"uk-width-1-6\"></input>";
       }
       
       tableContent = tableContent + "</div></div><!--EndTable:" + tableCounter + "-->";
