@@ -82,7 +82,6 @@
       var tableContent = eachTableContent[tableCounter];
       var uploadContentHTML = $("#uploadContent").html().trim();
       
-      tableContent = tableContent.replace("<!--EndTable:" + tableCounter + "-->", "")
       tableContent = tableContent + "<div class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert>"
       
       for (var index = 0; index < columnNo; index++) {
@@ -91,7 +90,7 @@
       
       tableContent = tableContent + "</div><!--EndTable:" + tableCounter + "-->";
       
-      uploadContentHTML.replace(eachTableContent[tableCounter], tableContent);
+      uploadContentHTML.replace("<!--EndTable:" + tableCounter + "-->", tableContent);
       
       $("#uploadContent").html(uploadContentHTML);
       eachTableContent[tableCounter] = tableContent;
