@@ -221,7 +221,11 @@
           Content.push(ListDetails);
         }
         
-        var objectData = {[ "Title" : $("#txtTitle").val(), "Content" : [Content] ]};
+        var objectData = []; 
+        
+        objectData["Title"] = $("#txtTitle").val();
+        objectData["Content"] = Content;
+        
         var jsonData = JSON.stringify(objectData);
       });
     });
