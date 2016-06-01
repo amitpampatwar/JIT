@@ -95,6 +95,11 @@
         var Object = [];
         var Title = { "Title" : $("#txtTitle").val() };        
         var Content = []
+        var htmlContent = $("#uploadContent").html().trim();
+        
+        $.each(htmlContent, function(index, objContent) {
+          
+        });
         
         Object.push(Title);              
       });
