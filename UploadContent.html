@@ -32,7 +32,7 @@
         var fileUploadContent = "";
         
         $.each(e.target.files, function(index, objFile) {
-          fileUploadContent = fileUploadContent + "<div class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><p>" + objFile.name + "</p></div>";
+          fileUploadContent = fileUploadContent + "<div id=\"files\" class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><p>" + objFile.name + "</p></div>";
         });
         
         $("#uploadContent").prepend(fileUploadContent);
@@ -52,8 +52,8 @@
       $("#addListItem").click(function() {        
         var contentData = "";
 
-        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>List Item</h2>";
-        contentData = contentData + "<input id=\"txSubHeader" + listitemCounter + "\" type=\"Text\" placeholder=\"Add List Item...\" class=\"uk-width-1-1\"></input></div>";
+        contentData = contentData + "<div id=\"paregraph\" class=\"uk-form-row uk-alert uk-alert-large uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>List Item</h2>";
+        contentData = contentData + "<input id=\"txList" + listitemCounter + "\" type=\"Text\" placeholder=\"Add List Item...\" class=\"uk-width-1-1\"></input></div>";
 
         listitemCounter = listitemCounter + 1;
 
@@ -63,8 +63,8 @@
       $("#addSubHeader").click(function() {        
         var contentData = "";
 
-        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Sub Header</h2>";
-        contentData = contentData + "<input id=\"txList" + headerCounter + "\" type=\"Text\" placeholder=\"Add Sub Header...\" class=\"uk-width-1-1\"></input></div>";
+        contentData = contentData + "<div id=\"subheader\" class=\"uk-form-row uk-alert uk-alert-large uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Sub Header</h2>";
+        contentData = contentData + "<input id=\"txSubHeader" + headerCounter + "\" type=\"Text\" placeholder=\"Add Sub Header...\" class=\"uk-width-1-1\"></input></div>";
 
         headerCounter = headerCounter + 1;
 
@@ -75,7 +75,7 @@
         var contentData = "";
         var noOfColumns = $("#columnNo").val();
                 
-        contentData = contentData + "<!--StartTable:" + tableCounter + "--><div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Table</h2><button id=\"tbl" + tableCounter + "\" class=\"tblRow uk-button uk-button-small uk-button-primary\" type=\"button\" onclick=\"AddRows(" + noOfColumns + "," + tableCounter + ");\">Add Row</button>";
+        contentData = contentData + "<!--StartTable:" + tableCounter + "--><div id=\"table\" class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Table</h2><button id=\"tbl" + tableCounter + "\" class=\"tblRow uk-button uk-button-small uk-button-primary\" type=\"button\" onclick=\"AddRows(" + noOfColumns + "," + tableCounter + ");\">Add Row</button>";
         contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p><hr class=\"uk-article-divider\"><div class=\"uk-form-row uk-alert uk-width-1-1\">";
         
         for (var index = 0; index < noOfColumns; index++) {
@@ -131,9 +131,21 @@
                   <input id="txtTitle" type="text" placeholder="Title.." class="uk-width-1-2" />
                   <input id="contentDate" placeholder="Date" type="text" class="uk-width-1-4" data-uk-datepicker="{format:'DD-MM-YYYY'}">
                 </div>
+                <div class="uk-form-row">                              
+                  <select id="category" class="uk-width-1-4">
+                    <option>--Select </option>
+                    <option value="News">News</option>
+                    <option value="FirstYear">First Year</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Electrical">Electrical</option>
+                    <option value="ComputerScience">Computer Science</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="MBA">MBA</option>
+                  </select>
+                </div>
               </div>
-              <div class="uk-form uk-width-medium-1-2">                
-                <hr class="uk-article-divider">
+              <hr class="uk-article-divider">
+              <div class="uk-form uk-width-medium-1-2">
                 <div class="uk-form-row">                              
                   <input id="addParegraph" type="button" class="uk-button uk-width-1-3" value="Add Paregraph" />                  
                 </div>
