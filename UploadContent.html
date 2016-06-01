@@ -95,10 +95,10 @@
         var Object = [];
         var Title = { "Title" : $("#txtTitle").val() };        
         var Content = []
-        var htmlContent = $("#uploadContent").html().trim();
+        var htmlContent = $.parseHTML($("#uploadContent").html().trim());
         
         $.each(htmlContent, function(index, objContent) {
-          
+          var test = objContent;
         });
         
         Object.push(Title);              
