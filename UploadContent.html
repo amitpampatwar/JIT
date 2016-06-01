@@ -19,9 +19,10 @@
     <script type="text/javascript" src="js/header.js"></script>
   </head>
   <script>
-    var textareaCounter = 1;
-    var listitemCounter = 1;
+    var textareaCounter = 0;
+    var listitemCounter = 0;
     var tableCounter = 0;
+    var headerCounter = 0;
     var eachTableContent = [];
     var eachRowCounter = [];
     
@@ -47,13 +48,24 @@
         $("#uploadContent").append(contentData);
       });
       
-      $("#addListItem").click(function() {        
+       $("#addListItem").click(function() {        
         var contentData = "";
 
         contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>List Item</h2>";
-        contentData = contentData + "<input id=\"txList" + listitemCounter + "\" type=\"Text\" placeholder=\"Add List Item...\" class=\"uk-width-1-1\"></input></div>";
+        contentData = contentData + "<input id=\"txSubHeader" + listitemCounter + "\" type=\"Text\" placeholder=\"Add List Item...\" class=\"uk-width-1-1\"></input></div>";
 
         listitemCounter = listitemCounter + 1;
+
+        $("#uploadContent").append(contentData);
+      });
+      
+      $("#addSubHeader").click(function() {        
+        var contentData = "";
+
+        contentData = contentData + "<div class=\"uk-form-row uk-alert uk-alert-large uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Sub Header</h2>";
+        contentData = contentData + "<input id=\"txList" + headerCounter + "\" type=\"Text\" placeholder=\"Add Sub Header...\" class=\"uk-width-1-1\"></input></div>";
+
+        headerCounter = headerCounter + 1;
 
         $("#uploadContent").append(contentData);
       });
@@ -113,9 +125,12 @@
                 <div class="uk-form-row">                              
                   <input id="addParegraph" type="button" class="uk-button uk-width-1-3" value="Add Paregraph" />                  
                 </div>
+                <div class="uk-form-row">                              
+                  <input id="addSubHeader" type="button" class="uk-button uk-width-1-3" value="Add Sub Header" />                  
+                </div>
                 <hr class="uk-article-divider">
                 <div class="uk-form-row">
-                  <input id="addListItem" type="button" class="uk-button uk-width-1-3" value="Add List" />                  
+                  <input id="addListItem" type="button" class="uk-button uk-width-1-3" value="Add List Item" />                  
                 </div>
                 <hr class="uk-article-divider">
                 <div class="uk-form-row">
