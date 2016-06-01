@@ -66,7 +66,7 @@
         contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p><hr class=\"uk-article-divider\">";
         
         for (var index = 0; index < noOfColumns; index++) {
-          contentData = contentData + "<input id=\"txtCell" + tableCounter + index + "\" type=\"Text\" placeholder=\"Header\" class=\"uk-width-1-" + noOfColumns + "\"></input>";
+          contentData = contentData + "<input id=\"txtHeader" + tableCounter + index + "\" type=\"Text\" placeholder=\"Header\" class=\"uk-width-1-" + noOfColumns + "\"></input>";
         }
         
         contentData = contentData + "</div><!--EndTable:" + tableCounter + "-->";
@@ -95,7 +95,7 @@
       
       tableContent = tableContent + "</div><!--EndTable:" + tableCounter + "-->";
       
-      uploadContentHTML.replace("<!--EndTable:" + tableCounter + "-->", tableContent);
+      uploadContentHTML = uploadContentHTML.replace("<!--EndTable:" + tableCounter + "-->", tableContent);
       eachRowCounter[tableCounter] = eachRowCounter[tableCounter] + 1;
       
       $("#uploadContent").html(uploadContentHTML);
