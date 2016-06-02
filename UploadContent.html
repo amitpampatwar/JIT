@@ -257,19 +257,16 @@
       tableContent = tableContent + "<!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
       
       if (eachRowCounter[tableCounter] == 0) {
-        $('body').contents().each(function(i, elem){
-          if (elem.nodeType == 8) {
-          }
-        });
+        $(tableContent).insertAfter($("<!--EndHeader:" + tableCounter + "-->"));
       }
       else {
-        
+        $(tableContent).insertAfter($("<!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->"));
       }
       
-      uploadContentHTML = uploadContentHTML.replace("</div><!--EndTable:" + tableCounter + "-->", tableContent);
+      //uploadContentHTML = uploadContentHTML.replace("</div><!--EndTable:" + tableCounter + "-->", tableContent);
       eachRowCounter[tableCounter] = eachRowCounter[tableCounter] + 1;
       
-      $("#uploadContent").html(uploadContentHTML);
+      //$("#uploadContent").html(uploadContentHTML);
     }
   </script>
   <body class="tm-background">
