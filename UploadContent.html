@@ -179,22 +179,24 @@
                 isTablePresent = true;
 
                 $.each(objChildNode.childNodes, function(index, objTableRow) {
-                  if (objTableRow.id.toLowerCase().indexOf("txtHeader") >= 0) {
-                    var myTableHeader = document.getElementById(objTableRow.id);
-                    var Text = { "Cell" : myTableHeader.value };
+                  if (objTableRow.nodeName.toLowerCase().indexOf("comment") < 0) { 
+                    if (objTableRow.id.toLowerCase().indexOf("txtHeader") >= 0) {
+                      var myTableHeader = document.getElementById(objTableRow.id);
+                      var Text = { "Cell" : myTableHeader.value };
 
-                    isHeader = true;
+                      isHeader = true;
 
-                    Header.push(Text);
-                  }
+                      Header.push(Text);
+                    }
 
-                  if (objTableRow.id.toLowerCase().indexOf("txtCell") >= 0) {
-                    var myTableCell = document.getElementById(objTableRow.id);
-                    var Text = { "Cell" : myTableCell.value };
+                    if (objTableRow.id.toLowerCase().indexOf("txtCell") >= 0) {
+                      var myTableCell = document.getElementById(objTableRow.id);
+                      var Text = { "Cell" : myTableCell.value };
 
-                    isHeader = false;
+                      isHeader = false;
 
-                    Cell.push(Text);
+                      Cell.push(Text);
+                    }
                   }
                 });
 
