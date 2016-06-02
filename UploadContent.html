@@ -180,7 +180,7 @@
 
                 $.each(objChildNode.childNodes, function(index, objTableRow) {
                   if (objTableRow.nodeName.toLowerCase().indexOf("comment") < 0) { 
-                    if (objTableRow.id.toLowerCase().indexOf("txtHeader") >= 0) {
+                    if (objTableRow.id.toLowerCase().indexOf("txtheader") >= 0) {
                       var myTableHeader = document.getElementById(objTableRow.id);
                       var Text = { "Cell" : myTableHeader.value };
 
@@ -188,8 +188,8 @@
 
                       Header.push(Text);
                     }
-
-                    if (objTableRow.id.toLowerCase().indexOf("txtCell") >= 0) {
+                                        
+                    if (objTableRow.id.toLowerCase().indexOf("txtcell") >= 0) {
                       var myTableCell = document.getElementById(objTableRow.id);
                       var Text = { "Cell" : myTableCell.value };
 
