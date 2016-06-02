@@ -114,6 +114,9 @@
                   
                   var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
+                  
+                  Rows.clear();
+                  Table.clear();
                 }
 
                 if (isListPresent) {
@@ -121,6 +124,8 @@
 
                   var ListDetails = { "Lists" : Lists };
                   Content.push(ListDetails);
+                  
+                  Lists.clear();
                 }
 
                 var myParegraph = document.getElementById(objChildNode.id);
@@ -139,6 +144,9 @@
 
                   var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
+                  
+                  Rows.clear();
+                  Table.clear();
                 }
 
                 if (isListPresent) {
@@ -146,6 +154,8 @@
 
                   var ListDetails = { "Lists" : Lists };
                   Content.push(ListDetails);
+                  
+                  Lists.clear();
                 }
 
                 var mySubHeader = document.getElementById(objChildNode.id);
@@ -164,6 +174,9 @@
 
                   var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
+                  
+                  Rows.clear();
+                  Table.clear();
                 }
 
                 isListPresent = true;
@@ -184,6 +197,8 @@
 
                   var ListDetails = { "Lists" : Lists };
                   Content.push(ListDetails);
+                  
+                  Lists.clear();
                 }
 
                 isTablePresent = true;
@@ -233,6 +248,9 @@
           
           var TableDetails = { "Table" : Table };
           Content.push(TableDetails);
+          
+          Rows.clear();
+          Table.clear();
         }
 
         if (isListPresent) {
