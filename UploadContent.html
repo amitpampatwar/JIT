@@ -103,144 +103,140 @@
         var isTablePresent = false;
 
         $.each(htmlContent, function(index, objContent) {
-          $.each(objContent.childNodes, function(index, objChildNode) {
-            if (objChildNode.nodeName.toLowerCase().indexOf("comment") < 0) {                          
-              if (objChildNode.id.toLowerCase().indexOf("txtparegraph") >= 0) {
-                if (isTablePresent) {
-                  isTablePresent = false;
-                  
-                  var TableRows = { "Rows" : [Rows] };
-                  Table.push(TableRows);
-                  
-                  var TableDetails = { "Table" : Table };
-                  Content.push(TableDetails);
-                  
-                  Rows.splice(0, Rows.length);
-                  Table.splice(0, Table.length);
-                }
+          if (objContent.nodeName.toLowerCase().indexOf("comment") < 0) {
+            if (objContent.nodeValue.toLowerCase().indexOf("endtable")) {
+              var TableRows = { "Rows" : [Rows] };
+              Table.push(TableRows);
 
-                if (isListPresent) {
-                  isListPresent = false;
-
-                  var ListDetails = { "Lists" : Lists };
-                  Content.push(ListDetails);
-                  
-                  Lists.splice(0, Lists.length);
-                }
-
-                var myParegraph = document.getElementById(objChildNode.id);
-                var Text = { "Text" : myParegraph.value };
-                var Paregraphs = { "Paregraphs" : [Text] };
-
-                Content.push(Paregraphs);
-              }
-
-              if (objChildNode.id.toLowerCase().indexOf("txtsubheader") >= 0) {
-                if (isTablePresent) {
-                  isTablePresent = false;
-                  
-                  var TableRows = { "Rows" : [Rows] };
-                  Table.push(TableRows);
-
-                  var TableDetails = { "Table" : Table };
-                  Content.push(TableDetails);
-                  
-                  Rows.splice(0, Rows.length);
-                  Table.splice(0, Table.length);
-                }
-
-                if (isListPresent) {
-                  isListPresent = false;
-
-                  var ListDetails = { "Lists" : Lists };
-                  Content.push(ListDetails);
-                  
-                  Lists.splice(0, Lists.length);
-                }
-
-                var mySubHeader = document.getElementById(objChildNode.id);
-                var Text = { "H2" : mySubHeader.value };
-                var Paregraphs = { "Paregraphs" : [Text] };
-
-                Content.push(Paregraphs);
-              }
-
-              if (objChildNode.id.toLowerCase().indexOf("txtlist") >= 0) {
-                if (isTablePresent) {
-                  isTablePresent = false;
-                  
-                  var TableRows = { "Rows" : [Rows] };
-                  Table.push(TableRows);
-
-                  var TableDetails = { "Table" : Table };
-                  Content.push(TableDetails);
-                  
-                  Rows.splice(0, Rows.length);
-                  Table.splice(0, Table.length);
-                }
-
-                isListPresent = true;
-
-                var myListItem = document.getElementById(objChildNode.id);
-                var Text = { "Value" : myListItem.value };
-
-                Lists.push(Text);
-              }
-
-              if (objChildNode.id.toLowerCase().indexOf("row") >= 0) {              
-                var Header = [];
-                var Cell = [];
-                var isHeader = false;
-
-                if (isListPresent) {
-                  isListPresent = false;
-
-                  var ListDetails = { "Lists" : Lists };
-                  Content.push(ListDetails);
-                  
-                  Lists.splice(0, Lists.length);
-                }
-
-                isTablePresent = true;
-
-                $.each(objChildNode.childNodes, function(index, objTableRow) {
-                  if (objTableRow.nodeName.toLowerCase().indexOf("comment") < 0) { 
-                    if (objTableRow.id.toLowerCase().indexOf("txtheader") >= 0) {
-                      var myTableHeader = document.getElementById(objTableRow.id);
-                      var Text = { "Cell" : myTableHeader.value };
-
-                      isHeader = true;
-
-                      Header.push(Text);
-                    }
-                                        
-                    if (objTableRow.id.toLowerCase().indexOf("txtcell") >= 0) {
-                      var myTableCell = document.getElementById(objTableRow.id);
-                      var Text = { "Cell" : myTableCell.value };
-
-                      isHeader = false;
-
-                      Cell.push(Text);
-                    }
-                  }
-                });
-
-                if (isHeader) {
-                  isHeader = false;
-
-                  var tableHeader = { "Header" : Header };
-                  Table.push(tableHeader);
-                }
-                else {
-                  var tableHeader = { "Row" : Cell };
-                  Rows.push(tableHeader);
-                }                            
-              }
+              var TableDetails = { "Table" : Table };
+              Content.push(TableDetails);
             }
-          });
+          }
+          else {          
+            $.each(objContent.childNodes, function(index, objChildNode) {
+              if (objChildNode.nodeName.toLowerCase().indexOf("comment") < 0) {                          
+                if (objChildNode.id.toLowerCase().indexOf("txtparegraph") >= 0) {
+                  /*if (isTablePresent) {
+                    isTablePresent = false;
+
+                    var TableRows = { "Rows" : [Rows] };
+                    Table.push(TableRows);
+
+                    var TableDetails = { "Table" : Table };
+                    Content.push(TableDetails);
+                  }*/
+
+                  if (isListPresent) {
+                    isListPresent = false;
+
+                    var ListDetails = { "Lists" : Lists };
+                    Content.push(ListDetails);
+                  }
+
+                  var myParegraph = document.getElementById(objChildNode.id);
+                  var Text = { "Text" : myParegraph.value };
+                  var Paregraphs = { "Paregraphs" : [Text] };
+
+                  Content.push(Paregraphs);
+                }
+
+                if (objChildNode.id.toLowerCase().indexOf("txtsubheader") >= 0) {
+                  /*if (isTablePresent) {
+                    isTablePresent = false;
+
+                    var TableRows = { "Rows" : [Rows] };
+                    Table.push(TableRows);
+
+                    var TableDetails = { "Table" : Table };
+                    Content.push(TableDetails);
+                  }*/
+
+                  if (isListPresent) {
+                    isListPresent = false;
+
+                    var ListDetails = { "Lists" : Lists };
+                    Content.push(ListDetails);
+                  }
+
+                  var mySubHeader = document.getElementById(objChildNode.id);
+                  var Text = { "H2" : mySubHeader.value };
+                  var Paregraphs = { "Paregraphs" : [Text] };
+
+                  Content.push(Paregraphs);
+                }
+
+                if (objChildNode.id.toLowerCase().indexOf("txtlist") >= 0) {
+                  /*if (isTablePresent) {
+                    isTablePresent = false;
+
+                    var TableRows = { "Rows" : [Rows] };
+                    Table.push(TableRows);
+
+                    var TableDetails = { "Table" : Table };
+                    Content.push(TableDetails);
+                  }*/
+
+                  isListPresent = true;
+
+                  var myListItem = document.getElementById(objChildNode.id);
+                  var Text = { "Value" : myListItem.value };
+
+                  Lists.push(Text);
+                }
+
+                if (objChildNode.id.toLowerCase().indexOf("row") >= 0) {              
+                  var Header = [];
+                  var Cell = [];
+                  var isHeader = false;
+
+                  if (isListPresent) {
+                    isListPresent = false;
+
+                    var ListDetails = { "Lists" : Lists };
+                    Content.push(ListDetails);
+                  }
+
+                  isTablePresent = true;
+
+                  $.each(objChildNode.childNodes, function(index, objTableRow) {
+                    if (objTableRow.nodeName.toLowerCase().indexOf("comment") < 0) { 
+                      if (objTableRow.id.toLowerCase().indexOf("txtheader") >= 0) {
+                        var myTableHeader = document.getElementById(objTableRow.id);
+                        var Text = { "Cell" : myTableHeader.value };
+
+                        isHeader = true;
+
+                        Header.push(Text);
+                      }
+
+                      if (objTableRow.id.toLowerCase().indexOf("txtcell") >= 0) {
+                        var myTableCell = document.getElementById(objTableRow.id);
+                        var Text = { "Cell" : myTableCell.value };
+
+                        isHeader = false;
+
+                        Cell.push(Text);
+                      }
+                    }
+                  });
+
+                  if (isHeader) {
+                    isHeader = false;
+
+                    var tableHeader = { "Header" : Header };
+                    Table.push(tableHeader);
+                  }
+                  else {
+                    var tableHeader = { "Row" : Cell };
+                    Rows.push(tableHeader);
+                  }                            
+                }
+              }
+            });
+          }
         });
         
-        if (isTablePresent) {
+        /*if (isTablePresent) {
           isTablePresent = false;
           
           var TableRows = { "Rows" : [Rows] };
@@ -248,18 +244,13 @@
           
           var TableDetails = { "Table" : Table };
           Content.push(TableDetails);
-          
-          Rows.splice(0, Rows.length);
-          Table.splice(0, Table.length);
-        }
+        }*/
 
         if (isListPresent) {
           isListPresent = false;
 
           var ListDetails = { "Lists" : Lists };
           Content.push(ListDetails);
-          
-          Lists.splice(0, Lists.length);
         }
         
         var objectData;
