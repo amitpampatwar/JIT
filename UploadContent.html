@@ -252,7 +252,9 @@
 
       tableContent = tableContent + "</div><!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
       
-      tableDetails.appendChild(tableContent);
+      var tempElement = document.createElement('div');
+      tempElement.outerHTML = tableContent;
+      tableDetails.appendChild(tempElement);
       
       /*if (eachRowCounter[tableCounter] == 0) {
         
