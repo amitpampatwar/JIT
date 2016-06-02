@@ -257,16 +257,15 @@
       tableContent = tableContent + "<!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
       
       if (eachRowCounter[tableCounter] == 0) {
-        $(tableContent).insertAfter($("<!--EndHeader:" + tableCounter + "-->"));
+        $(tableContent).insertAfter("<!--EndHeader:" + tableCounter + "-->");
       }
       else {
-        $(tableContent).insertAfter($("<!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->"));
+        $(tableContent).insertAfter("<!--EndRow:" + tableCounter + (eachRowCounter[tableCounter] - 1) + "-->");
       }
       
       //uploadContentHTML = uploadContentHTML.replace("</div><!--EndTable:" + tableCounter + "-->", tableContent);
       eachRowCounter[tableCounter] = eachRowCounter[tableCounter] + 1;
       
-      //$("#uploadContent").html(uploadContentHTML);
     }
   </script>
   <body class="tm-background">
