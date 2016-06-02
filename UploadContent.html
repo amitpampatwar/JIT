@@ -251,13 +251,16 @@
       }
 
       tableContent = tableContent + "</div><!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
-
-      if (eachRowCounter[tableCounter] == 0) {
+      
+      tableDetails.appendChild(tableContent);
+      
+      /*if (eachRowCounter[tableCounter] == 0) {
+        
         $("<!--EndHeader:" + tableCounter + "-->").append(tableContent);
       }
       else {
         $("<!--EndRow:" + tableCounter + (eachRowCounter[tableCounter] - 1) + "-->").append(tableContent);
-      }
+      }*/
 
       //uploadContentHTML = uploadContentHTML.replace("</div><!--EndTable:" + tableCounter + "-->", tableContent);
       eachRowCounter[tableCounter] = eachRowCounter[tableCounter] + 1;      
