@@ -103,7 +103,7 @@
         var isTablePresent = false;
 
         $.each(htmlContent, function(index, objContent) {
-          if (objContent.nodeName.toLowerCase().indexOf("comment") < 0) {
+          if (objContent.nodeName.toLowerCase().indexOf("comment") >= 0) {
             if (objContent.nodeValue.toLowerCase().indexOf("endtable")) {
               var TableRows = { "Rows" : [Rows] };
               Table.push(TableRows);
