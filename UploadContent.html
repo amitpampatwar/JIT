@@ -231,36 +231,36 @@
         objectData["Content"] = Content;
         
         var jsonData = JSON.stringify(objectData);
-      });
-      
-      function AddRows(columnNo, tableCounter) {      
-        //var uploadContentHTML = $("#uploadContent").html().trim();
-        var tableContent = "";
-
-        if (isNaN(eachRowCounter[tableCounter])) {
-          eachRowCounter[tableCounter] = 0;
-        }
-
-        tableContent = tableContent + "<!--StartRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
-        tableContent = tableContent + "<div id=\"row\" class=\"uk-form-row uk-alert uk-width-1-1\">"          
-
-        for (var index = 0; index < columnNo; index++) {
-          tableContent = tableContent + "<input id=\"txtCell" + tableCounter + eachRowCounter[tableCounter] + index + "\" type=\"Text\" placeholder=\"Cell\" class=\"uk-width-1-6\"></input>";
-        }
-
-        tableContent = tableContent + "</div><!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
-
-        if (eachRowCounter[tableCounter] == 0) {
-          $("<!--EndHeader:" + tableCounter + "-->").append(tableContent);
-        }
-        else {
-          $("<!--EndRow:" + tableCounter + (eachRowCounter[tableCounter] - 1) + "-->").append(tableContent);
-        }
-
-        //uploadContentHTML = uploadContentHTML.replace("</div><!--EndTable:" + tableCounter + "-->", tableContent);
-        eachRowCounter[tableCounter] = eachRowCounter[tableCounter] + 1;      
-      }
+      });            
     });
+    
+    function AddRows(columnNo, tableCounter) {      
+      //var uploadContentHTML = $("#uploadContent").html().trim();
+      var tableContent = "";
+
+      if (isNaN(eachRowCounter[tableCounter])) {
+        eachRowCounter[tableCounter] = 0;
+      }
+
+      tableContent = tableContent + "<!--StartRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
+      tableContent = tableContent + "<div id=\"row\" class=\"uk-form-row uk-alert uk-width-1-1\">"          
+
+      for (var index = 0; index < columnNo; index++) {
+        tableContent = tableContent + "<input id=\"txtCell" + tableCounter + eachRowCounter[tableCounter] + index + "\" type=\"Text\" placeholder=\"Cell\" class=\"uk-width-1-6\"></input>";
+      }
+
+      tableContent = tableContent + "</div><!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
+
+      if (eachRowCounter[tableCounter] == 0) {
+        $("<!--EndHeader:" + tableCounter + "-->").append(tableContent);
+      }
+      else {
+        $("<!--EndRow:" + tableCounter + (eachRowCounter[tableCounter] - 1) + "-->").append(tableContent);
+      }
+
+      //uploadContentHTML = uploadContentHTML.replace("</div><!--EndTable:" + tableCounter + "-->", tableContent);
+      eachRowCounter[tableCounter] = eachRowCounter[tableCounter] + 1;      
+    }
   </script>
   <body class="tm-background">
     <header id="header"></header>
