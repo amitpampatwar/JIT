@@ -229,11 +229,16 @@
           Content.push(ListDetails);
         }
         
+        var objectData;
+            
+        if ($("#contentDate").val() != "") {
+          objectData = [{ "Title" : $("#txtTitle").val(), "CreatedDate" : $("#contentDate").val(), "Content" : [Content]}]; 
+        }
+        else {
+          objectData = [{ "Title" : $("#txtTitle").val(), "Content" : [Content]}]; 
+        }
+        
         var objectData = [{ "Title" : $("#txtTitle").val(), "Content" : [Content]}]; 
-        
-        //objectData["Title"] = $("#txtTitle").val();
-        //objectData["Content"] = Content;
-        
         var jsonData = JSON.stringify(objectData);
       });            
     });
