@@ -115,8 +115,8 @@
                   var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
                   
-                  Rows.clear();
-                  Table.clear();
+                  Rows.splice(0, Rows.length);
+                  Table.splice(0, Table.length);
                 }
 
                 if (isListPresent) {
@@ -125,7 +125,7 @@
                   var ListDetails = { "Lists" : Lists };
                   Content.push(ListDetails);
                   
-                  Lists.clear();
+                  Lists.splice(0, Lists.length);
                 }
 
                 var myParegraph = document.getElementById(objChildNode.id);
@@ -145,8 +145,8 @@
                   var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
                   
-                  Rows.clear();
-                  Table.clear();
+                  Rows.splice(0, Rows.length);
+                  Table.splice(0, Table.length);
                 }
 
                 if (isListPresent) {
@@ -155,7 +155,7 @@
                   var ListDetails = { "Lists" : Lists };
                   Content.push(ListDetails);
                   
-                  Lists.clear();
+                  Lists.splice(0, Lists.length);
                 }
 
                 var mySubHeader = document.getElementById(objChildNode.id);
@@ -175,8 +175,8 @@
                   var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
                   
-                  Rows.clear();
-                  Table.clear();
+                  Rows.splice(0, Rows.length);
+                  Table.splice(0, Table.length);
                 }
 
                 isListPresent = true;
@@ -198,7 +198,7 @@
                   var ListDetails = { "Lists" : Lists };
                   Content.push(ListDetails);
                   
-                  Lists.clear();
+                  Lists.splice(0, Lists.length);
                 }
 
                 isTablePresent = true;
@@ -249,8 +249,8 @@
           var TableDetails = { "Table" : Table };
           Content.push(TableDetails);
           
-          Rows.clear();
-          Table.clear();
+          Rows.splice(0, Rows.length);
+          Table.splice(0, Table.length);
         }
 
         if (isListPresent) {
@@ -258,6 +258,8 @@
 
           var ListDetails = { "Lists" : Lists };
           Content.push(ListDetails);
+          
+          Lists.splice(0, Lists.length);
         }
         
         var objectData;
