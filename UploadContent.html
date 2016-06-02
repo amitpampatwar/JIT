@@ -257,10 +257,10 @@
       tableContent = tableContent + "<!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
       
       if (eachRowCounter[tableCounter] == 0) {
-        $("<!--EndHeader:" + tableCounter + "-->").after(tableContent);
+        $(tableContent).after($("<!--EndHeader:" + tableCounter + "-->"));
       }
       else {
-        $("<!--EndRow:" + tableCounter + (eachRowCounter[tableCounter] - 1) + "-->").after(tableContent);
+        $(tableContent).insertAfter($("<!--EndRow:" + tableCounter + (eachRowCounter[tableCounter] - 1) + "-->"));
       }
       
       //uploadContentHTML = uploadContentHTML.replace("</div><!--EndTable:" + tableCounter + "-->", tableContent);
