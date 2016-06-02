@@ -223,8 +223,8 @@
         
         var objectData = []; 
         
-        objectData["Title"] = $("#txtTitle").val();
-        objectData["Content"] = Content;
+        // objectData["Title"] = $("#txtTitle").val();
+        objectData = { "Content" : [Content] };
         
         var jsonData = JSON.stringify(objectData);
       });
