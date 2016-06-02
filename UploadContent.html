@@ -108,14 +108,14 @@
                 if (isTablePresent) {
                   isTablePresent = false;
 
-                  var TableDetails = { "Table" : [Table] };
+                  var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
                 }
 
                 if (isListPresent) {
                   isListPresent = false;
 
-                  var ListDetails = { "Lists" : [Lists] };
+                  var ListDetails = { "Lists" : Lists };
                   Content.push(ListDetails);
                 }
 
@@ -130,14 +130,14 @@
                 if (isTablePresent) {
                   isTablePresent = false;
 
-                  var TableDetails = { "Table" : [Table] };
+                  var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
                 }
 
                 if (isListPresent) {
                   isListPresent = false;
 
-                  var ListDetails = { "Lists" : [Lists] };
+                  var ListDetails = { "Lists" : Lists };
                   Content.push(ListDetails);
                 }
 
@@ -152,7 +152,7 @@
                 if (isTablePresent) {
                   isTablePresent = false;
 
-                  var TableDetails = { "Table" : [Table] };
+                  var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
                 }
 
@@ -172,7 +172,7 @@
                 if (isListPresent) {
                   isListPresent = false;
 
-                  var ListDetails = { "Lists" : [Lists] };
+                  var ListDetails = { "Lists" : Lists };
                   Content.push(ListDetails);
                 }
 
@@ -203,11 +203,11 @@
                 if (isHeader) {
                   isHeader = false;
 
-                  var tableHeader = { "Header" : [Header] };
+                  var tableHeader = { "Header" : Header };
                   Table.push(tableHeader);
                 }
                 else {
-                  var tableHeader = { "Row" : [Cell] };
+                  var tableHeader = { "Row" : Cell };
                   Table.push(tableHeader);
                 }                            
               }
@@ -218,14 +218,14 @@
         if (isTablePresent) {
           isTablePresent = false;
 
-          var TableDetails = { "Table" : [Table] };
+          var TableDetails = { "Table" : Table };
           Content.push(TableDetails);
         }
 
         if (isListPresent) {
           isListPresent = false;
 
-          var ListDetails = { "Lists" : [Lists] };
+          var ListDetails = { "Lists" : Lists };
           Content.push(ListDetails);
         }
         
@@ -235,10 +235,10 @@
           objectData = [{ "Title" : $("#txtTitle").val(), "CreatedDate" : $("#contentDate").val(), "Content" : [Content]}]; 
         }
         else {
-          objectData = [{ "Title" : $("#txtTitle").val(), "Content" : [Content]}]; 
+          objectData = [{ "Title" : $("#txtTitle").val(), "Content" : Content}]; 
         }
         
-        var objectData = [{ "Title" : $("#txtTitle").val(), "Content" : [Content]}]; 
+        var objectData = [{ "Title" : $("#txtTitle").val(), "Content" : Content}]; 
         var jsonData = JSON.stringify(objectData);
       });            
     });
