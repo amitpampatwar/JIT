@@ -175,6 +175,8 @@
                 Content.push(ListDetails);
               }
               
+              isTablePresent = true;
+              
               $.each(objChildNode.childNodes, function(index, objTableRow) {
                 if (objTableRow.id.toLowerCase().indexOf("txtHeader") >= 0) {
                   var myTableHeader = document.getElementById(objTableRow.id);
@@ -223,8 +225,8 @@
         
         var objectData = []; 
         
-        // objectData["Title"] = $("#txtTitle").val();
-        objectData = { "Content" : [Content] };
+        objectData["Title"] = $("#txtTitle").val();
+        objectData["Content"] = Content;
         
         var jsonData = JSON.stringify(objectData);
       });
