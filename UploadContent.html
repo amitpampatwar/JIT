@@ -97,6 +97,7 @@
         var Content = [];
         var Lists = [];
         var Table = [];
+        var Rows = [];
         var htmlContent = $.parseHTML($("#uploadContent").html().trim());
         var isListPresent = false;
         var isTablePresent = false;
@@ -107,7 +108,10 @@
               if (objChildNode.id.toLowerCase().indexOf("txtparegraph") >= 0) {
                 if (isTablePresent) {
                   isTablePresent = false;
-
+                  
+                  var TableRows = { "Rows" : [Rows] };
+                  Table.push(TableRows);
+                  
                   var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
                 }
@@ -129,6 +133,9 @@
               if (objChildNode.id.toLowerCase().indexOf("txtsubheader") >= 0) {
                 if (isTablePresent) {
                   isTablePresent = false;
+                  
+                  var TableRows = { "Rows" : [Rows] };
+                  Table.push(TableRows);
 
                   var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
@@ -151,6 +158,9 @@
               if (objChildNode.id.toLowerCase().indexOf("txtlist") >= 0) {
                 if (isTablePresent) {
                   isTablePresent = false;
+                  
+                  var TableRows = { "Rows" : [Rows] };
+                  Table.push(TableRows);
 
                   var TableDetails = { "Table" : Table };
                   Content.push(TableDetails);
@@ -208,7 +218,7 @@
                 }
                 else {
                   var tableHeader = { "Row" : Cell };
-                  Table.push(tableHeader);
+                  Rows.push(tableHeader);
                 }                            
               }
             }
@@ -217,7 +227,10 @@
         
         if (isTablePresent) {
           isTablePresent = false;
-
+          
+          var TableRows = { "Rows" : [Rows] };
+          Table.push(TableRows);
+          
           var TableDetails = { "Table" : Table };
           Content.push(TableDetails);
         }
