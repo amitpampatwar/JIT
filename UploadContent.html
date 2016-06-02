@@ -76,7 +76,7 @@
         var noOfColumns = $("#columnNo").val();
                 
         contentData = contentData + "<!--StartTable:" + tableCounter + "--><div class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Table</h2><button id=\"tbl" + tableCounter + "\" class=\"tblRow uk-button uk-button-small uk-button-primary\" type=\"button\" onclick=\"AddRows(" + noOfColumns + "," + tableCounter + ");\">Add Row</button>";
-        contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p><hr class=\"uk-article-divider\"><div id=\"row\" class=\"uk-form-row uk-alert uk-width-1-1\">";
+        contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p><hr class=\"uk-article-divider\"><!--StartHeader:" + tableCounter + "--><div id=\"row\" class=\"uk-form-row uk-alert uk-width-1-1\">";
         
         contentData = contentData + "<!--StartHeader:" + tableCounter + "-->";
         
@@ -84,9 +84,7 @@
           contentData = contentData + "<input id=\"txtHeader" + tableCounter + index + "\" type=\"Text\" placeholder=\"Header\" class=\"uk-width-1-6\"></input>";
         }
         
-        contentData = contentData + "<!--EndHeader:" + tableCounter + "-->";
-        
-        contentData = contentData + "</div></div><!--EndTable:" + tableCounter + "-->";
+        contentData = contentData + "</div><!--EndHeader:" + tableCounter + "--></div><!--EndTable:" + tableCounter + "-->";
         
         eachTableContent[tableCounter] = contentData;
         
@@ -242,19 +240,18 @@
       var uploadContentHTML = $("#uploadContent").html().trim();
       var tableContent = "";
       
+      tableContent = tableContent + "<!--StartRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
       tableContent = tableContent + "<div id=\"row\" class=\"uk-form-row uk-alert uk-width-1-1\">"
       
       if (isNaN(eachRowCounter[tableCounter])) {
         eachRowCounter[tableCounter] = 0;
       }
       
-      tableContent = tableContent + "<!--StartRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
-      
       for (var index = 0; index < columnNo; index++) {
         tableContent = tableContent + "<input id=\"txtCell" + tableCounter + eachRowCounter[tableCounter] + index + "\" type=\"Text\" placeholder=\"Cell\" class=\"uk-width-1-6\"></input>";
       }
       
-      tableContent = tableContent + "<!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
+      tableContent = tableContent + "</div><!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
       
       if (eachRowCounter[tableCounter] == 0) {
         $(tableContent).after($("<!--EndHeader:" + tableCounter + "-->"));
