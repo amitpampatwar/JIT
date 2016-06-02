@@ -234,8 +234,7 @@
       });            
     });
     
-    function AddRows(columnNo, tableCounter) {      
-      //var uploadContentHTML = $("#uploadContent").html().trim();
+    function AddRows(columnNo, tableCounter) {
       var tableDetails = document.getElementById("table" + tableCounter);
       var tableContent = "";
       
@@ -252,22 +251,10 @@
 
       tableContent = tableContent + "</div><!--EndRow:" + tableCounter + eachRowCounter[tableCounter] + "-->";
       
-      //var tempElement = document.createElement('div');
-      //tempElement.id = "row";
-      
       tableDetails.appendChild($(tableContent)[0]);
       tableDetails.appendChild($(tableContent)[1]);
       tableDetails.appendChild($(tableContent)[2]);
       
-      /*if (eachRowCounter[tableCounter] == 0) {
-        
-        $("<!--EndHeader:" + tableCounter + "-->").append(tableContent);
-      }
-      else {
-        $("<!--EndRow:" + tableCounter + (eachRowCounter[tableCounter] - 1) + "-->").append(tableContent);
-      }*/
-
-      //uploadContentHTML = uploadContentHTML.replace("</div><!--EndTable:" + tableCounter + "-->", tableContent);
       eachRowCounter[tableCounter] = eachRowCounter[tableCounter] + 1;      
     }
   </script>
