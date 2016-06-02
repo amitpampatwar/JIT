@@ -255,7 +255,9 @@
       //var tempElement = document.createElement('div');
       //tempElement.id = "row";
       
-      tableDetails.appendChild($(tableContent));
+      tableDetails.appendChild($(tableContent)[0]);
+      tableDetails.appendChild($(tableContent)[1]);
+      tableDetails.appendChild($(tableContent)[2]);
       
       /*if (eachRowCounter[tableCounter] == 0) {
         
