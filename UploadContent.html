@@ -107,9 +107,9 @@
         $.each(htmlContent, function(index, objContent) {
           if (objContent.nodeName.toLowerCase().indexOf("comment") >= 0) {
             if (objContent.nodeValue.toLowerCase().indexOf("endtable") >= 0) {
-              var tmpTable = Table;
-              var tmpHeader = Header;
-              var tmpRows = Rows;
+              var tmpTable = Table.slice();
+              var tmpHeader = Header.slice();
+              var tmpRows = Rows.slice();
               
               var TableHeader = { "Header" : [tmpHeader] };
               tmpTable.push(TableHeader);
