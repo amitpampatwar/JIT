@@ -111,10 +111,10 @@
               var tmpHeader = Header.slice();
               var tmpRows = Rows.slice();
               
-              var TableHeader = { "Header" : [tmpHeader] };
+              var TableHeader = { "Header" : tmpHeader };
               tmpTable.push(TableHeader);
               
-              var TableRows = { "Rows" : [tmpRows] };
+              var TableRows = { "Rows" : tmpRows };
               tmpTable.push(TableRows);
 
               var TableDetails = { "Table" : tmpTable };
@@ -129,20 +129,11 @@
             $.each(objContent.childNodes, function(index, objChildNode) {
               if (objChildNode.nodeName.toLowerCase().indexOf("comment") < 0) {                          
                 if (objChildNode.id.toLowerCase().indexOf("txtparegraph") >= 0) {
-                  /*if (isTablePresent) {
-                    isTablePresent = false;
-
-                    var TableRows = { "Rows" : [Rows] };
-                    Table.push(TableRows);
-
-                    var TableDetails = { "Table" : Table };
-                    Content.push(TableDetails);
-                  }*/
-
                   if (isListPresent) {
+                    var tmpLists = Lists.slice();
                     isListPresent = false;
 
-                    var ListDetails = { "Lists" : Lists };
+                    var ListDetails = { "Lists" : tmpLists };
                     Content.push(ListDetails);
                     
                     Lists.splice(0, Lists.length);
@@ -156,20 +147,11 @@
                 }
 
                 if (objChildNode.id.toLowerCase().indexOf("txtsubheader") >= 0) {
-                  /*if (isTablePresent) {
-                    isTablePresent = false;
-
-                    var TableRows = { "Rows" : [Rows] };
-                    Table.push(TableRows);
-
-                    var TableDetails = { "Table" : Table };
-                    Content.push(TableDetails);
-                  }*/
-
                   if (isListPresent) {
+                    var tmpLists = Lists.slice();
                     isListPresent = false;
 
-                    var ListDetails = { "Lists" : Lists };
+                    var ListDetails = { "Lists" : tmpLists };
                     Content.push(ListDetails);
                     
                     Lists.splice(0, Lists.length);
@@ -183,16 +165,6 @@
                 }
 
                 if (objChildNode.id.toLowerCase().indexOf("txtlist") >= 0) {
-                  /*if (isTablePresent) {
-                    isTablePresent = false;
-
-                    var TableRows = { "Rows" : [Rows] };
-                    Table.push(TableRows);
-
-                    var TableDetails = { "Table" : Table };
-                    Content.push(TableDetails);
-                  }*/
-
                   isListPresent = true;
 
                   var myListItem = document.getElementById(objChildNode.id);
@@ -206,15 +178,14 @@
                   var isHeader = false;
 
                   if (isListPresent) {
+                    var tmpLists = Lists.slice();
                     isListPresent = false;
 
-                    var ListDetails = { "Lists" : Lists };
+                    var ListDetails = { "Lists" : tmpLists };
                     Content.push(ListDetails);
                     
                     Lists.splice(0, Lists.length);
                   }
-
-                  isTablePresent = true;
 
                   $.each(objChildNode.childNodes, function(index, objTableRow) {
                     if (objTableRow.nodeName.toLowerCase().indexOf("comment") < 0) { 
@@ -238,13 +209,7 @@
                     }
                   });
 
-                  if (isHeader) {
-                    isHeader = false;
-
-                    //var tableHeader = { "Header" : Header };
-                    //Table.push(tableHeader);
-                  }
-                  else {
+                  if (!isHeader) {                    
                     var tableHeader = { "Row" : Cell };
                     Rows.push(tableHeader);
                   }                            
@@ -253,22 +218,15 @@
             });
           }
         });
-        
-        /*if (isTablePresent) {
-          isTablePresent = false;
-          
-          var TableRows = { "Rows" : [Rows] };
-          Table.push(TableRows);
-          
-          var TableDetails = { "Table" : Table };
-          Content.push(TableDetails);
-        }*/
 
         if (isListPresent) {
+          var tmpLists = Lists.slice();
           isListPresent = false;
 
-          var ListDetails = { "Lists" : Lists };
+          var ListDetails = { "Lists" : tmpLists };
           Content.push(ListDetails);
+
+          Lists.splice(0, Lists.length);
         }
         
         var objectData;
