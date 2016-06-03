@@ -106,7 +106,7 @@
 
         $.each(htmlContent, function(index, objContent) {
           if (objContent.nodeName.toLowerCase().indexOf("comment") >= 0) {
-            if (objContent.nodeValue.toLowerCase().indexOf("endtable")) {
+            if (objContent.nodeValue.toLowerCase().indexOf("endtable") >= 0) {
               var TableHeader = { "Header" : [Header] };
               Table.push(TableHeader);
               
