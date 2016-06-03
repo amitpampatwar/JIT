@@ -98,6 +98,8 @@
         var Lists = [];
         var Table = [];
         var Rows = [];
+        var Header = [];
+        
         var htmlContent = $.parseHTML($("#uploadContent").html().trim());
         var isListPresent = false;
         var isTablePresent = false;
@@ -105,11 +107,18 @@
         $.each(htmlContent, function(index, objContent) {
           if (objContent.nodeName.toLowerCase().indexOf("comment") >= 0) {
             if (objContent.nodeValue.toLowerCase().indexOf("endtable")) {
+              var TableHeader = { "Header" : [Header] };
+              Table.push(TableHeader);
+              
               var TableRows = { "Rows" : [Rows] };
               Table.push(TableRows);
 
               var TableDetails = { "Table" : Table };
               Content.push(TableDetails);
+              
+              Table.splice(0, Table.length);
+              Rows.splice(0, Rows.length);
+              Header.splice(0, Header.length);
             }
           }
           else {          
@@ -131,6 +140,8 @@
 
                     var ListDetails = { "Lists" : Lists };
                     Content.push(ListDetails);
+                    
+                    Lists.splice(0, Lists.length);
                   }
 
                   var myParegraph = document.getElementById(objChildNode.id);
@@ -156,6 +167,8 @@
 
                     var ListDetails = { "Lists" : Lists };
                     Content.push(ListDetails);
+                    
+                    Lists.splice(0, Lists.length);
                   }
 
                   var mySubHeader = document.getElementById(objChildNode.id);
@@ -184,8 +197,7 @@
                   Lists.push(Text);
                 }
 
-                if (objChildNode.id.toLowerCase().indexOf("row") >= 0) {              
-                  var Header = [];
+                if (objChildNode.id.toLowerCase().indexOf("row") >= 0) {                                
                   var Cell = [];
                   var isHeader = false;
 
@@ -194,6 +206,8 @@
 
                     var ListDetails = { "Lists" : Lists };
                     Content.push(ListDetails);
+                    
+                    Lists.splice(0, Lists.length);
                   }
 
                   isTablePresent = true;
@@ -223,8 +237,8 @@
                   if (isHeader) {
                     isHeader = false;
 
-                    var tableHeader = { "Header" : Header };
-                    Table.push(tableHeader);
+                    //var tableHeader = { "Header" : Header };
+                    //Table.push(tableHeader);
                   }
                   else {
                     var tableHeader = { "Row" : Cell };
