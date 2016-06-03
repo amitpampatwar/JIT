@@ -107,13 +107,17 @@
         $.each(htmlContent, function(index, objContent) {
           if (objContent.nodeName.toLowerCase().indexOf("comment") >= 0) {
             if (objContent.nodeValue.toLowerCase().indexOf("endtable") >= 0) {
-              var TableHeader = { "Header" : [Header] };
-              Table.push(TableHeader);
+              var tmpTable = Table;
+              var tmpHeader = Header;
+              var tmpRows = Rows;
               
-              var TableRows = { "Rows" : [Rows] };
-              Table.push(TableRows);
+              var TableHeader = { "Header" : [tmpHeader] };
+              tmpTable.push(TableHeader);
+              
+              var TableRows = { "Rows" : [tmpRows] };
+              tmpTable.push(TableRows);
 
-              var TableDetails = { "Table" : Table };
+              var TableDetails = { "Table" : tmpTable };
               Content.push(TableDetails);
               
               Table.splice(0, Table.length);
