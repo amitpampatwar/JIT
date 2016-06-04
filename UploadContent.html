@@ -103,11 +103,17 @@
         var Table = [];
         var Rows = [];
         var Header = [];
+        var objectData;
         
         var htmlContent = $.parseHTML($("#uploadContent").html().trim());
         var imageFiles = $('#imageInput').prop("files");
         var isListPresent = false;
         var isTablePresent = false;
+        var selectedFolder = $('select#category option:selected').val();
+          
+        if (selectedFolder == "") {
+          selectedFolder = "News";
+        }
         
         $.each(htmlContent, function(index, objContent) {
           if (objContent.nodeName.toLowerCase().indexOf("comment") >= 0) {
@@ -126,7 +132,26 @@
           }
           else {          
             $.each(objContent.childNodes, function(index, objChildNode) {
-              if (objChildNode.nodeName.toLowerCase().indexOf("comment") < 0) {                          
+              if (objChildNode.nodeName.toLowerCase().indexOf("comment") < 0) {
+                if (objChildNode.id.toLowerCase().indexOf("txtImage") >= 0) {
+                  if (isListPresent) {
+                    var tmpLists = Lists.slice();
+                    isListPresent = false;
+
+                    var ListDetails = { "Lists" : tmpLists };
+                    Content.push(ListDetails);
+                    
+                    Lists.splice(0, Lists.length);
+                  }
+                  
+                  var myImage = document.getElementById(objChildNode.id);
+                  var Text = { "URL" : myImage.value, "ImageTitle" : myImage.value };
+                  
+                  $.each(imageFiles, function(imageIndex, objImageFile) {
+                    
+                  });                  
+                }
+                
                 if (objChildNode.id.toLowerCase().indexOf("txtparegraph") >= 0) {
                   if (isListPresent) {
                     var tmpLists = Lists.slice();
@@ -227,9 +252,7 @@
 
           Lists.splice(0, Lists.length);
         }
-        
-        var objectData;
-            
+                            
         if ($("#contentDate").val() != "") {
           objectData = [{ "Title" : $("#txtTitle").val(), "CreatedDate" : $("#contentDate").val(), "Content" : [Content]}]; 
         }
@@ -242,12 +265,12 @@
         
         if (imageFiles.length) {
           $.each(imageFiles, function(imageIndex, objImageFile) {
-            frm.append('imageInput', objImageFile);
+            frm.append('imageInput' + imageIndex, objImageFile);
           });
-
+                              
           $.ajax({
             type: 'POST',
-            url: 'images/News',
+            url: 'images/' + selectedFolder,
             data: frm,
             contentType: false,
             processData: false,
@@ -255,11 +278,9 @@
             dataType: 'json',
             success : function(data, textStatus, jqXHR) {
               console.log(data);
-              alert(data);
             },
             error: function(jqXHR, textStatus, errorThrown) {
               console.log(textStatus);
-              alert(error);
             }
           });
         }
