@@ -111,13 +111,13 @@
               var tmpHeader = Header.slice();
               var tmpRows = Rows.slice();
               
-              var TableHeader = { "Header" : tmpHeader };
+              /*var TableHeader = { "Header" : tmpHeader };
               tmpTable.push(TableHeader);
               
               var TableRows = { "Rows" : tmpRows };
-              tmpTable.push(TableRows);
+              tmpTable.push(TableRows);*/
 
-              var TableDetails = { "Table" : tmpTable };
+              var TableDetails = { "Table" : { "Header" : tmpHeader, "Rows" : tmpRows } };
               Content.push(TableDetails);
               
               Table.splice(0, Table.length);
