@@ -27,14 +27,15 @@
     var imageCounter = 0;
     var eachTableContent = [];
     var eachRowCounter = [];
+    var frm = new FormData();
     
     $(document).ready(function() {            
       $('input[type="file"]').change(function(e) {
         var fileUploadContent = "";
-        
-        $.each(e.target.files, function(index, objFile) {
+
+        $.each(e.target.files, function(index, objFile) {          
           imageCounter = imageCounter + 1;
-          
+                    
           fileUploadContent = fileUploadContent + "<div class=\"uk-form-row uk-alert uk-width-1-2\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><p><input id=\"txtImage" + imageCounter + "\" type=\"Text\" placeholder=\"Image Title\" class=\"uk-width-1-2\"></p><p>" + objFile.name + "</p></div>";
         });
         
@@ -104,9 +105,10 @@
         var Header = [];
         
         var htmlContent = $.parseHTML($("#uploadContent").html().trim());
+        var imageFiles = $('#imageInput').prop("files");
         var isListPresent = false;
         var isTablePresent = false;
-
+        
         $.each(htmlContent, function(index, objContent) {
           if (objContent.nodeName.toLowerCase().indexOf("comment") >= 0) {
             if (objContent.nodeValue.toLowerCase().indexOf("endtable") >= 0) {
@@ -236,7 +238,22 @@
         }
         
         var objectData = [{ "Title" : $("#txtTitle").val(), "Content" : Content}]; 
-        var jsonData = JSON.stringify(objectData);
+        var jsonData = JSON.stringify(objectData);                        
+        
+        if (imageFiles.length) {
+          $.each(imageFiles, function(imageIndex, objImageFile) {
+            frm.append('imageInput', objImageFile);
+          });
+
+          $.ajax({
+            method: 'POST',
+            address: 'images',
+            data: frm,
+            contentType: false,
+            processData: false,
+            cache: false
+          });
+        }
       });            
     });
     
@@ -312,7 +329,7 @@
                 <div class="uk-form-row">
                   <div class="uk-form-file">
                     <button class="uk-button">Add Images +</button>
-                    <input type="file" name="files[]" multiple="" accept="image/x-png, image/gif, image/jpeg, image/jpg">
+                    <input id="imageInput" type="file" name="files[]" multiple="" accept="image/x-png, image/gif, image/jpeg, image/jpg">
                   </div>
                 </div>
               </div>
