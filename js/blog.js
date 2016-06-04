@@ -133,16 +133,24 @@ function addData(url, headerType, elementName)
             var tableData = "<table class=\"uk-table uk-table-striped\"><thead>{{HEAD}}</thead>{{BODY}}<tbody></tbody></table>";
             var tableHead = "";
             var tableBody = "";
-
-            $.each(objContent.Table, function(childIndex, table) { 
-              $.each(table.Header, function(childIndex, headerDetails) {
-                tableHead = tableHead + "<th>" + headerDetails.Cell + "</th>";
-              });
-
-              $.each(table.Row, function(childIndex, cell) {
-                tableBody = tableBody + "<td>" + cell.Cell + "</td>";
-              });              
+            
+            tableHead = tableHead + "<tr>";
+            
+            $.each(objContent.Table.Header, function(childIndex, headerDetails) {
+              tableHead = tableHead + "<th>" + headerDetails.Cell + "</th>";
             });
+            
+            tableHead = tableHead + "</tr>";
+
+            $.each(objContent.Table.Rows, function(childIndex, Row) {
+              tableBody = tableBody + "<tr>";
+              
+              $.each(Row, function(childIndex, cell) {
+                tableBody = tableBody + "<td>" + cell.Cell + "</td>";
+              });
+              
+              tableBody = tableBody + "</tr>";
+            });              
 
             tableData = tableData.replace('{{HEAD}}', tableHead);
             tableData = tableData.replace('{{BODY}}', tableBody);
