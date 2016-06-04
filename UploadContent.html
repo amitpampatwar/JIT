@@ -251,7 +251,15 @@
             data: frm,
             contentType: false,
             processData: false,
-            cache: false
+            cache: false,
+            success : function(data) {
+              console.log(data);
+              alert(data);
+            },
+            error: function(error) {
+              console.log(error);
+              alert(error);
+            }
           });
         }
       });            
