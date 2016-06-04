@@ -142,10 +142,10 @@ function addData(url, headerType, elementName)
             
             tableHead = tableHead + "</tr>";
 
-            $.each(objContent.Table.Rows, function(childIndex, Row) {
+            $.each(objContent.Table.Rows, function(childIndex, row) {
               tableBody = tableBody + "<tr>";
               
-              $.each(Row, function(childIndex, cell) {
+              $.each(row.Row, function(childIndex, cell) {
                 tableBody = tableBody + "<td>" + cell.Cell + "</td>";
               });
               
