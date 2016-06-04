@@ -253,12 +253,12 @@
         }
         
         if (imageFiles.length) {
-          var ImageDetais = { "ImageURL" : Images };
-          Content.unshift(ImageDetais);
+          //var ImageDetais = { "ImageURL" : Images };
+          Content.unshift({ "ImageURL" : Images });
         }
                             
         if ($("#contentDate").val() != "") {
-          objectData = [{ "Title" : $("#txtTitle").val(), "CreatedDate" : $("#contentDate").val(), "Content" : [Content]}]; 
+          objectData = [{ "Title" : $("#txtTitle").val(), "CreatedDate" : $("#contentDate").val(), "Content" : Content}]; 
         }
         else {
           objectData = [{ "Title" : $("#txtTitle").val(), "Content" : Content}]; 
