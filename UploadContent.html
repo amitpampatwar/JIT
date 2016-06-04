@@ -24,6 +24,7 @@
     var listitemCounter = 0;
     var tableCounter = 0;
     var headerCounter = 0;
+    var imageCounter = 0;
     var eachTableContent = [];
     var eachRowCounter = [];
     
@@ -32,7 +33,9 @@
         var fileUploadContent = "";
         
         $.each(e.target.files, function(index, objFile) {
-          fileUploadContent = fileUploadContent + "<div class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><p>" + objFile.name + "</p></div>";
+          imageCounter = imageCounter + 1;
+          
+          fileUploadContent = fileUploadContent + "<div class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert><input id=\"txtImage" + imageCounter + "\" type=\"Text\" placeholder=\"Image Title\" class=\"uk-width-1-5\"><a href=\"\" class=\"uk-alert-close uk-close\"></a><p>" + objFile.name + "</p></div>";
         });
         
         $("#uploadContent").prepend(fileUploadContent);
@@ -110,12 +113,6 @@
               var tmpTable = Table.slice();
               var tmpHeader = Header.slice();
               var tmpRows = Rows.slice();
-              
-              /*var TableHeader = { "Header" : tmpHeader };
-              tmpTable.push(TableHeader);
-              
-              var TableRows = { "Rows" : tmpRows };
-              tmpTable.push(TableRows);*/
 
               var TableDetails = { "Table" : { "Header" : tmpHeader, "Rows" : tmpRows } };
               Content.push(TableDetails);
