@@ -145,11 +145,9 @@
                   }
                   
                   var myImage = document.getElementById(objChildNode.id);
-                  var Text = { "URL" : myImage.value, "ImageTitle" : myImage.value };
+                  var Image = {"ImageURL": [{ "URL" : "images/" + selectedFolder + "/" + myImage.nextSibling.innerText, "ImageTitle" : myImage.value }]};
                   
-                  $.each(imageFiles, function(imageIndex, objImageFile) {
-                    
-                  });                  
+                  Content.push(Image);
                 }
                 
                 if (objChildNode.id.toLowerCase().indexOf("txtparegraph") >= 0) {
