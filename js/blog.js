@@ -132,32 +132,19 @@ function addData(url, headerType, elementName)
           }
 
           if (objContent.Table) {
-            var table = objContent.Table;
             var tableData = "<table class=\"uk-table uk-table-striped\"><thead>{{HEAD}}</thead>{{BODY}}<tbody></tbody></table>";
             var tableHead = "";
             var tableBody = "";
-            
-            if (table.Header) {
-              tableHead = tableHead + "<tr>";
-              
+
+            $.each(objContent.Table, function(childIndex, table) { 
               $.each(table.Header, function(childIndex, headerDetails) {
                 tableHead = tableHead + "<th>" + headerDetails.Cell + "</th>";
               });
-              
-              tableHead = tableHead + "</tr>";
-            }
-            
-            if (table.Rows) {                
-                $.each(table.Rows, function(childIndex, row) {
-                  tableBody = tableBody + "<tr>";
-                  
-                  $.each(row.Row, function(childIndex, cell) {
-                    tableBody = tableBody + "<td>" + cell.Cell + "</td>";
-                  });
-                  
-                  tableBody = tableBody + "</tr>";
-                });
-            }
+
+              $.each(table.Row, function(childIndex, cell) {
+                tableBody = tableBody + "<td>" + cell.Cell + "</td>";
+              });              
+            });
 
             tableData = tableData.replace('{{HEAD}}', tableHead);
             tableData = tableData.replace('{{BODY}}', tableBody);
@@ -166,25 +153,16 @@ function addData(url, headerType, elementName)
           }
     
           if (objContent.Lists) {
-            var startList = "<ul class=\"uk-list uk-list-striped\">";
-            var listData = "";
-            var hasHeader = false;
-            
             $.each(objContent.Lists, function(childIndex, lists) {
               if (lists.Header) {
-                hasHeader = true;
-                listData = listData + "<h2>" + lists.Header + "</h2><ul class=\"uk-list uk-list-striped\">";
-              }                                          
+                blogData = blogData + "<h2>" + lists.Header + "</h2><ul class=\"uk-list uk-list-striped\">";
+              }
               if (lists.Value) {
-                listData = listData + "<li>" + lists.Value + "</li>";
+                blogData = blogData + "<li>" + lists.Value + "</li>";
               }
             });
             
-            if (!hasHeader) {
-              blogData = blogData + startList;
-            }
-            
-            blogData = blogData + listData + "</ul></article>";
+            blogData = blogData + "</ul></article>";
           }
     
           if (objContent.HR) {
