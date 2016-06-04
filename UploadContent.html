@@ -35,7 +35,7 @@
         $.each(e.target.files, function(index, objFile) {
           imageCounter = imageCounter + 1;
           
-          fileUploadContent = fileUploadContent + "<div class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><p><input id=\"txtImage" + imageCounter + "\" type=\"Text\" placeholder=\"Image Title\" class=\"uk-width-1-1\"><p>" + objFile.name + "</p></p></div>";
+          fileUploadContent = fileUploadContent + "<div class=\"uk-form-row uk-alert uk-width-1-1\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><p><input id=\"txtImage" + imageCounter + "\" type=\"Text\" placeholder=\"Image Title\" class=\"uk-width-1-2\"><p>" + objFile.name + "</p></p></div>";
         });
         
         $("#uploadContent").prepend(fileUploadContent);
