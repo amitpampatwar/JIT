@@ -42,9 +42,9 @@
           success: function(data) {
             $(data).find("a:contains(.json)").each(function() {
               var jsons = $(this).attr("href");
-              var details = addData(jsons, 1, "main");
-              
-              blogDetails = blogDetails + details;
+              addData(jsons, 1, "main", function(contentData) {
+                blogDetails = blogDetails + contentData;
+              });                            
             });
           }
         });
