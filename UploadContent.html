@@ -274,7 +274,7 @@
         
         $.ajax({
           type: 'GET', 
-          url: folderName,
+          url: "json/" + selectedFolder + "/fileDetails.json",
           dataType: "text",
           async: false,
           success: function(data) {
