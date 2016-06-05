@@ -16,7 +16,7 @@
     $allImages = $allImages . $imageInput . ",";
     $allImageFilePath = $allImageFilePath . $imageFilePath . ","
     
-    $status = (boolean) move_uploaded_file($imageInput, $imageFilePath);
+    //$status = (boolean) move_uploaded_file($imageInput, $imageFilePath);
   }
   
   $response = $allImages . ";" . $allImageFilePath;
