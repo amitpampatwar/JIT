@@ -19,9 +19,7 @@
     $status = (boolean) move_uploaded_file($imageInput, $imageFilePath);
   }
   
-  $response = (object) [
-    'status' => $allImages . ";" . $allImageFilePath;
-  ];
-
+  $response = $allImages . ";" . $allImageFilePath;
+  
   echo json_encode($response);
 ?>
