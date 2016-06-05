@@ -282,7 +282,7 @@
             
             objFiles[objFiles.length] = { "Filename" : "json/" + selectedFolder + "/" + fileName };
             
-            InvokeSaveAsDialog(new Blob(JSON.stringify(objFiles), { type: 'text/plain' }) , "fileDetails.json");
+            InvokeSaveAsDialog(new Blob([JSON.stringify(objFiles)], { type: 'text/plain' }) , "fileDetails.json");
             InvokeSaveAsDialog(textFile, fileName);
           }
         });
