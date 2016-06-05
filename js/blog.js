@@ -1,6 +1,6 @@
 function addData(url, headerType, elementName)
 {
-  $.ajax({ 
+  return $.ajax({ 
     type: 'GET', 
     url: url,
     dataType: "text",
