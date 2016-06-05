@@ -264,6 +264,16 @@
         }
         
         var jsonData = JSON.stringify(objectData);                        
+        var textFile = new Blob([jsonData], { type: 'text/plain' });
+        var todayDate = new Date();
+        var fileName = String(todayDate.getFullYear()) + 
+                       ((String(todayDate.getMonth()).length === 1) ? '0' + String(todayDate.getMonth() + 1) : String(todayDate.getMonth() + 1)) + 
+                       ((String(todayDate.getDate()).length === 1) ? '0' + String(todayDate.getDate()) : String(todayDate.getDate())) + 
+                       ((String(todayDate.getHours()).length === 1) ? '0' + String(todayDate.getHours()) : String(todayDate.getHours())) +  
+                       ((String(todayDate.getMinutes()).length === 1) ? '0' + String(todayDate.getMinutes()) : String(todayDate.getMinutes())) +  
+                       ((String(todayDate.getSeconds()).length === 1) ? '0' + String(todayDate.getSeconds()) : String(todayDate.getSeconds())) + ".json";
+        
+        invokeSaveAsDialog(textFile, fileName);
         
         if (imageFiles.length) {          
           var formData = new FormData();
@@ -312,6 +322,57 @@
       
       eachRowCounter[tableCounter] = eachRowCounter[tableCounter] + 1;      
     }
+    
+    function invokeSaveAsDialog(file, fileName) {
+      if (!file) {
+        throw 'Blob object is required.';
+      }
+
+      if (!file.type) {
+        file.type = 'video/webm';
+      }
+
+      var fileExtension = file.type.split('/')[1];
+
+      if (fileName && fileName.indexOf('.') !== -1) {
+        var splitted = fileName.split('.');
+        fileName = splitted[0];
+        fileExtension = splitted[1];
+      }
+
+      var fileFullName = (fileName || (Math.round(Math.random() * 9999999999) + 888888888)) + '.' + fileExtension;
+
+      if (typeof navigator.msSaveOrOpenBlob !== 'undefined') {
+        return navigator.msSaveOrOpenBlob(file, fileFullName);
+      } else if (typeof navigator.msSaveBlob !== 'undefined') {
+        return navigator.msSaveBlob(file, fileFullName);
+      }
+
+      var hyperlink = document.createElement('a');
+      hyperlink.href = URL.createObjectURL(file);
+      hyperlink.target = '_blank';
+      hyperlink.download = fileFullName;
+
+      if (!!navigator.mozGetUserMedia) {
+        hyperlink.onclick = function() {
+            (document.body || document.documentElement).removeChild(hyperlink);
+        };
+
+        (document.body || document.documentElement).appendChild(hyperlink);
+      }
+
+      var evt = new MouseEvent('click', {
+        view: window,
+        bubbles: true,
+        cancelable: true
+      });
+
+      hyperlink.dispatchEvent(evt);
+
+      if (!navigator.mozGetUserMedia) {
+        URL.revokeObjectURL(hyperlink.href);
+      }
+  }
   </script>
   <body class="tm-background">
     <header id="header"></header>
