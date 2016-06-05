@@ -1,4 +1,4 @@
-function addData(url, headerType, elementName)
+function addData(url, headerType, elementName, callback)
 {
   return $.ajax({ 
     type: 'GET', 
@@ -182,7 +182,7 @@ function addData(url, headerType, elementName)
         blogData = blogData + "</article>";
       });
       
-      return blogData;
+      callback(blogData);
       //blogContent.outerHTML = blogData;
     }
   });
