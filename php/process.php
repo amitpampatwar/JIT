@@ -1,4 +1,5 @@
 <?php
+  ini_set('display_errors', 'On');
   //$imageCount = $_FILES['imageCount'];
   $allImages = '';
   $allImageFilePath = '';
@@ -21,5 +22,5 @@
   
   $response = $allImages . ";" . $allImageFilePath;
   
-  echo json_encode($response);
+  echo $response;
 ?>
