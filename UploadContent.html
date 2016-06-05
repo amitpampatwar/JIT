@@ -252,7 +252,6 @@
         }
         
         if (imageFiles.length) {
-          //var ImageDetais = { "ImageURL" : Images };
           Content.unshift({ "ImageURL" : Images });
         }
                             
@@ -273,7 +272,22 @@
                        ((String(todayDate.getMinutes()).length === 1) ? '0' + String(todayDate.getMinutes()) : String(todayDate.getMinutes())) +  
                        ((String(todayDate.getSeconds()).length === 1) ? '0' + String(todayDate.getSeconds()) : String(todayDate.getSeconds())) + ".json";
         
-        invokeSaveAsDialog(textFile, fileName);
+        $.ajax({
+          type: 'GET', 
+          url: folderName,
+          dataType: "text",
+          async: false,
+          success: function(data) {
+            var objFiles = jQuery.parseJSON(data);  
+            
+            objFiles[objFiles.length] = "json/" + selectedFolder + "/" + fileName;
+            
+            InvokeSaveAsDialog(objFiles, "fileDetails.json");
+            InvokeSaveAsDialog(textFile, fileName);
+          }
+        });
+        
+        InvokeSaveAsDialog(textFile, fileName);
         
         /*if (imageFiles.length) {          
           var formData = new FormData();
@@ -323,7 +337,7 @@
       eachRowCounter[tableCounter] = eachRowCounter[tableCounter] + 1;      
     }
     
-    function invokeSaveAsDialog(file, fileName) {
+    function InvokeSaveAsDialog(file, fileName) {
       if (!file) {
         throw 'Blob object is required.';
       }
@@ -355,7 +369,7 @@
 
       if (!!navigator.mozGetUserMedia) {
         hyperlink.onclick = function() {
-            (document.body || document.documentElement).removeChild(hyperlink);
+          (document.body || document.documentElement).removeChild(hyperlink);
         };
 
         (document.body || document.documentElement).appendChild(hyperlink);
@@ -372,7 +386,7 @@
       if (!navigator.mozGetUserMedia) {
         URL.revokeObjectURL(hyperlink.href);
       }
-  }
+    }
   </script>
   <body class="tm-background">
     <header id="header"></header>

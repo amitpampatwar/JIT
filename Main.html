@@ -32,17 +32,21 @@
     
     $(document).ready(function() {
       var jsonFile = "json/" + GetParameterValues("JSON") + ".json";
-      var folderName = "json/" + GetParameterValues("Folder") + "/";
+      var folderName = "json/" + GetParameterValues("Folder") + "/fileDetails.json";
       var blogContent = document.getElementById("main");
       var blogDetails = "";
       
       if (typeof GetParameterValues("Folder") != "undefined") {
         $.ajax({
+          type: 'GET', 
           url: folderName,
+          dataType: "text",
+          async: false,
           success: function(data) {
-            $(data).find("a:contains(.json)").each(function() {
-              var jsons = $(this).attr("href");
-              addData(jsons, 1, "main", function(contentData) {
+            var objFiles = jQuery.parseJSON(data);
+            
+            $.each(objFiles, function(index, objData) {
+              addData(objData.Filename, 1, "main", function(contentData) {
                 blogDetails = blogDetails + contentData;
               });                            
             });
