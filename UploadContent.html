@@ -27,7 +27,6 @@
     var imageCounter = 0;
     var eachTableContent = [];
     var eachRowCounter = [];
-    var frm = new FormData();
     
     $(document).ready(function() {            
       $('input[type="file"]').change(function(e) {
@@ -266,11 +265,7 @@
         
         var jsonData = JSON.stringify(objectData);                        
         
-        if (imageFiles.length) {
-          /*$.each(imageFiles, function(imageIndex, objImageFile) {
-            frm.append('imageInput' + imageIndex, objImageFile);
-          });*/
-          
+        if (imageFiles.length) {          
           var formData = new FormData();
           
           $.each(imageFiles, function(imageIndex, objImageFile) {
@@ -288,25 +283,8 @@
             }
           }
           
-          request.open('POST', 'php/process.php');
-          request.responseType = 'json';
-          request.send(formData);
-          
-          /*$.ajax({
-            type: 'POST',
-            url: 'images/' + selectedFolder,
-            data: frm,
-            contentType: false,
-            processData: false,
-            cache: false,
-            dataType: 'json',
-            success : function(data, textStatus, jqXHR) {
-              console.log(data);
-            },
-            error: function(jqXHR, textStatus, errorThrown) {
-              console.log(textStatus);
-            }
-          });*/
+          request.open('POST', 'php/process.php');          
+          request.send(formData);          
         }
       });            
     });
