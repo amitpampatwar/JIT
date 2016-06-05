@@ -36,7 +36,7 @@
       var blogContent = document.getElementById("main");
       var blogDetails = "";
       
-      if (GetParameterValues("Folder") != "") {
+      if (typeof GetParameterValues("Folder") != "undefined") {
         $.ajax({
           url: folderName,
           success: function(data) {
