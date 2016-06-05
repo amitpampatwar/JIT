@@ -99,27 +99,27 @@
 		 		"SubChildNav":[
 					{
 						"Name":"First Year",
-						"Link":"Academics_FirstYear.html"
+                        "Link":"Main.html?JSON=academics_firstyear&Folder=FirstYear"
 					},
 					{
 						"Name":"Electronics",
-						"Link":"Academics_Electronics.html"
+						"Link":"Main.html?JSON=academics_electronics&Folder=Electronics"
 					},
 					{
 						"Name":"Electrical",
-						"Link":"Academics_Electrical.html"
+						"Link":"Main.html?JSON=academics_electrical&Folder=Electrical"
 					},
 					{
 						"Name":"Computer Science",
-						"Link":"Academics_ComputerScience.html"
+						"Link":"Main.html?JSON=academics_computerscience&Folder=ComputerScience"
 					},
 					{
 						"Name":"Mechanical",
-						"Link":"Academics_Mechanical.html"
+						"Link":"Main.html?JSON=academics_mechanical&Folder=Mechanical"
 					},
 					{
 						"Name":"MBA",
-						"Link":"Academics_MBA.html"
+						"Link":"Main.html?JSON=academics_mba&Folder=MBA"
 					}
 				]
 			}
