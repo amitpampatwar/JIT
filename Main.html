@@ -32,8 +32,28 @@
     
     $(document).ready(function() {
       var jsonFile = "json/" + GetParameterValues("JSON") + ".json";
-          
-      addData(jsonFile, 1, "main");
+      var folderName = "json/" + GetParameterValues("Folder") + "/";
+      var blogContent = document.getElementById(elementName);
+      var blogDetails = "";
+      
+      if (GetParameterValues("Folder") != "") {
+        $.ajax({
+          url: folderName,
+          success: function(data) {
+            $(data).find("a:contains(.json)").each(function() {
+              var jsons = $(this).attr("href");
+              var details = addData(jsons, 1, "main");
+              
+              blogDetails = blogDetails + details;
+            });
+          }
+        });
+      }
+      else {
+        blogDetails = addData(jsonFile, 1, "main");
+      }
+      
+      blogContent.outerHTML = blogDetails;
     });
   </script>
   <body class="tm-background">
