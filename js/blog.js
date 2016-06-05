@@ -181,8 +181,9 @@ function addData(url, headerType, elementName)
 
         blogData = blogData + "</article>";
       });
-
-      blogContent.outerHTML = blogData;
+      
+      return blogData;
+      //blogContent.outerHTML = blogData;
     }
   });
 }
