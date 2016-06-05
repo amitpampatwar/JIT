@@ -280,7 +280,7 @@
           success: function(data) {
             var objFiles = jQuery.parseJSON(data);  
             
-            objFiles[objFiles.length] = "json/" + selectedFolder + "/" + fileName;
+            objFiles[objFiles.length] = { "Filename" : "json/" + selectedFolder + "/" + fileName };
             
             InvokeSaveAsDialog(objFiles, "fileDetails.json");
             InvokeSaveAsDialog(textFile, fileName);
