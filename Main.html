@@ -50,7 +50,9 @@
         });
       }
       else {
-        blogDetails = addData(jsonFile, 1, "main");
+        addData(jsonFile, 1, "main").success(function(contentData) {
+          blogDetails = blogDetails + contentData;
+        });
       }
       
       blogContent.outerHTML = blogDetails;
