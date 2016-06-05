@@ -1,9 +1,9 @@
 <?php
-  $imageCount = $_FILES['imageCount'];
+  //$imageCount = $_FILES['imageCount'];
   $allImages = '';
   $allImageFilePath = '';
     
-  for ($x = 0; $x <= $imageCount; $x++) {
+  /*for ($x = 0; $x <= $imageCount; $x++) {
     $imageInputString = 'imageInput' . $x;
     $imageFilePathString = 'imageFilepath' . $x;
     
@@ -17,7 +17,7 @@
     $allImageFilePath = $allImageFilePath . $imageFilePath . ","
     
     //$status = (boolean) move_uploaded_file($imageInput, $imageFilePath);
-  }
+  }*/
   
   $response = $allImages . ";" . $allImageFilePath;
   
