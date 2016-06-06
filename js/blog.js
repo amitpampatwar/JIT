@@ -164,16 +164,20 @@ function addData(url, headerType, elementName, callback)
           }
     
           if (objContent.Lists) {
+            var listData = "";
+            var listDescription = "<ul class=\"uk-list uk-list-striped\">{{LISTDATA}}</ul>";
+            
             $.each(objContent.Lists, function(childIndex, lists) {
               if (lists.Header) {
-                blogData = blogData + "<h2>" + lists.Header + "</h2><ul class=\"uk-list uk-list-striped\">";
+                blogData = blogData + "<h2>" + lists.Header + "</h2>";
               }
               if (lists.Value) {
-                blogData = blogData + "<li>" + lists.Value + "</li>";
+                listData = listData + "<li>" + lists.Value + "</li>";
               }
             });
             
-            blogData = blogData + "</ul></article>";
+            listDescription = listDescription.replace('{{LISTDATA}}', listData);
+            blogData = blogData + listDescription;
           }
     
           if (objContent.HR) {
