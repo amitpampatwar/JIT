@@ -14,8 +14,9 @@ function addData(url, headerType, elementName, callback)
         blogData = blogData + "<article class=\"uk-article\">";
         
         if (objData.CreatedDate) {
-          blogData = blogData + "<h" + headerType + " class=\"uk-article-title uk-float-left\">" + objData.Title + "</h" + headerType + ">";
-          blogData = blogData + "<p class=\"uk-text-muted uk-float-right\">" + objData.CreatedDate + "</p>";
+          blogData = blogData + "<h" + headerType + " class=\"uk-article-title\">" + objData.Title + "</h" + headerType + ">";
+          blogData = blogData + "<p class=\"uk-text-muted\">" + objData.CreatedDate + "</p>";
+          blogData = blogData + "<hr class=\"uk-article-divider\">";
         }
         else {
           blogData = blogData + "<h" + headerType + " class=\"uk-article-title\">" + objData.Title + "</h" + headerType + ">";
