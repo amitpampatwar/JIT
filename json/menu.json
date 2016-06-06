@@ -130,7 +130,7 @@
 		"ChildNav": [
 			{
 				"Name":"News",
-				"Link":"Students_News.html"
+				"Link":"Main.html?JSON=students_news&Folder=News"
 			},
 			{
 				"Name":"Events",
