@@ -253,7 +253,11 @@
 		}
 	}, {
 		"Paregraphs": [{
-			"Text": "<b>For any queries feel free to contact :</b> <br><br>Ms. Raana Sayeda<br>M: 9503452288<br><br>Ms. Priyanka Dudhe<br>M: 9923599048"
+			"H2": "For any queries feel free to contact"
+		}]
+	},{
+		"Paregraphs": [{
+			"Text": "<br><br>Ms. Raana Sayeda<br>M: 9503452288<br><br>Ms. Priyanka Dudhe<br>M: 9923599048"
 		}]
 	}]
 }]
