@@ -280,15 +280,13 @@
           success: function(data) {
             var objFiles = jQuery.parseJSON(data);  
             
-            objFiles[objFiles.length] = { "Filename" : "json/" + selectedFolder + "/" + fileName };
+            objFiles.unshift({ "Filename" : "json/" + selectedFolder + "/" + fileName });
             
             InvokeSaveAsDialog(new Blob([JSON.stringify(objFiles)], { type: 'text/plain' }) , "fileDetails.json");
             InvokeSaveAsDialog(textFile, fileName);
           }
         });
-        
-        //InvokeSaveAsDialog(textFile, fileName);
-        
+                
         /*if (imageFiles.length) {          
           var formData = new FormData();
           
