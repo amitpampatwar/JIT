@@ -277,6 +277,26 @@
                         "Text" : "We have best planned and best used infrastructure of verdant serenity and houses state of the art technology to enable first rate education in a range of courses. The rapidly mechanizing and hi-tech areas of Engineering require an equally advanced infrastructure."
                     }
                 ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Others"
+                    }
+                ]
+            },
+            {
+                "Lists" : [                    
+                    {
+                        "Value" : "<a href='pdf/ArchitectCertificate.pdf'>Architect Certificate</a>"
+                    },
+                    {
+                        "Value" : "<a href='pdf/DrainageFacility.pdf'>Architect Certificate</a>"
+                    }
+                ]
             }
 		]
 	}
