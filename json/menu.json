@@ -79,7 +79,7 @@
 		"ChildNav": [				 		
 			{
 				"Name":"Academic Calender",
-				"Link":"Academics_AcademicCalender.html",
+				"Link":"http://www.nagpuruniversity.org/links/timetables/timetables.htm",
 				"Divide":"true"
 			},
 			{
@@ -134,7 +134,7 @@
 			},			
 			{
 				"Name":"Results",
-				"Link":"Students_Results.html"
+				"Link":"http://www.nagpuruniversity.org/links/Results_section.htm"
 			},
 			{
 				"Name":"Transcript",
