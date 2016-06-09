@@ -118,16 +118,18 @@
         $.each(htmlContent, function(index, objContent) {
           if (objContent.nodeName.toLowerCase().indexOf("comment") >= 0) {
             if (objContent.nodeValue.toLowerCase().indexOf("endtable") >= 0) {
-              var tmpTable = Table.slice();
-              var tmpHeader = Header.slice();
-              var tmpRows = Rows.slice();
+              if (Rows.length) {
+                var tmpTable = Table.slice();
+                var tmpHeader = Header.slice();
+                var tmpRows = Rows.slice();
 
-              var TableDetails = { "Table" : { "Header" : tmpHeader, "Rows" : tmpRows } };
-              Content.push(TableDetails);
-              
-              Table.splice(0, Table.length);
-              Rows.splice(0, Rows.length);
-              Header.splice(0, Header.length);
+                var TableDetails = { "Table" : { "Header" : tmpHeader, "Rows" : tmpRows } };
+                Content.push(TableDetails);
+
+                Table.splice(0, Table.length);
+                Rows.splice(0, Rows.length);
+                Header.splice(0, Header.length);
+              }
             }
           }
           else {          
