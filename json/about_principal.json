@@ -9,7 +9,7 @@
                     "ProfileName": "Dr. Pramod Patil",
                     "Details": [
                         {
-                            "Paregraph" : "We at JIT believe in nurturing students latent talents, ingenuity and creativity. We bring out the best in them. We train them not only to pass the university examination with flying colors, but also to put in practice what they have learned in theory. Our teachers never stop learning. They continuously update themselves through conferences and research. As the global economy comes out of recession opportunities for engineers will increase many fold. We will make sure that our students are globally competitive."
+                            "Paregraph" : "I'm pleased to welcome you at JIT. one of the most happening Engineering colleges of Central India. The college established in 2008. has successfully completed 8 years of excellence & has moulded innumerable of its students to become a thorough professional & a better human being. Entering into this wonderful institute shall widen the horizons of your knowledge. The student-centric activities & thorough grooming by a dedicated team of efficient teachers shall help you to reach the top of the world. The teacher mentors shall help you to extend the depth & breadth of your knowledge & I'm sure that the T & P team will surely go all the way to make you a more employable product. Have a great time & a successful professional life."
                         }
                     ],
                     "Qualifications": [
@@ -22,23 +22,40 @@
                         {
                             "Title" : "Ph.D (Electronics Engineering), Amravati University (2007)"
                         }		
-                    ],
-                    "Lists" : [
+                    ]
+                }                
+            }
+        ]
+    },
+    {
+		"Title":"Vice-Principal",
+		"Content": [
+            {
+                "Profile" : {
+                    "ImageURL":"images/Bhowmick.png",
+                    "ImageTitle":"Dr. Debashish Bhowmick",
+                    "ProfileName": "Dr. Debashish Bhowmick",
+                    "Details": [
                         {
-                            "Header": "Professional Profile"
-                        },
-                        {
-                            "Value" : "Principal for last 8 years"
-                        },
-                        {
-                            "Value" : "Principal for last 8 years"
-                        },
-                        {
-                            "Value" : "Principal for last 8 years"
-                        },
-                        {
-                            "Value" : "Principal for last 8 years"
+                            "Paregraph" : "It gives me pride & satisfaction to welcome you to one of the fast progressing Engineering College in Central India. It is an institute where discipline and punctuality with conductive environment will provide quality education development in frontier areas of Engineering and Technology. With strong team work we would achieve technological excellence in a highly competitive environment around us. We have high class infrastructure with well equipped Laboratories, Class rooms, Library, Computer Centre, Cafeteria, Sports, transportation facilities. medical help on campus and a sprawling lawn. I'm sure you all will enjoy your stay on the campus &transform yourself in the best possible way for the benefit of society in general & potential recruiters in particular. May God bless you all with all the wisdom & successful profession."
                         }
+                    ],
+                    "Qualifications": [
+                        {
+                            "Title" : "M.Phil (2007) & Ph.D.(2011) in Physics, RTM Nagpur University"
+                        },
+                        {
+                            "Title" : "MBA (2006) (HRM & Personnel Mgnt, Corp.), National Institute of Management, Mumbai"
+                        },
+                        {
+                            "Title" : "PPGD (2012)Nanoscience & Nanotechnology, RTM Nagpur University"
+                        },
+                        {
+                            "Title" : "B.Ed.(2000), RTM Nagpur University"
+                        },
+                        {
+                            "Title" : "PPGD in Nanoscience & Nanotechnology, RTM Nagpur University, Nagpur"
+                        }		
                     ]
                 }                
             }
