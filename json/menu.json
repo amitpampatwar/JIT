@@ -142,7 +142,7 @@
 			},
 			{
 				"Name":"Anti-Ragging Commitee",
-				"Link":"Students_AntiRagging.html",
+				"Link":"Main.html?JSON=students_antiragging.json",
 				"Divide":"true"
 			},
 			{
