@@ -174,22 +174,18 @@
 			{
 		 		"Name": "Visionaries",
 		 		"Divide":"true",
-		 		"SubChildNav":[
-					{
-						"Name":"Patrons",
-						"Link":"About_Patrons.html"
-					},
+		 		"SubChildNav":[					
 					{
 						"Name":"Board Of Directors",
 						"Link":"Main.html?JSON=about_board"
 					},
 					{
 						"Name":"Academic Advisors",
-						"Link":"About_AcademicAdvisors.html"
+						"Link":"Main.html?JSON=about_academicadvisors"
 					},
 					{
 						"Name":"Corporate Advisors",
-						"Link":"About_CorporateAdvisors.html"
+						"Link":"Main.html?JSON=about_corporateadvisors"
 					},
 					{
 						"Name":"Testimonials",
