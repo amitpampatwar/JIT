@@ -95,7 +95,7 @@
 				"Link":"Main.html?JSON=academics_otherfacilities"
 			},
 			{
-		 		"Name": "Departments",
+		 		"Name": "Events",
 		 		"SubChildNav":[
 					{
 						"Name":"First Year",
@@ -131,11 +131,7 @@
 			{
 				"Name":"News",
 				"Link":"Main.html?JSON=students_news&Folder=News"
-			},
-			{
-				"Name":"Events",
-				"Link":"Students_Events.html"
-			},
+			},			
 			{
 				"Name":"Results",
 				"Link":"Students_Results.html"
