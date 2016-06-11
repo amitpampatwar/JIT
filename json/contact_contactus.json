@@ -3,6 +3,43 @@
 		"Title":"Contact Us",
 		"Content": [
             {
+                "Paregraphs": [
+                    {
+                        "H2": "Address"
+                    },
+                    {
+                        "Text": "Kh.No.68/1/2/3/72, <br>Off Koradi Road, <br>Lonara, Nagpur - 441111 <br>Telephone: +91-712-2023130, +91-712-2668234, +91-712-2668235, +91-8698888221 <br>Fax: +91-712-2668233 <br>Email: pampatwarpv@jit.org.in, admin@jit.org.in <br>Milestones: 12.9 Kms from Zero Mile, 9 Kms from Poonam Chambers"
+                    }
+                ]
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2": "Placement Enquiries"
+                    },
+                    {
+                        "Text": "Address"
+                    }
+                ]
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2": "Admissions Enquiries"
+                    },
+                    {
+                        "Text": "Address"
+                    }
+                ]
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2": "Submit Your Query"
+                    }
+                ]
+            },
+            {
                 "Form" : [
                     {                        
                         "Textbox" : {
