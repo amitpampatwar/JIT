@@ -248,27 +248,27 @@
 		 		"SubChildNav":[
 		 			{
 						"Name":"First Year",
-						"Link":"About_FirstYear.html"
+						"Link":"Main.html?JSON=about_firstyear"		
 					},
 					{
 						"Name":"Electronics",
-						"Link":"About_Electronics.html"
+						"Link":"Main.html?JSON=about_electronics"
 					},
 					{
 						"Name":"Electrical",
-						"Link":"About_Electrical.html"
+						"Link":"Main.html?JSON=about_electrical"
 					},
 					{
 						"Name":"Computer Science",
-						"Link":"About_ComputerScience.html"
+						"Link":"Main.html?JSON=about_computer"
 					},
 					{
 						"Name":"Mechanical",
-						"Link":"About_Mechanical.html"
+						"Link":"Main.html?JSON=about_mechanical"
 					},
 					{
 						"Name":"MBA",
-						"Link":"About_MBA.html"
+						"Link":"Main.html?JSON=about_mba"
 					}
 				]
 			}
