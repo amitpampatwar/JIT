@@ -58,6 +58,23 @@
 		]
 	},
 	{
+		"Name":"Facilities",
+		"ChildNav": [				 		
+			{
+				"Name":"Hostel",
+				"Link":"Main.html?JSON=facilities_hostel"
+			},
+			{
+				"Name":"Library",
+				"Link":"Main.html?JSON=facilities_library"
+			},					
+			{
+				"Name":"Other Facilities",
+				"Link":"Main.html?JSON=facilities_otherfacilities"
+			}
+		]
+	},
+	{
 		"Name":"Placements",
 		"ChildNav": [				 		
 			{
@@ -83,19 +100,7 @@
 				"Divide":"true"
 			},
 			{
-				"Name":"Hostel",
-				"Link":"Main.html?JSON=academics_hostel"
-			},
-			{
-				"Name":"Library",
-				"Link":"Main.html?JSON=academics_library"
-			},					
-			{
-				"Name":"Other Facilities",
-				"Link":"Main.html?JSON=academics_otherfacilities"
-			},
-			{
-		 		"Name": "Events",
+		 		"Name": "Departments",
 		 		"SubChildNav":[
 					{
 						"Name":"First Year",
@@ -144,6 +149,36 @@
 				"Name":"Anti-Ragging Commitee",
 				"Link":"Main.html?JSON=students_antiragging",
 				"Divide":"true"
+			},
+            {
+		 		"Name": "Events",
+                "Divide": "true",
+		 		"SubChildNav":[
+					{
+						"Name":"First Year",
+                        "Link":"Main.html?JSON=students_firstyear&Folder=FirstYear"
+					},
+					{
+						"Name":"Electronics",
+						"Link":"Main.html?JSON=students_electronics&Folder=Electronics"
+					},
+					{
+						"Name":"Electrical",
+						"Link":"Main.html?JSON=students_electrical&Folder=Electrical"
+					},
+					{
+						"Name":"Computer Science",
+						"Link":"Main.html?JSON=students_computerscience&Folder=ComputerScience"
+					},
+					{
+						"Name":"Mechanical",
+						"Link":"Main.html?JSON=students_mechanical&Folder=Mechanical"
+					},
+					{
+						"Name":"MBA",
+						"Link":"Main.html?JSON=students_mba&Folder=MBA"
+					}
+				]
 			},
 			{
 				"Name":"Sports Activities",
