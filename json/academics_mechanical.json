@@ -1,1 +1,53 @@
-[{"Title":"","Content":[{"Paregraphs":[{"Text":"Mechanical Engineering envisages the development, design, manufacturing and maintenance of machinery. The present age demands Mechanical Engineering course producing specialists who have the capacity of adaptability and creativity in the new technical areas. To meet the above requirements Mechanical Engineering department offers the Undergraduate Programme (UG) in Mechanical Engineering."}]},{"Paregraphs":[{"Text":"Jhulelal Institute Of Technology (JIT) started undergraduate Mechanical Engineering course in 2012 in Nagpur. The department has excellent faculty and is known for its commitment high academic standard disciplined approach and well maintained facilities. Students get solid exposure and are motivated to orient themselves in one of the three main thrusts namely Design, Heat power and Manufacturing. The department has maintained a good rapport with the industry as well as specialized R&D organizations."}]},{"Paregraphs":[{"H2":"Program Educational Objectives"}]},{"Lists":[{"Value":"Graduates of the program will become competent engineers suitable for the mechanical engineering based industry and higher education."},{"Value":"Graduates of the program will acquire the necessary foundation in fundamental mechanical engineering subjects for development of mathematical and analytical abilities."},{"Value":"Graduates of the program will acquire the knowledge and skills in mechanical engineering to provide technological solutions."},{"Value":"Graduates of the program will learn managerial, financial and ethical practices such as, project and financial management skills, multidisciplinary approach and soft skills."},{"Value":"Graduates of the program will respond to growing demands of society through lifelong learning."}]},{"Paregraphs":[{"Text":"Engineers are required in almost every sector of the industry. Since the tremendous impact of globalization has been in the field of manufacturing, a mechanical engineering student has certainly an edge over others. The areas of employment are marine, aerospace, aviation, automobile industries, railways, pharmaceuticals, machine tools industries, farm equipments, fabricated metal products and so on."}]},{"Paregraphs":[{"H2":"Highlights of Department"}]},{"Lists":[{"Value":"Highly qualified staff"},{"Value":"Faculties as well as students get involved with real world research projects from industry and other institutions"},{"Value":"Every Laboratory houses equipment and software that measures up to industry and modern day engineering requirements and standards."}]}]}]
+[{
+	"Title": "Mechanical Department",
+	"Content": [
+    {
+        "ImageURL": [
+            {
+                "URL" : "images/engineering_mechanical.jpg",
+                "ImageTitle":"Mechanical Department"
+            }
+        ]
+    },
+    {
+		"Paregraphs": [{
+			"Text": "Mechanical Engineering envisages the development, design, manufacturing and maintenance of machinery. The present age demands Mechanical Engineering course producing specialists who have the capacity of adaptability and creativity in the new technical areas. To meet the above requirements Mechanical Engineering department offers the Undergraduate Programme (UG) in Mechanical Engineering."
+		}]
+	}, {
+		"Paregraphs": [{
+			"Text": "Jhulelal Institute Of Technology (JIT) started undergraduate Mechanical Engineering course in 2012 in Nagpur. The department has excellent faculty and is known for its commitment high academic standard disciplined approach and well maintained facilities. Students get solid exposure and are motivated to orient themselves in one of the three main thrusts namely Design, Heat power and Manufacturing. The department has maintained a good rapport with the industry as well as specialized R&D organizations."
+		}]
+	}, {
+		"Paregraphs": [{
+			"H2": "Program Educational Objectives"
+		}]
+	}, {
+		"Lists": [{
+			"Value": "Graduates of the program will become competent engineers suitable for the mechanical engineering based industry and higher education."
+		}, {
+			"Value": "Graduates of the program will acquire the necessary foundation in fundamental mechanical engineering subjects for development of mathematical and analytical abilities."
+		}, {
+			"Value": "Graduates of the program will acquire the knowledge and skills in mechanical engineering to provide technological solutions."
+		}, {
+			"Value": "Graduates of the program will learn managerial, financial and ethical practices such as, project and financial management skills, multidisciplinary approach and soft skills."
+		}, {
+			"Value": "Graduates of the program will respond to growing demands of society through lifelong learning."
+		}]
+	}, {
+		"Paregraphs": [{
+			"Text": "Engineers are required in almost every sector of the industry. Since the tremendous impact of globalization has been in the field of manufacturing, a mechanical engineering student has certainly an edge over others. The areas of employment are marine, aerospace, aviation, automobile industries, railways, pharmaceuticals, machine tools industries, farm equipments, fabricated metal products and so on."
+		}]
+	}, {
+		"Paregraphs": [{
+			"H2": "Highlights of Department"
+		}]
+	}, {
+		"Lists": [{
+			"Value": "Highly qualified staff"
+		}, {
+			"Value": "Faculties as well as students get involved with real world research projects from industry and other institutions"
+		}, {
+			"Value": "Every Laboratory houses equipment and software that measures up to industry and modern day engineering requirements and standards."
+		}]
+	}]
+}]
