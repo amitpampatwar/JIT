@@ -276,6 +276,6 @@
 	},
 	{
 		"Name":"Contact Us",
-		"Link":"Contact_ContactUs.html"
+		"Link":"Main.html?JSON=contact_contactus"
 	}
 ]
