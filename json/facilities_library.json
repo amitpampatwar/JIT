@@ -1,0 +1,80 @@
+[
+	{
+		"Title":"Library",
+		"Content": [
+			{
+                "ImageURL": [
+                    {
+                        "URL" : "images/Library.png",
+                        "ImageTitle":"JIT Library"
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+			{
+                "Paregraphs": [
+                    {
+                        "Text" : "It is regarded as the best technical Library. It serves as a knowledge hub containing resources not only in the form of print but also in e-resources .The library aims at developing a comprehensive collection of documents that is useful for the faculty and students in their education and research activities in the institute. The Library is open to all students and staff members from 10.00 am to 5.00 pm on all working days. There is a rich collection of volumes of textbooks, reference books, National and International Journals in all branches of Engineering, Science, Technology, Management and General Studies. The Library makes efforts to increase this collection. These Books are classified according to UDC classification scheme and open access system is followed in the Library."
+                    },
+                    {
+                        "Text" : "JIT has always recognized the significance of enrichment of academic that takes place with the help of Library. Library is a member of National Library Network – DELNET. Information from National Program on Technology Enhanced Learning (NPTEL) and other Electronic Resources are also available for the user community. On-line e-journals can be accessed such as IEEE. Library members are allowed to access all materials (such as Books, Journals, Magazines, Digital materials and E-Journals etc.) available in the library. Library functions such as Acquisition, Circulation, and Cataloging have been automated using integrated software ERP."
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Reference Section"
+                    },
+                    {
+                        "Text" : "The reference section of the Library has rich collection of International editions of reference books, hand books, conference proceedings, encyclopedias and various reference documents."
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Back Volumes"
+                    },
+                    {
+                        "Text" : "Back volumes of journals have been neatly bounded and categorized under their respective subjects for reference. "
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Periodical Section"
+                    },
+                    {
+                        "Text" : "The Library has a separate periodical section and subscribes to National and International Journals. The Library receives Journals, Newsletters to provide the staff and students latest information in technical education, research and developmental activities. "
+                    }
+                ]
+            },
+            {
+                "HR" : "true"
+            },
+            {
+                "Paregraphs": [
+                    {
+                        "H2" : "Digital Library"
+                    },
+                    {
+                        "Text" : "The Digital library has 10 dedicated computers with multimedia and internet facility. The users use this service for searching information and downloading articles from various e-resources."
+                    }
+                ]
+            }
+		]
+	}
+]
