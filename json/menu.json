@@ -151,7 +151,7 @@
 				"Divide":"true"
 			},
             {
-		 		"Name": "Events",
+		 		"Name": "Students Events",
                 "Divide": "true",
 		 		"SubChildNav":[
 					{
