@@ -75,23 +75,6 @@
 		]
 	},
 	{
-		"Name":"Placements",
-		"ChildNav": [				 		
-			{
-				"Name":"Training &amp; Placement",
-				"Link":"Main.html?JSON=placements_trainingplacements"
-			},
-			{
-				"Name":"Placement History",
-				"Link":"Main.html?JSON=placements_placementhistory"
-			},
-			{
-				"Name":"Industrial Tieups",
-				"Link":"Main.html?JSON=placements_industrialtieups"
-			}
-		]
-	},
-	{
 		"Name":"Academics",
 		"ChildNav": [				 		
 			{
@@ -99,6 +82,24 @@
 				"Link":"http://www.nagpuruniversity.org/links/timetables/timetables.htm",
 				"Divide":"true"
 			},
+            {
+                "Name":"Placements",
+                "Divide":"true",
+                "SubChildNav": [				 		
+                    {
+                        "Name":"Training &amp; Placement",
+                        "Link":"Main.html?JSON=placements_trainingplacements"
+                    },
+                    {
+                        "Name":"Placement History",
+                        "Link":"Main.html?JSON=placements_placementhistory"
+                    },
+                    {
+                        "Name":"Industrial Tieups",
+                        "Link":"Main.html?JSON=placements_industrialtieups"
+                    }
+                ]
+            },
 			{
 		 		"Name": "Departments",
 		 		"SubChildNav":[
