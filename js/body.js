@@ -1,9 +1,9 @@
-var folderNames = "json/folderNames.json";
-var objEvents = [];
-var objNews = [];
-var objAll = [];
-
 $(document).ready(function(){
+  var folderNames = "json/folderNames.json";
+  var objEvents = [];
+  var objNews = [];
+  var objAll = [];
+  
   $.ajax({
     type: 'GET', 
     url: folderNames,
