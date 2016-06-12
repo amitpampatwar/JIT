@@ -1,8 +1,5 @@
 $(document).ready(function(){
   var folderNames = "json/folderNames.json";
-  var objEvents = new Array();
-  var objNews = new Array();
-  var objAll = new Array();
   
   $.ajax({
     type: 'GET', 
@@ -11,7 +8,10 @@ $(document).ready(function(){
     async: false,
     success: function(data) {
       var objFiles = jQuery.parseJSON(data);
-
+      var objEvents = new Array();
+      var objNews = new Array();
+      var objAll = new Array();
+    
       $.each(objFiles, function(index, objData) {
         GetAllEvents("json/" + objData.Name + "/fileDetails.json", function(eventData) {
           $.each(eventData, function(index, eventFiles) {
