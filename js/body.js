@@ -12,7 +12,9 @@ $(document).ready(function(){
 
       $.each(objFiles, function(index, objData) {
         GetAllEvents("json/" + objData.Name + "/fileDetails.json", function(eventData) {
-          objEvents.push(eventData);
+          $.each(eventData, function(index, eventFiles) {
+            objEvents.push(eventFiles.Filename);
+          });          
         });                          
       });
     }
