@@ -21,9 +21,34 @@ $(document).ready(function(){
       });
 
       objEvents = objEvents.sort(sortByPropertyDecending('Name'));
+
+      if (objEvents.length > 10) {
+        objEvents = objEvents.slice(0,10);
+      }
+
+      AddEventData(objEvents)
     }
   });    
 });
+
+function AddEventData(objEvents) {
+  var latestEventData = "";
+  var latestContent = document.getElementById("latestEvents");
+  
+  $.each(objEvents, function(index, eventFiles) {
+    GetAllEvents(eventFiles.Path, function(eventData) {
+      if (eventData.Content.ImageURL) {                
+        latestEventData = latestEventData + "<li>";
+        latestEventData = latestEventData + "<img src=\"" + eventData.Content.ImageURL.URL + "\" width=\"800\" height=\"400\" alt=\"" + eventData.Content.ImageURL.ImageTitle + "\">";
+        latestEventData = latestEventData + "<div class=\"uk-overlay-panel uk-overlay-left uk-overlay-slide-left uk-width-1-3\"><p style=\"color:#fff;\" class=\"uk-panel-box uk-overlay-background\">";
+        latestEventData = latestEventData + eventData.Title;
+        latestEventData = latestEventData + "</p></div></li>";
+      }
+    });
+  });
+  
+  latestContent.innerHTML = latestEventData;
+}
 
 var sortByPropertyDecending = function (property) {
   return function (x, y) {
