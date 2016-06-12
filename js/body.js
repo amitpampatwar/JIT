@@ -41,7 +41,7 @@ function AddEventData(objEvents) {
         if (allFiles.ImageURL) {
           latestEventData = latestEventData + "<li>";
           latestEventData = latestEventData + "<img src=\"" + allFiles.ImageURL[0].URL + "\" width=\"800\" height=\"400\" alt=\"" + allFiles.ImageURL[0].ImageTitle + "\">";
-          latestEventData = latestEventData + "<div class=\"uk-overlay-panel uk-overlay-left uk-overlay-slide-left uk-width-1-3\"><p style=\"color:#fff;\" class=\"uk-panel-box uk-overlay-background\">";
+          latestEventData = latestEventData + "<div class=\"uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom\"><p>";
           latestEventData = latestEventData + eventData[0].Title;
           latestEventData = latestEventData + "</p></div></li>";                 
         }
