@@ -20,14 +20,14 @@ $(document).ready(function(){
         });                          
       });
 
-      objEvents = objEvents.sort(sortByProperty('Name'));
+      objEvents = objEvents.sort(sortByPropertyDecending('Name'));
     }
   });    
 });
 
-var sortByProperty = function (property) {
+var sortByPropertyDecending = function (property) {
   return function (x, y) {
-    return ((x[property] === y[property]) ? 0 : ((x[property] > y[property]) ? 1 : -1));
+    return ((x[property] === y[property]) ? 0 : ((x[property] < y[property]) ? 1 : -1));
   };
 }
 
