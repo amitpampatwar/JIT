@@ -42,7 +42,7 @@ $(document).ready(function(){
         objEvents = objEvents.slice(0,10);
       }
 
-      var objAll = objEvents.concat(objNews).unique();
+      var objAll = objEvents.concat(objNews);
 
       AddEventData(objAll);      
     }
