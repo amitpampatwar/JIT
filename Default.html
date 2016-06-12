@@ -32,7 +32,18 @@
             </div>
           </div>
           <div class="uk-width-1-3 uk-animation-fade">
-            Amit Pampatwar
+            <ul id="latestEvents" class="uk-slideshow" data-uk-slideshow="{autoplay:true}">
+              <li>
+                <div>
+                  I love my jQuery, but it's not ideal for sorting here, unless you can only use the existing html (you don't have the array handy to do your sorting on). Just write a function that takes the property name as a string and the order (ascending or descending) as a boolean, write a simple comparison function, and use the native js sort() function.
+                </div>
+              </li>
+              <li>
+                <div>
+                  Successfully pass equal values (keep same order). Flexible : handle ascendant (123) or descendant (321), works for numbers, letters, and unicodes. Works on all tested devices (Chrome, Android default browser, FF).
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
