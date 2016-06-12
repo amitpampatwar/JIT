@@ -13,7 +13,7 @@ $(document).ready(function(){
       $.each(objFiles, function(index, objData) {
         GetAllEvents("json/" + objData.Name + "/fileDetails.json", function(eventData) {
           $.each(eventData, function(index, eventFiles) {
-            var fileWithoutPath = str.split("/");
+            var fileWithoutPath = eventFiles.Filename.split("/");
             
             objEvents.push({ "Name" : fileWithoutPath[2], "Path" : eventFiles.Filename});
           });          
