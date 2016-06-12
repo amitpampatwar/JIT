@@ -66,13 +66,16 @@ function AddEventData(objEvents) {
   
   $.each(objEvents, function(index, eventFiles) {
     GetAllEvents(eventFiles.Path, function(eventData) {
+      var isNewsSet = false;
+
       $.each(eventData[0].Content, function(index, allFiles) {        
         if (eventFiles.Path.includes("News")) {
           if (allFiles.Paregraphs) {
-            if (allFiles.Paregraphs[0].Text) {
+            if (allFiles.Paregraphs[0].Text && !isNewsSet) {
+              isNewsSet = true;
+              
               latestNewsData = latestNewsData + "<li>";
               latestNewsData = latestNewsData + "<div style=\"max-height:235px;\" class=\"uk-panel\">";
-              latestNewsData = latestNewsData + "<div class=\"uk-panel-badge uk-badge uk-badge-danger\">Hot</div>";
               latestNewsData = latestNewsData + "<h3 class=\"uk-panel-title\">" + eventData[0].Title + "</h3>";
               latestNewsData = latestNewsData + allFiles.Paregraphs[0].Text + "</div></li>";
             }
