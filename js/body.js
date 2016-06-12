@@ -1,5 +1,7 @@
 var folderNames = "json/folderNames.json";
 var objEvents = [];
+var objNews = [];
+var objAll = [];
 
 $(document).ready(function(){
   $.ajax({
@@ -15,9 +17,23 @@ $(document).ready(function(){
           $.each(eventData, function(index, eventFiles) {
             var fileWithoutPath = eventFiles.Filename.split("/");
             
-            objEvents.push({ "Name" : fileWithoutPath[2], "Path" : eventFiles.Filename});
+            objAll.push({ "Name" : fileWithoutPath[2], "Path" : eventFiles.Filename});
           });          
         });                          
+      });
+      
+      objNews = objAll.filter(function(i,n) {
+        return n.Path.includes("News");
+      });
+
+      objNews = objNews.sort(sortByPropertyDecending('Name'));
+      
+      if (objNews.length > 5) {
+        objNews = objNews.slice(0,5);
+      }
+      
+      objEvents = objAll.filter(function(i,n) {
+        return !(n.Path.includes("News"));
       });
 
       objEvents = objEvents.sort(sortByPropertyDecending('Name'));
@@ -26,36 +42,12 @@ $(document).ready(function(){
         objEvents = objEvents.slice(0,10);
       }
 
-      AddEventData(objEvents);      
+      var objAll = objEvents.concat(objNews).unique();
+
+      AddEventData(objAll);      
     }
   });    
 });
-
-function AddLatestNews() {
-  $.ajax({
-    type: 'GET', 
-    url: "json/News/fileDetails.json",
-    dataType: "text",
-    async: false,
-    success: function(data) {
-      var objNews = jQuery.parseJSON(data);
-      
-      if (objNews.length > 10) {
-        objNews = objNews.slice(0,10);
-      }
-         
-      $.each(objNews, function(index, objData) {
-        GetAllEvents(objData.Filename, function(newsData) {
-          $.each(eventData, function(index, eventFiles) {
-            var fileWithoutPath = eventFiles.Filename.split("/");
-            
-            objEvents.push({ "Name" : fileWithoutPath[2], "Path" : eventFiles.Filename});
-          });          
-        });                          
-      });
-    }
-  });
-}
 
 function AddEventData(objEvents) {
   var latestEventData = "";
