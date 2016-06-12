@@ -1,5 +1,5 @@
 var folderNames = "json/folderNames.json";
-var objEvents;
+var objEvents = [];
 
 $(document).ready(function(){
   $.ajax({
