@@ -13,13 +13,23 @@ $(document).ready(function(){
       $.each(objFiles, function(index, objData) {
         GetAllEvents("json/" + objData.Name + "/fileDetails.json", function(eventData) {
           $.each(eventData, function(index, eventFiles) {
-            objEvents.push(eventFiles.Filename);
+            var fileWithoutPath = str.split("/");
+            
+            objEvents.push({ "Name" : fileWithoutPath[2], "Path" : eventFiles.Filename});
           });          
         });                          
       });
+
+      objEvents = objEvents.sort(sortByProperty('Name'));
     }
   });    
 });
+
+var sortByProperty = function (property) {
+  return function (x, y) {
+    return ((x[property] === y[property]) ? 0 : ((x[property] > y[property]) ? 1 : -1));
+  };
+}
 
 function GetAllEvents(fileName, callback) {
   $.ajax({
