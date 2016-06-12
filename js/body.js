@@ -1,8 +1,8 @@
 $(document).ready(function(){
   var folderNames = "json/folderNames.json";
-  var objEvents = [];
-  var objNews = [];
-  var objAll = [];
+  var objEvents = new Array();
+  var objNews = new Array();
+  var objAll = new Array();
   
   $.ajax({
     type: 'GET', 
