@@ -23,7 +23,7 @@ $(document).ready(function(){
       });
       
       objNews = objAll.filter(function(i,n) {
-        return n.Path.includes("News");
+        return i.Path.includes("News");
       });
 
       objNews = objNews.sort(sortByPropertyDecending('Name'));
@@ -33,7 +33,7 @@ $(document).ready(function(){
       }
       
       objEvents = objAll.filter(function(i,n) {
-        return !(n.Path.includes("News"));
+        return !(i.Path.includes("News"));
       });
 
       objEvents = objEvents.sort(sortByPropertyDecending('Name'));
