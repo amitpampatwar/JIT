@@ -17,7 +17,7 @@ $(document).ready(function(){
           $.each(eventData, function(index, eventFiles) {
             var fileWithoutPath = eventFiles.Filename.split("/");
             
-            objAll.push({ "Name" : fileWithoutPath[2], "Path" : eventFiles.Filename});
+            objAll.Push({ "Name" : fileWithoutPath[2], "Path" : eventFiles.Filename});
           });          
         });                          
       });
