@@ -199,11 +199,6 @@
 				"Link":"Main.html?JSON=about_visionmission"				
 			},
 			{
-				"Name":"Organization Structure",
-				"Link":"About_OrganizationStructure.html",
-				"Divide":"true"
-			},
-			{
 		 		"Name": "Visionaries",
 		 		"Divide":"true",
 		 		"SubChildNav":[					
@@ -236,7 +231,11 @@
 					{
 						"Name":"Affiliation Letter",
 						"Link":"pdf/Univ Affiliation upto 2017.pdf"
-					}
+					},
+                    {
+                        "Name":"Shikshan Shulka Samiti",
+                        "Link":"pdf/shikshan_shulka_samiti.pdf"
+                    }
 				]
 			},						
 			{
