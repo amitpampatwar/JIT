@@ -103,8 +103,10 @@ function AddTestimonials() {
   GetAllEvents("json/about_testimonials.json", function(testData) {
     $.each(testData[0].Content, function(index, allFiles) {        
       if (allFiles.Profile) {
-        testimonialData = testimonialData + "<li>";
-        testimonialData = testimonialData + allFiles.Profile.Details[0].Paregraph;
+        testimonialData = testimonialData + "<li>;
+        testimonialData = testimonialData + "<p>\"" + allFiles.Profile.Details[0].Paregraph + "\"</p>";
+        testimonialData = testimonialData + "<br><br><strong>" + allFiles.Profile.ProfileName + "</strong><br>";
+        testimonialData = testimonialData + allFiles.Profile.Qualifications[0].Title
         testimonialData = testimonialData + "</li>";
       }
     });
