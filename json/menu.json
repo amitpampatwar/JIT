@@ -224,14 +224,14 @@
 		 		"Name": "Mandatory Disclosure",
 		 		"Divide":"true",
 		 		"SubChildNav":[
-					{
-						"Name":"Mandatory Disclosure",
-						"Link":"pdf/Mandatory Disclosure 2014-15.pdf"
-					},
-					{
+                    {
 						"Name":"Affiliation Letter",
 						"Link":"pdf/Univ Affiliation upto 2017.pdf"
 					},
+					{
+						"Name":"Mandatory Disclosure",
+						"Link":"pdf/Mandatory Disclosure 2014-15.pdf"
+					},					
                     {
                         "Name":"Shikshan Shulka Samiti",
                         "Link":"pdf/shikshan_shulka_samiti.pdf"
