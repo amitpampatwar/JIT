@@ -179,11 +179,11 @@
 			},
 			{
 				"Name":"Sports Activities",
-				"Link":"Students_SportsActivities.html"
+				"Link":"Main.html?JSON=students_sports"
 			},
 			{
 				"Name":"Students Achievements",
-				"Link":"Students_StudentsAchievements.html"
+				"Link":"Main.html?JSON=students_achievements"
 			}
 		]
 	},
