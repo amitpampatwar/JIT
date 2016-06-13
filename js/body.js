@@ -92,6 +92,25 @@ function AddEventData(objEvents) {
   
   latestContent.innerHTML = latestEventData;
   latestNews.innerHTML = latestNewsData;
+  
+  AddTestimonials();
+}
+
+function AddTestimonials() {
+  var testimonialData = "";
+  var testimonialContent = document.getElementById("testimonials");
+  
+  GetAllEvents("json/about_testimonials.json", function(testData) {
+    $.each(eventData[0].Content, function(index, allFiles) {        
+      if (allFiles.Profile) {
+        testimonialData = testimonialData + "<li>";
+        testimonialData = testimonialData + allFiles.Profile.Details[0].Paregraph;
+        testimonialData = testimonialData + "</li>";
+      }
+    });
+  });
+  
+  testimonialContent.innerHTML = testimonialData;
 }
 
 var sortByPropertyDecending = function (property) {
