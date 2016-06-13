@@ -243,7 +243,7 @@
 		 		"SubChildNav":[
 		 			{
 						"Name":"First Year",
-						"Link":"Main.html?JSON=about_firstyear"		
+						"Link":"Main.html?JSON=about_electrical"	
 					},
 					{
 						"Name":"Electronics",
