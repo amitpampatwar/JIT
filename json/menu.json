@@ -104,10 +104,6 @@
 		 		"Name": "Departments",
 		 		"SubChildNav":[
 					{
-						"Name":"First Year",
-                        "Link":"Main.html?JSON=academics_firstyear"
-					},
-					{
 						"Name":"Electronics",
 						"Link":"Main.html?JSON=academics_electronics"
 					},
