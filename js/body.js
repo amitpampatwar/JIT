@@ -104,7 +104,7 @@ function AddTestimonials() {
     $.each(testData[0].Content, function(index, allFiles) {        
       if (allFiles.Profile) {
         testimonialData = testimonialData + "<li>";
-        testimonialData = testimonialData + "<p>\"" + allFiles.Profile.Details[0].Paregraph + "\"</p>";
+        testimonialData = testimonialData + "<h3>\"" + allFiles.Profile.Details[0].Paregraph + "\"</h3>";
         testimonialData = testimonialData + "<br><br><strong>" + allFiles.Profile.ProfileName + "</strong><br>";
         testimonialData = testimonialData + allFiles.Profile.Qualifications[0].Title
         testimonialData = testimonialData + "</li>";
