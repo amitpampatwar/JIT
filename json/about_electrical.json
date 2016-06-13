@@ -1,20 +1,31 @@
 [{
 	"Title": "HOD Electrical / First Year",
-	"Content": [{
+	"Content": [
+    {
+        "Profile" : {
+            "ImageURL":"images/rohaningle.jpg",
+            "ImageTitle":"Rohan Ingle",
+            "ProfileName": "Rohan Ingle",            
+            "Qualifications": [
+                {
+                    "Title" : "Ph.D pursuing in Electrical Engineering from RTM Nagpur University"
+                },
+                {
+                    "Title" : "M.Tech (Integrated Power System), GHRCE, Nagpur in 2008"
+                },
+                {
+                    "Title" : "B.E (Electrical), Y.C.C.E, Nagpur in 2003"
+                }		
+            ]
+        }                
+    },  
+    {
 		"Paregraphs": [{
 			"Text": "To put my knowledge and skills to the best of my ability for solving challenging and practical problems leading to the development and the growth of organization. To constantly improve in the stimulating and learning environment through hard work and sincerity"
 		}]
 	}, {
 		"Paregraphs": [{
 			"H2": "Academic Qualification"
-		}]
-	}, {
-		"Lists": [{
-			"Value": "Ph.D pursuing in Electrical Engineering from RTM Nagpur University"
-		}, {
-			"Value": "M.Tech (Integrated Power System), GHRCE, Nagpur in 2008"
-		}, {
-			"Value": "B.E (Electrical), Y.C.C.E, Nagpur in 2003"
 		}]
 	}, {
 		"Paregraphs": [{
