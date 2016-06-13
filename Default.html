@@ -56,16 +56,15 @@
         <div class="uk-grid uk-grid-divider tm-grid-margin-large" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
           <div class="uk-width-medium-1-3">
             <div class="uk-panel tm-panel-link" style="max-height:235px;">
-              <h2><strong>Notice Board</strong></h2>            
-              <marquee id="notice" direction="up" scrolldelay="20" style="max-height:235px;" onMouseOver="document.all.notice.stop()" onMouseOut="document.all.notice.start()">
-                <ul>
-                  <li>The two battleships of the North Carolina class were built shortly before the US entered</li>
-                  <li>North Carolina took part in every major US naval offensive of the Pacific War and was the most highly decorated American battleship of World War II</li>
-                  <li>Washington initially went undetected by the Japanese in the second naval battle of Guadalcanal, a chaotic night engagement, until its main guns hit the battleship Kirishima at close range, sinking the ship the next day</li>
-                  <li>In February 1944, Washington's bow was crushed in a collision with the battleship Indiana, but the damage was repaired in time to join the Battle of the Philippine Sea in</li>
-                  <li>After the war, both ships helped withdraw American military personnel from overseas deployments.</li>
-                </ul>
-              </marquee>             
+              <h2><strong>Notice Board</strong></h2>                          
+              <ul id="notice" class="uk-slideshow" data-uk-slideshow="{autoplay:true, animation:'slice-down'}" style="max-height:235px;">
+                <li>The two battleships of the North Carolina class were built shortly before the US entered</li>
+                <li>North Carolina took part in every major US naval offensive of the Pacific War and was the most highly decorated American battleship of World War II</li>
+                <li>Washington initially went undetected by the Japanese in the second naval battle of Guadalcanal, a chaotic night engagement, until its main guns hit the battleship Kirishima at close range, sinking the ship the next day</li>
+                <li>In February 1944, Washington's bow was crushed in a collision with the battleship Indiana, but the damage was repaired in time to join the Battle of the Philippine Sea in</li>
+                <li>After the war, both ships helped withdraw American military personnel from overseas deployments.</li>
+              </ul>
+              <a target="_blank" href="Main.html?JSON=students_notice" class="uk-button uk-button-primary">Read More</a>
             </div>
           </div>
           <div class="uk-width-medium-1-3">
