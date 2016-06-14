@@ -310,8 +310,40 @@
           request.open('POST', 'php/process.php');          
           request.send(formData);          
         }*/
-      });            
+      });
+      
+      AddSubMenu();
     });
+    
+    function AddSubMenu() {
+      var subMenu = "<ul class=\"tm-nav uk-nav\">";
+      var subMenuTag = document.getElementById("subMenu");
+      
+      $('#category option').each(function() {
+        subMenu = subMenu + "<li class=\"uk-nav-header\">" + $(this).attr('value') + "</li>";
+        
+        GetAllContents("json/" + $(this).attr('value') + "/fileDetails.json", function(fileData) {
+          $.each(fileData, function(index, fileNames) {
+            subMenu = subMenu + "<li><a href=\"UploadContent.html?JSON=" + fileNames.Filename + ">" + fileNames.Filename.split("/")[2] + "</a></li>";
+          });          
+        });        
+      });
+      
+      subMenu = subMenu + "</ul>";
+      subMenuTag.innerHTML = subMenu;
+    }
+    
+    function GetAllContents(fileName, callback) {
+      $.ajax({
+        type: 'GET', 
+        url: fileName,
+        dataType: "text",
+        async: false,
+        success: function(data) {
+          callback(jQuery.parseJSON(data));        
+        }
+      });
+    }
     
     function AddRows(columnNo, tableCounter) {
       var tableDetails = document.getElementById("table" + tableCounter);
@@ -405,6 +437,7 @@
                   <select id="category" class="uk-width-1-4">
                     <option value="">--Select--</option>
                     <option value="News">News</option>
+                    <option value="Notice">Notice</option>
                     <option value="FirstYear">First Year</option>
                     <option value="Electronics">Electronics</option>
                     <option value="Electrical">Electrical</option>
