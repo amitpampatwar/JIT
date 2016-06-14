@@ -356,9 +356,15 @@
           if (allFiles.Paregraphs) {
             if (allFiles.Paregraphs[0].Text) {
               $("#addParegraph").trigger("click");
+              
+              var paregraph = document.getElementById("txtParegraph" + (textareaCounter - 1));              
+              paregraph.value = allFiles.Paregraphs[0].Text;
             }
             else {
               $("#addSubHeader").trigger("click");
+              
+              var paregraph = document.getElementById("txtSubHeader" + (headerCounter - 1));              
+              paregraph.value = allFiles.Paregraphs[0].H2;
             }
           }
           if (allFiles.Lists) {
