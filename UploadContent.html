@@ -377,6 +377,20 @@
           }
           if (allFiles.Table) {
             $("#addRow").trigger("click");
+            
+            $.each(allFiles.Table.Header, function(index, cellHeader) {
+              var paregraph = document.getElementById("txtHeader" + (tableCounter - 1) + index);
+              paregraph.value = cellHeader.Cell;
+            });
+            
+            $.each(allFiles.Table.Rows, function(index, row) {
+              AddRows(row.length, tableCounter)
+              
+              $.each(row, function(index, cellValue) {
+                var paregraph = document.getElementById("txtCell" + tableCounter + (eachRowCounter[tableCounter] - 1) + index);
+                paregraph.value = cellValue.Cell;
+              });              
+            });
           }
           if (allFiles.ImageURL) {
             
