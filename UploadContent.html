@@ -368,7 +368,12 @@
             }
           }
           if (allFiles.Lists) {
-            $("#addListItem").trigger("click");
+            $.each(allFiles.Lists, function(index, listItem) {
+              $("#addListItem").trigger("click");
+            
+              var paregraph = document.getElementById("txtList" + (listitemCounter - 1));              
+              paregraph.value = listItem.Value;
+            });            
           }
           if (allFiles.Table) {
             $("#addRow").trigger("click");
