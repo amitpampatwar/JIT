@@ -315,8 +315,20 @@
       AddSubMenu();
     });
     
+    function GetParameterValues(param) {  
+      var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      
+      for (var i = 0; i < url.length; i++) {  
+        var urlparam = url[i].split('=');  
+        if (urlparam[0] == param) {  
+          return urlparam[1];  
+        }  
+      }  
+    }
+    
     function AddSubMenu() {
       var subMenu = "";
+      var jsonData =  GetParameterValues("JSON");
       var subMenuTag = document.getElementById("subMenuDetails");
 
       $('#category option').each(function() {
@@ -332,6 +344,34 @@
       });
 
       subMenuTag.innerHTML = subMenu;
+      
+      if (jsonData != "") {
+        AddExistingData(jsonData);
+      }
+    }
+    
+    function AddExistingData(filePath) {
+      GetAllEvents(eventFiles.Path, function(eventData) {        
+        $.each(eventData[0].Content, function(index, allFiles) {
+          if (allFiles.Paregraphs) {
+            if (if (allFiles.Paregraphs[0].Text) {
+              $("#addParegraph").trigger("click");
+            }
+            else {
+              $("#addSubHeader").trigger("click");
+            }
+          }
+          if (allFiles.Lists) {
+            $("#addListItem").trigger("click");
+          }
+          if (allFiles.Table) {
+            $("#addRow").trigger("click");
+          }
+          if (allFiles.ImageURL) {
+            
+          }          
+        });
+      });
     }
             
     function GetAllContents(fileName, callback) {
