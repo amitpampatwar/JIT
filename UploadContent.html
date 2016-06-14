@@ -314,7 +314,7 @@
       
       function AddSubMenu() {
         var subMenu = "";
-        var subMenuTag = document.getElementById("subMenu");
+        var subMenuTag = document.getElementById("subMenuDetails");
 
         $('#category option').each(function() {
           subMenu = subMenu + "<li class=\"uk-nav-header\">" + $(this).attr('value') + "</li>";
@@ -425,7 +425,7 @@
       <div class="uk-container uk-container-center">
         <div class="uk-grid" data-uk-grid-margin="">
           <div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small uk-row-first">
-            <ul id="subMenu" class="tm-nav uk-nav">
+            <ul id="subMenuDetails" class="tm-nav uk-nav">
             </ul>
           </div>
           <div class="tm-main uk-width-medium-3-4">
