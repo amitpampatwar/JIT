@@ -325,7 +325,7 @@
 
           GetAllContents("json/" + $(this).attr('value') + "/fileDetails.json", function(fileData) {
             $.each(fileData, function(index, fileNames) {
-              subMenu = subMenu + "<li><a href=\"UploadContent.html?JSON=" + fileNames.Filename + ">" + fileNames.Filename.split("/")[2] + "</a></li>";
+              subMenu = subMenu + "<li><a href=\"UploadContent.html?JSON=" + fileNames.Filename + "\">" + fileNames.Filename.split("/")[2] + "</a></li>";
             });          
           });
         }
