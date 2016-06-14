@@ -377,18 +377,24 @@
           }
           if (allFiles.Table) {
             $("#addRow").trigger("click");
+            var headerIndex = 0;
             
             $.each(allFiles.Table.Header, function(index, cellHeader) {
-              var paregraph = document.getElementById("txtHeader" + (tableCounter - 1) + index);
+              var paregraph = document.getElementById("txtHeader" + (tableCounter - 1) + (headerIndex));
               paregraph.value = cellHeader.Cell;
+              
+              headerIndex = headerIndex + 1;
             });
             
             $.each(allFiles.Table.Rows, function(index, row) {
+              var rowIndex = 0;
               AddRows(row.length, (tableCounter - 1))
               
               $.each(row, function(index, cellValue) {
-                var paregraph = document.getElementById("txtCell" + (tableCounter - 1) + (eachRowCounter[tableCounter] - 1) + index);
+                var paregraph = document.getElementById("txtCell" + (tableCounter - 1) + (eachRowCounter[tableCounter] - 1) + (rowIndex));
                 paregraph.value = cellValue.Cell;
+                
+                rowIndex = rowIndex + 1;
               });              
             });
           }
