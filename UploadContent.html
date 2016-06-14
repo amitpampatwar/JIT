@@ -354,7 +354,7 @@
       GetAllEvents(eventFiles.Path, function(eventData) {        
         $.each(eventData[0].Content, function(index, allFiles) {
           if (allFiles.Paregraphs) {
-            if (if (allFiles.Paregraphs[0].Text) {
+            if (allFiles.Paregraphs[0].Text) {
               $("#addParegraph").trigger("click");
             }
             else {
