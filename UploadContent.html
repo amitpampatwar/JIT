@@ -316,7 +316,7 @@
     });
     
     function AddSubMenu() {
-      var subMenu = "<ul class=\"tm-nav uk-nav\">";
+      var subMenu = "";
       var subMenuTag = document.getElementById("subMenu");
       
       $('#category option').each(function() {
@@ -329,7 +329,6 @@
         });        
       });
       
-      subMenu = subMenu + "</ul>";
       subMenuTag.innerHTML = subMenu;
     }
     
@@ -425,7 +424,10 @@
     <div class="tm-middle">
       <div class="uk-container uk-container-center">
         <div class="uk-grid" data-uk-grid-margin="">
-          <div id="subMenu" class="tm-sidebar uk-width-medium-1-4 uk-hidden-small uk-row-first"></div>
+          <div class="tm-sidebar uk-width-medium-1-4 uk-hidden-small uk-row-first">
+            <ul id="subMenu" class="tm-nav uk-nav">
+            </ul>
+          </div>
           <div class="tm-main uk-width-medium-3-4">
             <article id="uploadParameters" class="uk-comment">
               <div class="uk-form uk-width-medium-1-1">       
