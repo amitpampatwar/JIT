@@ -27,6 +27,7 @@
     var imageCounter = 0;
     var eachTableContent = [];
     var eachRowCounter = [];
+    var noOfColumnsEdit = 0;
     
     $(document).ready(function() {            
       $('input[type="file"]').change(function(e) {
@@ -76,7 +77,14 @@
       
       $("#addRow").click(function() {        
         var contentData = "";
-        var noOfColumns = $("#columnNo").val();
+        var noOfColumns;
+        
+        if (GetParameterValues("JSON") != "") {
+          noOfColumns = noOfColumnsEdit;
+        }
+        else {
+          noOfColumns = $("#columnNo").val();
+        }
                 
         contentData = contentData + "<!--StartTable:" + tableCounter + "--><div id=\"table" + tableCounter +"\" class=\"uk-form-row uk-alert uk-alert-large\" data-uk-alert><a href=\"\" class=\"uk-alert-close uk-close\"></a><h2>Table</h2><button id=\"tbl" + tableCounter + "\" class=\"tblRow uk-button uk-button-small uk-button-primary\" type=\"button\" onclick=\"AddRows(" + noOfColumns + "," + tableCounter + ");\">Add Row</button>";
         contentData = contentData + "<p>First row of the table will be considered as the 'Header' Row</p><hr class=\"uk-article-divider\"><!--StartHeader:" + tableCounter + "--><div id=\"row\" class=\"uk-form-row uk-alert uk-width-1-1\">";
@@ -376,6 +384,8 @@
             });            
           }
           if (allFiles.Table) {
+            noOfColumnsEdit = allFiles.Table.Header.length;
+            
             $("#addRow").trigger("click");
             var headerIndex = 0;
             
