@@ -272,15 +272,23 @@
           objectData = [{ "Title" : $("#txtTitle").val(), "Content" : Content}]; 
         }
         
+        var hasFileName = GetParameterValues("JSON");
         var jsonData = JSON.stringify(objectData);                        
         var textFile = new Blob([jsonData], { type: 'text/plain' });
         var todayDate = new Date();
-        var fileName = String(todayDate.getFullYear()) + 
-                       ((String(todayDate.getMonth()).length === 1) ? '0' + String(todayDate.getMonth() + 1) : String(todayDate.getMonth() + 1)) + 
-                       ((String(todayDate.getDate()).length === 1) ? '0' + String(todayDate.getDate()) : String(todayDate.getDate())) + 
-                       ((String(todayDate.getHours()).length === 1) ? '0' + String(todayDate.getHours()) : String(todayDate.getHours())) +  
-                       ((String(todayDate.getMinutes()).length === 1) ? '0' + String(todayDate.getMinutes()) : String(todayDate.getMinutes())) +  
-                       ((String(todayDate.getSeconds()).length === 1) ? '0' + String(todayDate.getSeconds()) : String(todayDate.getSeconds())) + ".json";
+        var fileName = "";
+        
+        if (hasFileName != "") {
+          fileName = hasFileName.split("/")[2];
+        }
+        else {
+          fileName = String(todayDate.getFullYear()) + 
+                     ((String(todayDate.getMonth()).length === 1) ? '0' + String(todayDate.getMonth() + 1) : String(todayDate.getMonth() + 1)) + 
+                     ((String(todayDate.getDate()).length === 1) ? '0' + String(todayDate.getDate()) : String(todayDate.getDate())) + 
+                     ((String(todayDate.getHours()).length === 1) ? '0' + String(todayDate.getHours()) : String(todayDate.getHours())) +  
+                     ((String(todayDate.getMinutes()).length === 1) ? '0' + String(todayDate.getMinutes()) : String(todayDate.getMinutes())) +  
+                     ((String(todayDate.getSeconds()).length === 1) ? '0' + String(todayDate.getSeconds()) : String(todayDate.getSeconds())) + ".json";
+        }
         
         $.ajax({
           type: 'GET', 
