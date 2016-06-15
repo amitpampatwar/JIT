@@ -398,10 +398,10 @@
             
             $.each(allFiles.Table.Rows, function(index, row) {
               var rowIndex = 0;
-              AddRows(row.length, (tableCounter - 1))
+              AddRows(row.Row.length, (tableCounter - 1))
               
-              $.each(row, function(index, cellValue) {
-                var paregraph = document.getElementById("txtCell" + (tableCounter - 1) + (eachRowCounter[tableCounter] - 1) + (rowIndex));
+              $.each(row.Row, function(index, cellValue) {
+                var paregraph = document.getElementById("txtCell" + (tableCounter - 1) + (eachRowCounter[tableCounter - 1] - 1) + (rowIndex));
                 paregraph.value = cellValue.Cell;
                 
                 rowIndex = rowIndex + 1;
