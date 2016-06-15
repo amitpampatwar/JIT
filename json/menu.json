@@ -178,6 +178,10 @@
 				]
 			},
 			{
+				"Name":"Students Notice",
+				"Link":"Main.html?JSON=students_notice&Folder=Notice"
+			},
+			{
 				"Name":"Sports Activities",
 				"Link":"Main.html?JSON=students_sports"
 			},
