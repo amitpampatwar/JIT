@@ -1,30 +1,3 @@
 [
-	{
-		"Title":"Principal",
-		"Content": [
-            {
-                "Profile" : {
-                    "ImageURL":"images/JITPrincipal.jpg",
-                    "ImageTitle":"Dr. Pramod Patil",
-                    "ProfileName": "Dr. Pramod Patil",
-                    "Details": [
-                        {
-                            "Paregraph" : "I'm pleased to welcome you at JIT. one of the most happening Engineering colleges of Central India. The college established in 2008. has successfully completed 8 years of excellence & has moulded innumerable of its students to become a thorough professional & a better human being. Entering into this wonderful institute shall widen the horizons of your knowledge. The student-centric activities & thorough grooming by a dedicated team of efficient teachers shall help you to reach the top of the world. The teacher mentors shall help you to extend the depth & breadth of your knowledge & I'm sure that the T & P team will surely go all the way to make you a more employable product. Have a great time & a successful professional life."
-                        }
-                    ],
-                    "Qualifications": [
-                        {
-                            "Title" : "B.E (Electronics Engineering), Amravati University (1989)"
-                        },
-                        {
-                            "Title" : "M.E (Advanced Electronics), Amravati University (1997)"
-                        },
-                        {
-                            "Title" : "Ph.D (Electronics Engineering), Amravati University (2007)"
-                        }		
-                    ]
-                }                
-            }
-        ]
-    }
+	
 ]
