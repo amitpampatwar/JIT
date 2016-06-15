@@ -11,9 +11,10 @@
     <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="js/docs.js"></script>
     <script type="text/javascript" src="js/uikit.js"></script>
-    <script type="text/javascript" src="js/components/sticky.js"></script>
+    <script type="text/javascript" src="js/components/sticky.js"></script>    
     <script type="text/javascript" src="js/components/slideshow.js"></script>
-    <script type="text/javascript" src="js/components/slideshow-fx.js"></script>    
+    <script type="text/javascript" src="js/components/slideshow-fx.js"></script>
+    <script type="text/javascript" src="js/formValidation.min.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
     <script type="text/javascript" src="js/header.js"></script>
     <script type="text/javascript" src="js/blog.js"></script>   
@@ -60,6 +61,49 @@
       }
       
       blogContent.outerHTML = blogDetails;
+    
+      $('#admissionForm').formValidation({
+        framework: 'uikit',
+        icon: {
+          valid: 'uk-icon-check',
+          invalid: 'uk-icon-times',
+          validating: 'uk-icon-refresh'
+        },
+        fields: {
+          firstName: {
+            row: '.uk-width-1-2',
+            validators: {
+              notEmpty: {
+                message: 'The first name is required'
+              },
+              regexp: {
+                regexp: /^[a-zA-Z\s]+$/,
+                message: 'The first name can only consist of alphabetical and space'
+              }
+            }
+          },
+          email: {
+            row: '.uk-width-1-2',
+            validators: {
+              notEmpty: {
+                message: 'The last name is required'
+              },
+              regexp: {
+                regexp: /^[a-zA-Z\s]+$/,
+                message: 'The last name can only consist of alphabetical and space'
+              }
+            }
+          },
+          mobileno: {
+            row: '.uk-width-1-3',
+            validators: {
+              notEmpty: {
+                message: 'The cell phone number is required'
+              }
+            }
+          }
+        }
+      });
     });
   </script>
   <body class="tm-background">
