@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="Stylesheet" media="screen,print" href="css/uikit.docs.min.css" />    
+    <link type="text/css" rel="Stylesheet" media="screen,print" href="css/docs.css" />
+    <link type="text/css" rel="Stylesheet" media="screen,print" href="css/highlight.css" />
+
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="js/docs.js"></script>
+    <script type="text/javascript" src="js/uikit.js"></script>
+    <script type="text/javascript" src="js/components/sticky.js"></script>
+    <script type="text/javascript" src="js/components/slideshow.js"></script>
+    <script type="text/javascript" src="js/components/slideshow-fx.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/body.js"></script>   
+  </head>
+  <body class="tm-background">
+    <div class="tm-panel-link tm-section-color-2 tm-section-colored uk-text-center" style="padding:15px;">
+      <div class="uk-flex-inline">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img class="uk-margin uk-margin-remove" src="images/SiteLogo.png" width="195" title="JIT" alt="JIT">
+              </td>
+              <td>
+                <h1 class="uk-text-center uk-heading-large uk-margin-bottom-remove"><strong>Jhulelal Institute Of Technology</strong></h1>
+                <h3 class="uk-text-center" style="color:#fff;">Approved by AICTE, DTE and affiliated to RTM Nagpur University</h3>
+              </td>
+            </tr>            
+          </tbody>
+        </table>                
+      </div>
+    </div>
+    <header id="header"></header>
+    <div class="tm-section tm-section-color-white">
+      <div class="uk-container uk-container-center">
+        <!--div class="uk-grid uk-grid-divider tm-grid-margin-large" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+          <div class="uk-width-medium-3-3">
+            <div class="uk-slidenav-position" data-uk-slideshow="">
+              <ul class="uk-slideshow" style="height: 549px;">
+                <li aria-hidden="false" class="uk-active" style="animation-duration: 500ms; height: 549px;">
+                  <video width="600" height="400" autoplay="" loop="" muted="" controls="" class="uk-cover-object uk-position-absolute __web-inspector-hide-shortcut__">
+                    <source src="video/63e1c0238d627fe13b63d4d3c28bea64.mp4" type="video/mp4">
+                  </video>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div-->
+        <div class="uk-grid uk-grid-divider tm-grid-margin-large" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+          <div class="uk-width-medium-2-3">
+            <div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
+              <ul id="latestEvents" class="uk-slideshow uk-overlay-active"></ul>
+              <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
+              <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
+            </div>
+          </div>          
+          <div class="uk-width-medium-1-3">
+            <a class="uk-panel tm-panel-link" href="Main.html?JSON=students_news&Folder=News">
+              <h2><strong>Latest News</strong></h2>            
+              <ul id="latestNews" class="uk-slideshow" data-uk-slideshow="{autoplay:true}"></ul>
+            </a>
+          </div>
+        </div>
+        <div class="uk-grid uk-grid-divider tm-grid-margin-large" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+          <div class="uk-width-medium-1-3">
+            <div class="uk-panel tm-panel-link" style="max-height:235px;">
+              <h2><strong>Notice Board</strong></h2>                          
+              <ul id="notice" class="uk-slideshow" data-uk-slideshow="{autoplay:true, animation:'slice-down'}" style="max-height:235px;"></ul><br><br>
+              <a target="_blank" href="Main.html?JSON=students_notice&Folder=Notice" class="uk-float-right uk-button uk-button-primary">Read More</a> 
+            </div>
+          </div>
+          <div class="uk-width-medium-1-3">
+            <a class="uk-panel tm-panel-link" href="Main.html?JSON=admission_fycoursesoffered">
+              <h2><strong>Admission Details</strong></h2>            
+              <p>Admission details, procedures, important dates, important links everything about admissions...</p>
+            </a>
+          </div>
+          <div class="uk-width-medium-1-3">
+            <div class="uk-panel tm-panel-link" style="max-height:235px;">
+              <h2><strong>Quick Links</strong></h2>            
+              <ul id="quickLinks">
+                <li><a target="_blank" href="Main.html?JSON=admission_fyeligibilitycriteria">Admissions 2016 (BE - First Year)</a></li>
+                <li><a target="_blank" href="Main.html?JSON=admission_syeligibilitycriteria">Admissions 2016 (BE - Direct Second Year)</a></li>
+                <li><a target="_blank" href="Main.html?JSON=admissions_admissionenquiry">Admission Enquiry</a></li>
+                <li><a target="_blank" href="Main.html?JSON=placements_placementhistory">Placement Records</a></li>
+                <li><a target="_blank" href="Main.html?JSON=contact_contactus">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="uk-grid uk-grid-divider tm-grid-margin-large" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+          <div class="uk-width-medium-3-3">
+            <a class="uk-panel tm-panel-link uk-text-center" href="Main.html?JSON=about_testimonials">
+              <h2><strong>Testimonials</strong></h2>            
+              <ul id="testimonials" class="uk-slideshow" data-uk-slideshow="{autoplay:true, animation:'scroll'}"></ul>
+            </a>
+          </div>                    
+        </div>
+      </div>
+    </div>  
+    <footer id="footer">
+      <div class="tm-footer">
+        <div class="uk-container uk-container-center uk-text-center">
+          <ul class="uk-subnav uk-subnav-line uk-flex-center">
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Rules &amp; Regulations</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+          <div class="uk-panel">
+            <p>All Rights Reserved with Samruddhi Sarwajanik Charitable Trust, <br/>Jhulelal Institute Of Technology, Nagpur</p>
+            <a href="../index.html"><img src="images/SiteLogo.png" width="90" height="30" title="JIT" alt="JIT"></a>
+          </div>
+        </div>
+      </div>
+      <div id="tm-offcanvas" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+          <ul id="footerList" class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{multiple:true}"></ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
