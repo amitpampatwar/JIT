@@ -359,7 +359,15 @@
     }
     
     function AddExistingData(filePath) {
-      GetAllContents(filePath, function(eventData) {        
+      GetAllContents(filePath, function(eventData) {
+        var titleText = document.getElementById("txtTitle");
+        var createdDate = document.getElementById("contentDate");
+        var category = document.getElementById("category");
+        
+        titleText.value = eventData[0].Title;
+        createdDate.value = eventData[0].CreatedDate;
+        category.value = filePath.split('/')[1];
+        
         $.each(eventData[0].Content, function(index, allFiles) {
           if (allFiles.Paregraphs) {
             if (allFiles.Paregraphs[0].Text) {
@@ -375,6 +383,7 @@
               paregraph.value = allFiles.Paregraphs[0].H2;
             }
           }
+          
           if (allFiles.Lists) {
             $.each(allFiles.Lists, function(index, listItem) {
               $("#addListItem").trigger("click");
@@ -383,6 +392,7 @@
               paregraph.value = listItem.Value;
             });            
           }
+          
           if (allFiles.Table) {
             noOfColumnsEdit = allFiles.Table.Header.length;
             
@@ -408,6 +418,7 @@
               });              
             });
           }
+          
           if (allFiles.ImageURL) {
             var fileUploadContent = "";
 
