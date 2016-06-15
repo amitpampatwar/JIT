@@ -41,7 +41,7 @@ function addData(url, headerType, elementName, callback)
               if (objFormContent.Dropdown) {
                 var dropdownContent = objFormContent.Dropdown;
                 
-                formData = formData + "<select id=\"" + dropdownContent.ID + "\" name=\"" + textboxContent.ID + "\" class=\"uk-width-1-" + dropdownContent.Width + "\">";
+                formData = formData + "<select id=\"" + dropdownContent.ID + "\" name=\"" + dropdownContent.ID + "\" class=\"uk-width-1-" + dropdownContent.Width + "\">";
                 formData = formData + "<option>-- Select " + dropdownContent.Name + "--</option>";
                 
                 $.each(dropdownContent.Option, function(index, objOptionValue) {
@@ -54,13 +54,13 @@ function addData(url, headerType, elementName, callback)
               if (objFormContent.Button) {
                 var buttonContent = objFormContent.Button;
                 
-                formData = formData + "<button id=\"" + buttonContent.ID + "\" name=\"" + textboxContent.ID + "\" class=\"uk-button\">" + buttonContent.Text + "</button>";                
+                formData = formData + "<button id=\"" + buttonContent.ID + "\" name=\"" + buttonContent.ID + "\" class=\"uk-button\">" + buttonContent.Text + "</button>";                
               }
               
               if (objFormContent.Textarea) {
                 var textareaContent = objFormContent.Textarea;
                 
-                formData = formData + "<textarea id=\"" + textareaContent.ID + "\" name=\"" + textboxContent.ID + "\" rows=\"" + textareaContent.Rows + "\" placeholder=\"" + textareaContent.Name + "\" class=\"uk-width-1-" + textareaContent.Width + "\"></textarea>";
+                formData = formData + "<textarea id=\"" + textareaContent.ID + "\" name=\"" + textareaContent.ID + "\" rows=\"" + textareaContent.Rows + "\" placeholder=\"" + textareaContent.Name + "\" class=\"uk-width-1-" + textareaContent.Width + "\"></textarea>";
               }
               
               formData = formData + "</div>";
