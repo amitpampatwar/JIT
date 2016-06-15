@@ -62,8 +62,9 @@
       }
       
       blogContent.outerHTML = blogDetails;
+      var admissionForm = document.getElementById("admissionForm");
     
-      $('#admissionForm').formValidation({
+      admissionForm.formValidation({
         framework: 'uikit',
         icon: {
           valid: 'uk-icon-check',
