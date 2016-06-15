@@ -398,10 +398,10 @@
             
             $.each(allFiles.Table.Rows, function(index, row) {
               var rowIndex = 0;
-              AddRows(row.Row.length, (tableCounter - 1))
+              AddRows(row.length, (tableCounter - 1))
               
-              $.each(row.Row, function(index, cellValue) {
-                var paregraph = document.getElementById("txtCell" + (tableCounter - 1) + (eachRowCounter[tableCounter - 1] - 1) + (rowIndex));
+              $.each(row, function(index, cellValue) {
+                var paregraph = document.getElementById("txtCell" + (tableCounter - 1) + (eachRowCounter[tableCounter] - 1) + (rowIndex));
                 paregraph.value = cellValue.Cell;
                 
                 rowIndex = rowIndex + 1;
@@ -521,14 +521,15 @@
                 <div class="uk-form-row">                              
                   <select id="category" class="uk-width-1-4">
                     <option value="">--Select--</option>
+                    <option value="MBA">MBA</option>
                     <option value="News">News</option>
                     <option value="Notice">Notice</option>
                     <option value="FirstYear">First Year</option>
                     <option value="Electronics">Electronics</option>
                     <option value="Electrical">Electrical</option>
+                    <option value="Mechanical">Mechanical</option>                    
                     <option value="ComputerScience">Computer Science</option>
-                    <option value="Mechanical">Mechanical</option>
-                    <option value="MBA">MBA</option>
+                    <option value="StudentsAchievements">Students Achievements</option>
                   </select>
                 </div>
               </div>
