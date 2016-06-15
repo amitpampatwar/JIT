@@ -71,6 +71,10 @@
 			{
 				"Name":"Other Facilities",
 				"Link":"Main.html?JSON=facilities_otherfacilities"
+			},
+            {
+				"Name":"Sports Activities",
+				"Link":"Main.html?JSON=students_sports"
 			}
 		]
 	},
@@ -180,11 +184,7 @@
 			{
 				"Name":"Students Notice",
 				"Link":"Main.html?JSON=students_notice&Folder=Notice"
-			},
-			{
-				"Name":"Sports Activities",
-				"Link":"Main.html?JSON=students_sports"
-			},
+			},			
 			{
 				"Name":"Students Achievements",
 				"Link":"Main.html?JSON=students_achievements"
