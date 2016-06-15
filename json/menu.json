@@ -1,7 +1,7 @@
 [
 	{
 		"Name":"Home",
-		"Link":"Default.html"
+		"Link":"index.htm"
 	},
 	{
 		"Name":"Admissions",
@@ -144,7 +144,7 @@
 			},
 			{
 				"Name":"Transcript",
-				"Link":"Students_Transcript.html"				
+				"Link":"Main.html?JSON=students_transcript"				
 			},
 			{
 				"Name":"Anti-Ragging Commitee",
