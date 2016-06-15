@@ -50,15 +50,18 @@ $(document).ready(function(){
 });
 
 function AddEventData(objEvents) {
+  var latestNoticeData = "";
   var latestEventData = "";
   var latestNewsData = "";
   
   var latestContent = document.getElementById("latestEvents");
+  var latestNotice = document.getElementById("notice");
   var latestNews = document.getElementById("latestNews");
   
   $.each(objEvents, function(index, eventFiles) {
     GetAllEvents(eventFiles.Path, function(eventData) {
       var isNewsSet = false;
+      var isNoticeSet = false;
 
       $.each(eventData[0].Content, function(index, allFiles) {        
         if (eventFiles.Path.includes("News")) {
@@ -70,6 +73,17 @@ function AddEventData(objEvents) {
               latestNewsData = latestNewsData + "<div style=\"max-height:235px;\" class=\"uk-panel\">";
               latestNewsData = latestNewsData + "<h3 class=\"uk-panel-title\">" + eventData[0].Title + "</h3>";
               latestNewsData = latestNewsData + allFiles.Paregraphs[0].Text + "</div></li>";
+            }
+          }
+        }
+        else if (eventFiles.Path.includes("Notice")) {
+          if (allFiles.Paregraphs) {
+            if (allFiles.Paregraphs[0].Text && !isNoticeSet) {
+              isNoticeSet = true;
+              
+              latestNoticeData = latestNoticeData + "<li>";
+              latestNoticeData = latestNoticeData + eventData[0].Title;
+              latestNoticeData = latestNoticeData + "</li>";
             }
           }
         }
@@ -91,6 +105,7 @@ function AddEventData(objEvents) {
   });
   
   latestContent.innerHTML = latestEventData;
+  latestNotice.innerHTML = latestNoticeData;
   latestNews.innerHTML = latestNewsData;
   
   AddTestimonials();
