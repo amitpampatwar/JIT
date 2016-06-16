@@ -42,6 +42,10 @@
       }  
     }
     
+    $('[data-uk-pagination]').on('select.uk.pagination', function(e, pageIndex){
+      alert('You have selected page: ' + (pageIndex+1));
+    });
+    
     $(document).ready(function() {
       var jsonFile = "json/" + GetParameterValues("JSON") + ".json";
       var folderName = "json/" + GetParameterValues("Folder") + "/fileDetails.json";
@@ -56,7 +60,7 @@
           async: false,
           success: function(data) {
             var objFiles = jQuery.parseJSON(data);
-            var pagination = "<ul class=\"uk-pagination\" data-uk-pagination=\"{items:" + objFiles.length + ", itemsOnPage:2}\"></ul>";
+            var pagination = "<ul class=\"uk-pagination uk-pagination-right\" data-uk-pagination=\"{items:" + objFiles.length + ", itemsOnPage:2}\"></ul>";
             
             $.each(objFiles, function(index, objData) {
               addData(objData.Filename, 1, "main", function(contentData) {
