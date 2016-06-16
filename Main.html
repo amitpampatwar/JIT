@@ -47,6 +47,7 @@
       var folderName = "json/" + GetParameterValues("Folder") + "/fileDetails.json";
       var blogContent = document.getElementById("main");
       var blogDetails = "";
+      var itemsPerPage = 2;
       
       if (typeof GetParameterValues("Folder") != "undefined") {
         $.ajax({
@@ -56,7 +57,9 @@
           async: false,
           success: function(data) {
             var objFiles = jQuery.parseJSON(data);
-            var pagination = "<ul class=\"uk-pagination uk-pagination-right\" data-uk-pagination=\"{items:" + objFiles.length + ", itemsOnPage:2}\"></ul>";
+            var pagination = "<ul class=\"uk-pagination uk-pagination-right\" data-uk-pagination=\"{items:" + objFiles.length + ", itemsOnPage:" + itemsPerPage + "}\"></ul>";
+            
+            objFiles = objFiles.slice(0,itemsPerPage);
             
             $.each(objFiles, function(index, objData) {
               addData(objData.Filename, 1, "main", function(contentData) {
@@ -64,7 +67,9 @@
               });                            
             });
             
-            blogDetails = blogDetails + pagination;
+            if (objFiles.length > itemsPerPage) {
+              blogDetails = blogDetails + pagination;
+            }
           }
         });
       }
