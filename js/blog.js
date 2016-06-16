@@ -35,7 +35,7 @@ function addData(url, headerType, elementName, callback)
               if (objFormContent.Textbox) {
                 var textboxContent = objFormContent.Textbox;
                 
-                formData = formData + "<input id=\"" + textboxContent.ID + "\" name=\"" + textboxContent.ID + "\" type=\"text\" placeholder=\"" + textboxContent.Name + "\" class=\"uk-width-1-" + textboxContent.Width + "\">";
+                formData = formData + "<input id=\"" + textboxContent.ID + "\" name=\"" + textboxContent.ID + "\" type=\"text\" placeholder=\"" + textboxContent.Name + "\" class=\"uk-width-1-" + textboxContent.Width + "\"><br>";
               }
               
               if (objFormContent.Dropdown) {
@@ -48,19 +48,19 @@ function addData(url, headerType, elementName, callback)
                   formData = formData + "<option value=\"" + objOptionValue.Value + "\">" + objOptionValue.Text + "</option>";
                 });
                 
-                formData = formData + "</select>";
+                formData = formData + "</select><br>";
               }
               
               if (objFormContent.Button) {
                 var buttonContent = objFormContent.Button;
                 
-                formData = formData + "<button id=\"" + buttonContent.ID + "\" name=\"" + buttonContent.ID + "\" class=\"uk-button\">" + buttonContent.Text + "</button>";                
+                formData = formData + "<button id=\"" + buttonContent.ID + "\" name=\"" + buttonContent.ID + "\" class=\"uk-button\">" + buttonContent.Text + "</button><br>";                
               }
               
               if (objFormContent.Textarea) {
                 var textareaContent = objFormContent.Textarea;
                 
-                formData = formData + "<textarea id=\"" + textareaContent.ID + "\" name=\"" + textareaContent.ID + "\" rows=\"" + textareaContent.Rows + "\" placeholder=\"" + textareaContent.Name + "\" class=\"uk-width-1-" + textareaContent.Width + "\"></textarea>";
+                formData = formData + "<textarea id=\"" + textareaContent.ID + "\" name=\"" + textareaContent.ID + "\" rows=\"" + textareaContent.Rows + "\" placeholder=\"" + textareaContent.Name + "\" class=\"uk-width-1-" + textareaContent.Width + "\"></textarea><br>";
               }
               
               formData = formData + "</div></div>";
