@@ -48,6 +48,7 @@
       var blogContent = document.getElementById("main");
       var blogDetails = "";
       var itemsPerPage = 2;
+      var objFiles;
       
       if (typeof GetParameterValues("Folder") != "undefined") {
         $.ajax({
@@ -56,12 +57,13 @@
           dataType: "text",
           async: false,
           success: function(data) {
-            var objFiles = jQuery.parseJSON(data);
-            var pagination = "<ul class=\"uk-pagination uk-pagination-right\" data-uk-pagination=\"{items:" + objFiles.length + ", itemsOnPage:" + itemsPerPage + "}\"></ul>";
+            objFiles = jQuery.parseJSON(data);
             
-            objFiles = objFiles.slice(0,itemsPerPage);
+            var totalNoOfFiles = objFiles.length;
+            var objTrimmedFiles = objFiles.slice(0,itemsPerPage);
+            var pagination = "<ul class=\"uk-pagination uk-pagination-right\" data-uk-pagination=\"{items:" + objFiles.length + ", itemsOnPage:" + itemsPerPage + "}\"></ul>";            
             
-            $.each(objFiles, function(index, objData) {
+            $.each(objTrimmedFiles, function(index, objData) {
               addData(objData.Filename, 1, "main", function(contentData) {
                 blogDetails = blogDetails + contentData;             
               });                            
@@ -79,10 +81,25 @@
         });
       }
       
-      blogContent.outerHTML = blogDetails;
+      blogContent.innerHTML = blogDetails;
       
-      $('[data-uk-pagination]').on('select.uk.pagination', function(e, pageIndex){
-        alert('You have selected page: ' + (pageIndex+1));
+      $('[data-uk-pagination]').on('select.uk.pagination', function(e, pageIndex) {
+        var objFromFile = ((itemsPerPage * (pageIndex + 1)) - itemsPerPage);
+        var objToFile = ((itemsPerPage * (pageIndex + 1));
+        var objTrimmedFiles = objFiles.slice(objFromFile, objToFile);
+        var pageDetails = "";
+        
+        $.each(objTrimmedFiles, function(index, objData) {
+          addData(objData.Filename, 1, "main", function(contentData) {
+            pageDetails = pageDetails + contentData;             
+          });                            
+        });
+        
+        if (objFiles.length > itemsPerPage) {
+          pageDetails = pageDetails + pagination;
+        }
+        
+        blogContent.innerHTML = pageDetails;
       });
     });
   </script>
@@ -109,9 +126,7 @@
       <div class="uk-container uk-container-center">
         <div class="uk-grid" data-uk-grid-margin="">
           <div id="subMenu" class="tm-sidebar uk-width-medium-1-4 uk-hidden-small uk-row-first"></div>
-          <div class="tm-main uk-width-medium-3-4">
-            <article id="main" class="uk-comment"></article>
-          </div>
+          <div id="main" class="tm-main uk-width-medium-3-4"></div>
         </div>
       </div>
     </div>    
