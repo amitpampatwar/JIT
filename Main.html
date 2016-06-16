@@ -60,9 +60,7 @@
             
             $.each(objFiles, function(index, objData) {
               addData(objData.Filename, 1, "main", function(contentData) {
-                blogDetails = blogDetails + "<li>";
-                blogDetails = blogDetails + contentData;
-                blogDetails = blogDetails + "</li>";                
+                blogDetails = blogDetails + contentData;             
               });                            
             });
             
