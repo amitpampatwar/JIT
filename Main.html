@@ -132,7 +132,7 @@
                 message: 'Email is required'
               },
               regexp: {
-                regexp: ^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$,
+                regexp: /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/,
                 message: 'Enter valid email'
               }
             }
