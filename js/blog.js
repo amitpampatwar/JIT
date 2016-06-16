@@ -27,7 +27,7 @@ function addData(url, headerType, elementName, callback)
           if (objContent.Form) {
             var formData = "";
             
-            formData = formData + "<form id=\"admissionForm\" class=\"uk-form uk-width-medium-1-2\"><fieldset>";
+            formData = formData + "<form id=\"admissionForm\" class=\"uk-form uk-form-stacked\"><fieldset>";
             
             $.each(objContent.Form, function(index, objFormContent) {
               formData = formData + "<div class=\"uk-form-row\"><div class=\"uk-form-controls\">";
