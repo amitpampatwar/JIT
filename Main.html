@@ -85,7 +85,7 @@
       
       $('[data-uk-pagination]').on('select.uk.pagination', function(e, pageIndex) {
         var objFromFile = ((itemsPerPage * (pageIndex + 1)) - itemsPerPage);
-        var objToFile = ((itemsPerPage * (pageIndex + 1));
+        var objToFile = (itemsPerPage * (pageIndex + 1));
         var objTrimmedFiles = objFiles.slice(objFromFile, objToFile);
         var pageDetails = "";
         
