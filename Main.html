@@ -49,6 +49,7 @@
       var blogDetails = "";
       var itemsPerPage = 2;
       var objFiles;
+      var pagination;
       
       if (typeof GetParameterValues("Folder") != "undefined") {
         $.ajax({
@@ -58,10 +59,10 @@
           async: false,
           success: function(data) {
             objFiles = jQuery.parseJSON(data);
-            
+            pagination = "<ul class=\"uk-pagination uk-pagination-right\" data-uk-pagination=\"{items:" + objFiles.length + ", itemsOnPage:" + itemsPerPage + "}\"></ul>";            
+
             var totalNoOfFiles = objFiles.length;
             var objTrimmedFiles = objFiles.slice(0,itemsPerPage);
-            var pagination = "<ul class=\"uk-pagination uk-pagination-right\" data-uk-pagination=\"{items:" + objFiles.length + ", itemsOnPage:" + itemsPerPage + "}\"></ul>";            
             
             $.each(objTrimmedFiles, function(index, objData) {
               addData(objData.Filename, 1, "main", function(contentData) {
