@@ -4,6 +4,15 @@
   <head>
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=",It offers Undergraduate degree in B.E ? Electronics Engg, Computer Science,CSE Engg, Electronics Engg,   Telecomm Engg, Best Engineering College in India, Beside being an an outstanding Institute that focuses on achieving excellence in Learning, Quality education ,Best placement engg college in nagpur,  Innovation, Discovery, and Knowledge transfer it also conducts various Inter college as well as Intra college events like Shikhar,Workshopon   Aptitude test, Best faculty in all branches" />
+    <meta name="robots" content="index, follow" />  
+    <meta name="rights" content="" />
+    <meta name="language" content="English" />
+    <meta name="title" content="Best Engineering,Engg,MBA college in Nagpur maharashtra India" />
+    <meta name="author" content="Mr.Pramod Pampatwar" />
+    <meta name="generator" content="HTML" />    
+    <meta name="keywords" content="admissions 2013, JIT, mba, jhulelal, nagpur, rtm-nagpur-university, education, b.e, be, baba university, admissions 2013, engineering, electronics engg, computer science &  engg, electronics & telecomm engg, engineering career, engineering branches,engineering colleges in nagpur district, engineering admissions 2013, samrudhi sarvajanik charitable trust,Engineering, electronics and telecommunication, computer,Computer science and engg, Nagpur, Best engineering   colleges, to engineering college,100% placement engg college,top ten engg college, top 100 engg college in india" />
+    
     <link type="text/css" rel="Stylesheet" media="screen,print" href="css/uikit.docs.min.css" />    
     <link type="text/css" rel="Stylesheet" media="screen,print" href="css/docs.css" />
     <link type="text/css" rel="Stylesheet" media="screen,print" href="css/highlight.css" />
@@ -14,6 +23,7 @@
     <script type="text/javascript" src="js/components/sticky.js"></script>    
     <script type="text/javascript" src="js/components/slideshow.js"></script>
     <script type="text/javascript" src="js/components/slideshow-fx.js"></script>
+    <script type="text/javascript" src="js/components/pagination.js"></script>
     <script type="text/javascript" src="js/formValidation.min.js"></script>
     <script type="text/javascript" src="js/FormValidation.uikit.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
@@ -46,12 +56,17 @@
           async: false,
           success: function(data) {
             var objFiles = jQuery.parseJSON(data);
+            var pagination = "<ul class=\"uk-pagination\" data-uk-pagination=\"{items:" + objFiles.length + ", itemsOnPage:2}\">";
             
             $.each(objFiles, function(index, objData) {
               addData(objData.Filename, 1, "main", function(contentData) {
+                blogDetails = blogDetails + "<li>";
                 blogDetails = blogDetails + contentData;
+                blogDetails = blogDetails + "</li>";                
               });                            
             });
+            
+            blogDetails = pagination + blogDetails + "</ul>";
           }
         });
       }
@@ -61,51 +76,7 @@
         });
       }
       
-      blogContent.outerHTML = blogDetails;
-      var admissionForm = document.getElementById("admissionForm");
-    
-      admissionForm.formValidation({
-        framework: 'uikit',
-        icon: {
-          valid: 'uk-icon-check',
-          invalid: 'uk-icon-times',
-          validating: 'uk-icon-refresh'
-        },
-        fields: {
-          firstName: {
-            row: '.uk-width-1-2',
-            validators: {
-              notEmpty: {
-                message: 'The first name is required'
-              },
-              regexp: {
-                regexp: /^[a-zA-Z\s]+$/,
-                message: 'The first name can only consist of alphabetical and space'
-              }
-            }
-          },
-          email: {
-            row: '.uk-width-1-2',
-            validators: {
-              notEmpty: {
-                message: 'The last name is required'
-              },
-              regexp: {
-                regexp: /^[a-zA-Z\s]+$/,
-                message: 'The last name can only consist of alphabetical and space'
-              }
-            }
-          },
-          mobileno: {
-            row: '.uk-width-1-3',
-            validators: {
-              notEmpty: {
-                message: 'The cell phone number is required'
-              }
-            }
-          }
-        }
-      });
+      blogContent.outerHTML = blogDetails;      
     });
   </script>
   <body class="tm-background">
