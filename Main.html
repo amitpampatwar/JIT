@@ -46,6 +46,7 @@
       var jsonFile = "json/" + GetParameterValues("JSON") + ".json";
       var folderName = "json/" + GetParameterValues("Folder") + "/fileDetails.json";
       var blogContent = document.getElementById("main");
+      var addPagination= document.getElementById("addPagination");
       var blogDetails = "";
       var itemsPerPage = 2;
       var objFiles;
@@ -59,7 +60,7 @@
           async: false,
           success: function(data) {
             objFiles = jQuery.parseJSON(data);
-            pagination = "<ul class=\"uk-pagination uk-pagination-right\" data-uk-pagination=\"{items:" + objFiles.length + ", itemsOnPage:" + itemsPerPage + "}\"></ul>";            
+            pagination = "<ul id=\"addPagination\" class=\"uk-pagination uk-pagination-right\" data-uk-pagination=\"{items:" + objFiles.length + ", itemsOnPage:" + itemsPerPage + "}\"></ul>";            
 
             var totalNoOfFiles = objFiles.length;
             var objTrimmedFiles = objFiles.slice(0,itemsPerPage);
@@ -71,7 +72,10 @@
             });
             
             if (objFiles.length > itemsPerPage) {
-              blogDetails = blogDetails + pagination;
+              addPagination.outerHTML = pagination;
+            }
+            else {
+              addPagination.outerHTML = "";
             }
           }
         });
@@ -95,11 +99,7 @@
             pageDetails = pageDetails + contentData;             
           });                            
         });
-        
-        if (objFiles.length > itemsPerPage) {
-          pageDetails = pageDetails + pagination;
-        }
-        
+                
         blogContent.innerHTML = pageDetails;
       });
     });
@@ -128,6 +128,7 @@
         <div class="uk-grid" data-uk-grid-margin="">
           <div id="subMenu" class="tm-sidebar uk-width-medium-1-4 uk-hidden-small uk-row-first"></div>
           <div id="main" class="tm-main uk-width-medium-3-4"></div>
+          <ul id="addPagination"></ul>
         </div>
       </div>
     </div>    
