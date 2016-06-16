@@ -30,7 +30,7 @@ function addData(url, headerType, elementName, callback)
             formData = formData + "<form id=\"admissionForm\" class=\"uk-form uk-width-medium-1-2\"><fieldset>";
             
             $.each(objContent.Form, function(index, objFormContent) {
-              formData = formData + "<div class=\"uk-form-row\">";
+              formData = formData + "<div class=\"uk-form-row\"><div class=\"uk-form-controls\">";
               
               if (objFormContent.Textbox) {
                 var textboxContent = objFormContent.Textbox;
@@ -63,7 +63,7 @@ function addData(url, headerType, elementName, callback)
                 formData = formData + "<textarea id=\"" + textareaContent.ID + "\" name=\"" + textareaContent.ID + "\" rows=\"" + textareaContent.Rows + "\" placeholder=\"" + textareaContent.Name + "\" class=\"uk-width-1-" + textareaContent.Width + "\"></textarea>";
               }
               
-              formData = formData + "</div>";
+              formData = formData + "</div></div>";
             });
             
             formData = formData + "</fieldset></form>";
