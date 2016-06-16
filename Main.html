@@ -41,11 +41,7 @@
         }  
       }  
     }
-    
-    $('[data-uk-pagination]').on('select.uk.pagination', function(e, pageIndex){
-      alert('You have selected page: ' + (pageIndex+1));
-    });
-    
+            
     $(document).ready(function() {
       var jsonFile = "json/" + GetParameterValues("JSON") + ".json";
       var folderName = "json/" + GetParameterValues("Folder") + "/fileDetails.json";
@@ -78,7 +74,11 @@
         });
       }
       
-      blogContent.outerHTML = blogDetails;      
+      blogContent.outerHTML = blogDetails;
+      
+      $('[data-uk-pagination]').on('select.uk.pagination', function(e, pageIndex){
+        alert('You have selected page: ' + (pageIndex+1));
+      });
     });
   </script>
   <body class="tm-background">
